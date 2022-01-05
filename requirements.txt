@@ -1,4 +1,0 @@
-requests
-pytz
-beautifulsoup4
-pandas
