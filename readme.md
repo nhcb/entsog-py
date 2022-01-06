@@ -5,7 +5,7 @@ Documentation of the API found on https://transparency.entsog.eu/api/archiveDire
 
 Documentation of the data (user manual) found on https://www.entsog.eu/sites/default/files/2021-07/ENTSOG%20-%20TP%20User%20Manual_v_4.5.pdf
 
-
+Heavily inspired upon (and forked from) https://github.com/EnergieID/entsoe-py 
 
 ## Installation
 DOES NOT WORK (YET)
