@@ -1,7 +1,7 @@
 import pandas as pd
 from dateutil import rrule
 from itertools import tee
-
+import re
 
 def year_blocks(start, end):
     """
@@ -91,3 +91,16 @@ def pairwise(iterable):
     a, b = tee(iterable)
     next(b, None)
     return zip(a, b)
+
+def to_snake_case(name : str) -> str:
+    """Camel case to snake case
+
+    Parameters
+    ----------
+    name : str
+
+    Returns
+    -------
+    str
+    """
+    return re.sub(r'(?<!^)(?=[A-Z])', '_', name).lower()

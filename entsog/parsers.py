@@ -2,14 +2,36 @@ import sys
 import zipfile
 from io import BytesIO
 from typing import Union
+from .misc import to_snake_case
 
 import bs4
 import pandas as pd
+import simplejson
+
 
 from .mappings import PSRTYPE_MAPPINGS, DOCSTATUS, BSNTYPE, Area
 
 GENERATION_ELEMENT = "inBiddingZone_Domain.mRID"
 CONSUMPTION_ELEMENT = "outBiddingZone_Domain.mRID"
+
+def _extract_data(json_text):
+
+    json = simplejson.loads(json_text)
+
+    keys = list(json.keys())
+    print(keys)
+    df = pd.json_normalize(json[keys[1]])
+
+    return df
+
+def parse_general(json_text):
+    df = _extract_data(json_text)
+    df.columns = [to_snake_case(col) for col in df.columns]
+
+    return df
+
+
+
 
 
 def _extract_timeseries(xml_text):
