@@ -27,6 +27,58 @@ end = pd.Timestamp('20180101', tz='Europe/Brussels')
 country_code = 'BE'  # Belgium
 
 client.query_connection_points()
+client.query_operators(country_code)
+client.query_balancing_zones()
+client.query_operator_point_directions(country_code)
+client.query_interconnections(country_code)
+client.query_aggregate_interconnections(country_code)
+client.query_urgent_market_messages(country_code)
+client.query_tariffs(start = start, end = end, country_code = country_code)
+client.query_tariffs_sim(start = start, end = end, country_code = country_code)
+
+client.query_aggregated_data(start = start, end = end, country_code = country_code)
+client.query_interruptions(start = start, end = end, country_code = country_code)
+client.query_CMP_auction_premiums(start = start, end = end, country_code = country_code)
+client.query_CMP_unavailable_firm_capacity(start = start, end = end, country_code = country_code)
+
+client.query_CMP_unsuccesful_requests(start = start, end = end, country_code = country_code)
+
+#Nomination, Renominations, Allocations, Physical Flows, GCV, Wobbe Index, Capacities, Interruptions, and CMP CMA
+# One could filter on these indicators...
+# All possible values:
+# Actual interruption of interruptible capacity
+# Allocation
+# Firm Available
+# Firm Booked
+# Firm Interruption Planned - Interrupted
+# Firm Interruption Unplanned - Interrupted
+# Firm Technical
+# Firm available
+# Firm booked
+# Firm technical
+# GCV
+# Interruptible Available
+# Interruptible Booked
+# Interruptible Interruption Actual – Interrupted
+# Interruptible Interruption Planned - Interrupted
+# Interruptible Total
+# Nominations
+# Physical Flow
+# Planned interruption of firm capacity
+# Renomination
+# Unplanned interruption of firm capacity
+# Wobbe Index
+
+# Available through Oversubscription
+# Available through Surrender
+# Available through UIOLI long-term
+# Available through UIOLI short-term
+
+client.query_operational_data(start = start, end = end, country_code = country_code, indicator = ['Nomination', 'Renominations', 'Wobbe Index'])
+
+
+
+
 
 ```
 
@@ -46,12 +98,31 @@ country_code = 'BE'  # Belgium
 
 # methods that return Pandas DataFrame
 client.query_connection_points()
+client.query_operators(country_code)
+client.query_balancing_zones()
+client.query_operator_point_directions(country_code)
+client.query_interconnections(country_code)
+client.query_aggregate_interconnections(country_code)
+client.query_urgent_market_messages(country_code)
+client.query_tariffs(start = start, end = end, country_code = country_code)
+client.query_tariffs_sim(start = start, end = end, country_code = country_code)
+
+client.query_aggregated_data(start = start, end = end, country_code = country_code)
+client.query_interruptions(start = start, end = end, country_code = country_code)
+client.query_CMP_auction_premiums(start = start, end = end, country_code = country_code)
+client.query_CMP_unavailable_firm_capacity(start = start, end = end, country_code = country_code)
+
+client.query_CMP_unsuccesful_requests(start = start, end = end, country_code = country_code)
+
+client.query_operational_data(start = start, end = end, country_code = country_code, indicator = ['Nomination', 'Renominations', 'Wobbe Index'])
+
+
 
 ```
 #### Dump result to file
 See a list of all IO-methods on https://pandas.pydata.org/pandas-docs/stable/io.html
 ```python
-ts = client.query_connection_points(country_code, start=start, end=end)
+ts = client.query_connection_points(country_code, start=start, end = end=end)
 ts.to_csv('outfile.csv')
 ```
 

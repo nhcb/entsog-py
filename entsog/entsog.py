@@ -1266,6 +1266,8 @@ class EntsogRawClient:
 
     def query_operational_data(self, start: pd.Timestamp, end: pd.Timestamp,
     country_code: Union[Area, str],
+    #indicator = Optional[list[Union[Indicator, str]]] =,
+    #indicator, #: Optional[list[str]] = None,
     limit : int = -1) -> str:
         
         """
@@ -1291,6 +1293,9 @@ class EntsogRawClient:
             'operatorKey' : list(area.code),
             'limit': limit
         }
+
+        # if indicator:
+        #     params['indicator'] = ', '.join(indicator)
 
         response = self._base_request(endpoint = '/operationaldatas',params=params)
 
@@ -1682,6 +1687,8 @@ class EntsogPandasClient(EntsogRawClient):
     @year_limited
     def query_operational_data(self, start: pd.Timestamp, end: pd.Timestamp,
     country_code: Union[Area, str],
+    #indicator = Optional[list[Union[Indicator, str]]] = None,
+    #indicator, #: Optional[list[str]] = None,
     limit : int = -1) -> str:
         
         """
@@ -1702,7 +1709,9 @@ class EntsogPandasClient(EntsogRawClient):
         """
         area = lookup_area(country_code)
         json = super(EntsogPandasClient, self).query_operational_data(
-            start = start, end = end, country_code = area ,limit =limit
+            start = start, end = end, country_code = area ,
+            #indicator = indicator,
+            limit =limit
         )
         data = parse_general(json)
 

@@ -31,10 +31,15 @@ client = EntsogPandasClient()
 
 start = pd.Timestamp(2018, 1, 1)
 end = pd.Timestamp(2018, 2, 1)
-data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
+country_code = 'BE'
+# data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
 
-data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
+# data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
+# print(data)
+
+# op = client.query_operator_point_directions()
+# print(op)
+
+data = client.query_operational_data(start = start, end = end, country_code = country_code)
+
 print(data)
-
-op = client.query_operator_point_directions()
-print(op)
