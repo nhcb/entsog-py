@@ -29,9 +29,9 @@ def get_area():
 
 client = EntsogPandasClient()
 
-start = pd.Timestamp(2018, 1, 1)
-end = pd.Timestamp(2018, 2, 1)
-country_code = 'BG'
+start = pd.Timestamp(2021, 1, 1)
+end = pd.Timestamp(2021, 1, 31)
+country_code = 'DE'
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
 
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
@@ -40,6 +40,25 @@ country_code = 'BG'
 # op = client.query_operator_point_directions()
 # print(op)
 
-data = client.query_operational_data(start = start, end = end, country_code = country_code)
+# client.query_connection_points().to_csv(f'data/query_connection_points.csv',sep = ';')
+# client.query_operators(country_code).to_csv(f'data/query_operators.csv',sep = ';')
+# client.query_balancing_zones().to_csv(f'data/query_balancing_zones.csv',sep = ';')
+# client.query_operator_point_directions(country_code).to_csv(f'data/query_operator_point_directions_{country_code}.csv',sep = ';')
+# client.query_interconnections(country_code).to_csv(f'data/query_interconnections_{country_code}.csv',sep = ';')
+# client.query_aggregate_interconnections(country_code).to_csv(f'data/query_aggregate_interconnections_{country_code}.csv',sep = ';')
+# client.query_urgent_market_messages(country_code).to_csv(f'data/query_urgent_market_messages_{country_code}.csv',sep = ';')
+# client.query_tariffs(start = start, end = end, country_code = country_code).to_csv(f'data/query_tariffs_{country_code}.csv',sep = ';')
+# client.query_tariffs_sim(start = start, end = end, country_code = country_code).to_csv(f'data/query_tariffs_sim_{country_code}.csv',sep = ';')
+# client.query_aggregated_data(start = start, end = end, country_code = country_code).to_csv(f'data/query_aggregated_data_{country_code}.csv',sep = ';')
+# client.query_interruptions(start = start, end = end, country_code = country_code, limit = 1_000).to_csv(f'data/query_interruptions_{country_code}.csv',sep = ';')
+# client.query_CMP_auction_premiums(start = start, end = end, country_code = country_code).to_csv(f'data/query_CMP_auction_premiums_{country_code}.csv',sep = ';')
+# client.query_CMP_unavailable_firm_capacity(start = start, end = end, country_code = country_code).to_csv(f'data/query_CMP_unavailable_firm_capacity_{country_code}.csv',sep = ';')
+# client.query_CMP_unsuccesful_requests(start = start, end = end, country_code = country_code).to_csv(f'data/query_CMP_unsuccesful_requests_{country_code}.csv',sep = ';')
+# client.query_operational_data(start = start, end = end, country_code = country_code, indicators = ['nominations','allocation']).to_csv(f'data/query_operational_data_{country_code}.csv',sep = ';')
 
-print(data)
+
+
+client.query_aggregated_data(start = start, end = end, country_code = country_code).to_csv(f'data/query_aggregated_data_{country_code}.csv',sep = ';')
+
+
+#get_area()

@@ -1,0 +1,5 @@
+;country_key;country_label;bz_key;bz_label;bz_label_long;operator_key;operator_label;direction_key;adjacent_systems_key;adjacent_systems_count;adjacent_systems_are_balancing_zones;adjacent_systems_label;id;data_set
+0;DE;Germany;DE-THE-----;DE THE BZ;German Balancing Zone THE;DE-TSO-0018;Fluxys Deutschland GmbH;entry;Transmission;1;;Transmission;6DEDE-THE-----DE-TSO-0018entryTransmission;6
+1;DE;Germany;DE-THE-----;DE THE BZ;German Balancing Zone THE;DE-TSO-0018;Fluxys Deutschland GmbH;entry;TransmissionCZ---------;1;;Czech;6DEDE-THE-----DE-TSO-0018entryTransmissionCZ---------;6
+2;DE;Germany;DE-THE-----;DE THE BZ;German Balancing Zone THE;DE-TSO-0018;Fluxys Deutschland GmbH;exit;Transmission;1;;Transmission;6DEDE-THE-----DE-TSO-0018exitTransmission;6
+3;DE;Germany;DE-THE-----;DE THE BZ;German Balancing Zone THE;DE-TSO-0018;Fluxys Deutschland GmbH;exit;TransmissionCZ---------;1;;Czech;6DEDE-THE-----DE-TSO-0018exitTransmissionCZ---------;6

@@ -1,6 +1,6 @@
 import enum
 from typing import Union
-
+#import EntsogPandasClient
 
 def lookup_area(s: Union['Area', str]) -> 'Area':
     if isinstance(s, Area):
@@ -19,6 +19,36 @@ def lookup_area(s: Union['Area', str]) -> 'Area':
                 area = None
 
     return area
+
+def lookup_indicator(s: Union['Indicator', str]) -> 'Indicator':
+    if isinstance(s, Indicator):
+        # If it already is an Area object, we're happy
+        area = s
+    else:  # It is a string
+        try:
+            # If it is a 'country code' string, we do a lookup
+            area = Indicator[s]
+        except KeyError:
+            # It is not, it may be a direct code
+            try:
+                area = [area for area in Indicator if area.value == s][0]
+            except IndexError:
+            # None argument
+                area = None
+
+    return area
+
+#POINTS = EntsogPandasClient().query_operator_point_directions(limit = -1)
+
+class Points():
+    def __init__(self):
+        self.points = POINTS # Initialize with the original dataset
+
+    #def filter_operators(operators : Union[list[Operator], list[str]]):
+    #    return
+
+    #def filter_country_codes(country_codes: Union[list[Area], list[str]]):
+    #    return
 
 
 class Area(enum.Enum):
@@ -73,6 +103,53 @@ class Area(enum.Enum):
     FI   =   ('FI-TSO-0003',),  ('Gasgrid Finland',) ,
     CH   =   ('AL-TSO-0001',),  ('TAP',) ,
     DK   =   ('DK-TSO-0001'),  ('Energinet',) 
+
+# TODO: Add label containing description
+class Indicator(enum.Enum):
+    '''
+    ENUM containing full label of indicator
+    '''
+    def __new__(cls, *args, **kwds):
+        obj = object.__new__(cls)
+        obj._value_ = args[0]
+        return obj
+
+    # ignore the first param since it's already set by __new__
+    def __init__(self, _: str):
+        self = self
+
+    def __str__(self):
+        return self.value
+
+    @property
+    def code(self):
+        return (self.value)
+
+    interruption_capacity = "Actual interruption of interruptible capacity",
+    allocation = "Allocation",
+    firm_available = "Firm Available",
+    firm_booked = "Firm Booked",
+    firm_interruption_planned = "Firm Interruption Planned - Interrupted",
+    firm_interruption_unplanned ="Firm Interruption Unplanned - Interrupted",
+    firm_technical = "Firm Technical",
+    gcv = "GCV",
+    interruptible_available = "Interruptible Available",
+    interruptible_booked = "Interruptible Booked",
+    interruptible_interruption_actual = "Interruptible Interruption Actual – Interrupted",
+    interruptible_interruption_planned = "Interruptible Interruption Planned - Interrupted",
+    interruptible_total = "Interruptible Total",
+    nominations = "Nominations",
+    physical_flow = "Physical Flow",
+    firm_interruption_capacity_planned = "Planned interruption of firm capacity",
+    renomination = "Renomination",
+    firm_interruption_capacity_unplanned = "Unplanned interruption of firm capacity",
+    wobbe_index = "Wobbe Index",
+    oversubscription_available = "Available through Oversubscription",
+    surrender_available = "Available through Surrender",
+    uioli_available_lt = "Available through UIOLI long-term",
+    uioli_available_st = "Available through UIOLI short-term"
+
+
 
 
 
