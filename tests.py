@@ -31,7 +31,7 @@ client = EntsogPandasClient()
 
 start = pd.Timestamp(2018, 1, 1)
 end = pd.Timestamp(2018, 2, 1)
-country_code = 'BE'
+country_code = 'BG'
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
 
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)

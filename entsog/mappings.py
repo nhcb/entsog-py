@@ -45,34 +45,34 @@ class Area(enum.Enum):
     def operator_labels(self):
         return (self._operator_labels)
 
-
-    BE   =   ('BE-TSO-0001'),  ('Fluxys Belgium') ,
-    BG   =   ('BG-TSO-0001'),  ('Bulgartransgaz') ,
-    CZ   =   ('CZ-TSO-0001'),  ('NET4GAS') ,
+    # One element tuple consists of (element, )
+    BE   =   ('BE-TSO-0001',),  ('Fluxys Belgium',) ,
+    BG   =   ('BG-TSO-0001',),  ('Bulgartransgaz',) ,
+    CZ   =   ('CZ-TSO-0001',),  ('NET4GAS',) ,
     DE   =   ('DE-TSO-0001', 'DE-TSO-0002', 'DE-TSO-0003', 'DE-TSO-0005', 'DE-TSO-0009', 'DE-TSO-0010', 'DE-TSO-0013', 'DE-TSO-0014', 'DE-TSO-0006', 'DE-TSO-0004', 'DE-TSO-0007', 'DE-TSO-0008', 'DE-TSO-0015', 'DE-TSO-0016', 'DE-TSO-0017', 'DE-TSO-0018', 'DE-TSO-0020'),  ('GASCADE Gastransport', 'Thyssengas', 'ONTRAS', 'Gasunie Deutschland ', 'Open Grid Europe', 'bayernets', 'jordgas Transport', 'terranets bw', 'Gastransport Nord', 'GRTgaz Deutschland', 'Fluxys TENP', 'Nowega', 'GOAL', 'OPAL Gastransport', 'NEL Gastransport', 'Fluxys Deutschland', 'LBTG') ,
-    EE   =   ('EE-TSO-0001'),  ('Elering') ,
-    ES   =   ('ES-TSO-0006'),  ('Enagas') ,
+    EE   =   ('EE-TSO-0001',),  ('Elering',) ,
+    ES   =   ('ES-TSO-0006',),  ('Enagas',) ,
     FR   =   ('FR-TSO-0002', 'FR-TSO-0003'),  ('TERÉGA', 'GRTgaz') ,
-    GR   =   ('GR-TSO-0001'),  ('DESFA') ,
-    HR   =   ('HR-TSO-0001'),  ('Plinacro Ltd') ,
-    IE   =   ('IE-TSO-0002'),  ('GNI') ,
+    GR   =   ('GR-TSO-0001',),  ('DESFA',) ,
+    HR   =   ('HR-TSO-0001',),  ('Plinacro Ltd',) ,
+    IE   =   ('IE-TSO-0002',),  ('GNI',) ,
     IT   =   ('IT-TSO-0001', 'IT-TSO-0003', 'IT-TSO-0004'),  ('Snam Rete Gas', 'SGI', 'ITG') ,
-    LV   =   ('LV-TSO-0001'),  ('Conexus') ,
+    LV   =   ('LV-TSO-0001',),  ('Conexus',) ,
     NL   =   ('NL-TSO-0001', 'UK-TSO-0004'),  ('GTS', 'BBL company') ,
     PL   =   ('PL-TSO-0002', 'PL-TSO-0001'),  ('GAZ-SYSTEM', 'GAZ-SYSTEM (ISO)') ,
-    PT   =   ('PT-TSO-0001'),  ('REN - Gasodutos') ,
-    RO   =   ('RO-TSO-0001'),  ('Transgaz') ,
-    SI   =   ('SI-TSO-0001'),  ('Plinovodi') ,
-    UA   =   ('UA-TSO-0001'),  ('Gas TSO UA') ,
+    PT   =   ('PT-TSO-0001',),  ('REN - Gasodutos',) ,
+    RO   =   ('RO-TSO-0001',),  ('Transgaz',) ,
+    SI   =   ('SI-TSO-0001',),  ('Plinovodi',) ,
+    UA   =   ('UA-TSO-0001',),  ('Gas TSO UA',) ,
     UK   =   ('UK-TSO-0001', 'UK-TSO-0002', 'IE-TSO-0001', 'UK-TSO-0003'),  ('National Grid Gas', 'Premier Transmission', 'GNI (UK)', 'Interconnector') ,
-    LU   =   ('LU-TSO-0001'),  ('Creos Luxembourg') ,
-    HU   =   ('HU-TSO-0001'),  ('FGSZ') ,
+    LU   =   ('LU-TSO-0001',),  ('Creos Luxembourg',) ,
+    HU   =   ('HU-TSO-0001',),  ('FGSZ',) ,
     AT   =   ('AT-TSO-0001', 'AT-TSO-0003'),  ('Gas Connect Austria', 'TAG') ,
-    LT   =   ('LT-TSO-0001'),  ('Amber Grid') ,
-    SK   =   ('SK-TSO-0001'),  ('eustream') ,
-    FI   =   ('FI-TSO-0003'),  ('Gasgrid Finland') ,
-    CH   =   ('AL-TSO-0001'),  ('TAP') ,
-    DK   =   ('DK-TSO-0001'),  ('Energinet') 
+    LT   =   ('LT-TSO-0001',),  ('Amber Grid',) ,
+    SK   =   ('SK-TSO-0001',),  ('eustream',) ,
+    FI   =   ('FI-TSO-0003',),  ('Gasgrid Finland',) ,
+    CH   =   ('AL-TSO-0001',),  ('TAP',) ,
+    DK   =   ('DK-TSO-0001'),  ('Energinet',) 
 
 
 
