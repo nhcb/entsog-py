@@ -1,6 +1,6 @@
 import enum
+from logging import error
 from typing import Union
-#import EntsogPandasClient
 
 def lookup_area(s: Union['Area', str]) -> 'Area':
     if isinstance(s, Area):
@@ -21,34 +21,175 @@ def lookup_area(s: Union['Area', str]) -> 'Area':
     return area
 
 def lookup_indicator(s: Union['Indicator', str]) -> 'Indicator':
-    if isinstance(s, Indicator):
-        # If it already is an Area object, we're happy
-        area = s
+
+    return _lookup(s, Indicator)
+
+def lookup_balancing_zone(s: Union['BalancingZone', str]) -> 'BalancingZone':
+
+    return _lookup(s, BalancingZone)
+
+def lookup_country(s: Union['Country', str]) -> 'Country':
+
+    return _lookup(s, Country)
+
+
+def _lookup(s, object):
+    if isinstance(s, object):
+        # If it already is the required object, we're happy
+        _object = s
     else:  # It is a string
         try:
-            # If it is a 'country code' string, we do a lookup
-            area = Indicator[s]
+            # If it is a code string, we do a lookup
+            _object = object[s]
         except KeyError:
             # It is not, it may be a direct code
             try:
-                area = [area for area in Indicator if area.value == s][0]
-            except IndexError:
-            # None argument
-                area = None
+                _object = [_object for _object in object if _object.value == s][0]
+            except IndexError as e:
+                print(f"{s} is not contained in {object}. This information is hardcoded, please raise an issue. Message: {e}")
+                raise
 
-    return area
+    return _object
 
-#POINTS = EntsogPandasClient().query_operator_point_directions(limit = -1)
 
-class Points():
-    def __init__(self):
-        self.points = POINTS # Initialize with the original dataset
 
-    #def filter_operators(operators : Union[list[Operator], list[str]]):
-    #    return
+class BalancingZone(enum.Enum):
+    '''
+    ENUM containing 3 things about a BalancingZone: Key, Label, Manager
+    '''
+    def __new__(cls, *args, **kwds):
+        obj = object.__new__(cls)
+        obj._value_ = args[0]
+        return obj
 
-    #def filter_country_codes(country_codes: Union[list[Area], list[str]]):
-    #    return
+    # ignore the first param since it's already set by __new__
+    def __init__(self, _: str, label: str, manager_label:str):
+        self._label = label
+        self._manager_label = manager_label
+
+    def __str__(self):
+        return self.value
+
+    @property
+    def code(self):
+        return (self.value)
+
+    @property
+    def label(self):
+        return (self._operator_labels)
+
+    @property
+    def manager_label(self):
+        return (self._operator_labels)
+
+
+    AT="AT---------","Austria","Central European Gas Hub AG",
+    BE_H="BE-H-ZONE--","H-Zone","Fluxys Belgium",
+    BE_L="BE-L-ZONE--","L-Zone","Fluxys Belgium",
+    BE_LUX="BE-LUX------","BeLux","Fluxys Belgium",
+    BG_GNTT="BG-GTNTT---","GTNTT-BG","Bulgartransgaz EAD",
+    BG_NGTS="BG-NGTS----","Bulgaria","Bulgartransgaz EAD",
+    CH="CH---------","Switzerland","Swissgas AS",
+    CZ="CZ---------","Czech","NET4GAS, s.r.o.",
+    DE_GASPOOL="DE-GASPOOL-","GASPOOL","GASPOOL Balancing Services GmbH",
+    DE_NCG="DE-NCG-----","NCG","Net Connect Germany",
+    DK="DK---------","Denmark","Energinet",
+    EE="EE---------","Estonia","Elering AS",
+    ES="ES---------","Spain","Enagas Transporte S.A.U.",
+    FI="FI---------","Finland","Gasgrid Finland Oy",
+    FR_NORTH="FR-NORTH---","PEG North","GRTgaz",
+    FR_SOUTH="FR-SOUTH---","PEG South","GRTgaz",
+    FR_TIGF="FR-TIGF----","PEG TIGF","TERÃ‰GA",
+    FR_TRS="FR-TRS------","TRS","GRTgaz",
+    GR="GR---------","Greece","DESFA S.A.",
+    HR="HR---------","Croatia","Plinacro Ltd",
+    HU="HU---------","Hungary","FGSZ Ltd.",
+    IE="IE---------","Ireland","Gas Networks Ireland",
+    IT="IT---------","Italy","Snam Rete Gas S.p.A.",
+    LT="LT---------","Lithuania","AB Amber Grid",
+    LU="LU---------","Luxemburg","Creos Luxembourg S.A.",
+    LV="LV---------","Latvia","Conexus Baltic Grid",
+    NL="NL---------","Netherlands","Gasunie Transport Services B.V.",
+    PL="PL---------","Poland H-gas","GAZ-SYSTEM S.A.",
+    PL_YAMAL="PL-YAMAL---","TGPS (YAMAL)","GAZ-SYSTEM S.A.",
+    PT="PT---------","Portugal","REN - Gasodutos, S.A.",
+    RO="RO---------","RO_NTS","SNTGN Transgaz S.A.",
+    RO_TBP="RO-TBP-----","RO_DTS","SNTGN Transgaz S.A.",
+    SE="SE---------","Sweden","Swedegas AB",
+    SI="SI---------","Slovenia","Plinovodi d.o.o.",
+    SK="SK---------","Slovakia","eustream, a.s.",
+    UK="UK---------","UK","National Grid Gas plc",
+    UK_IUK="UK-IUK-----","IUK","Interconnector",
+    UK_NI="UK-NI------","NI","Premier Transmission Ltd",
+    PL_L="PL-L-gas---","Poland L-gas","GAZ-SYSTEM S.A. (ISO)",
+    FR="FR----------","TRF","GRTgaz",
+    DK_SE="DK-SE-------","Joint Bal Zone DK/SE","Energinet",
+    UA="UA---------","Ukraine","LLC Gas TSO of Ukraine",
+    MD="MD---------","Moldova","Moldovatransgaz LLC",
+    TR="TR---------","Turkey","",
+    MK="MK---------","North Macedonia","GA-MA - Skopje",
+    RS="RS---------","Serbia","Srbijagas",
+    EE_LV="EE-LV------","Joint Bal Zone EE/LV","Elering AS",
+    DE_THE="DE-THE-----","DE THE BZ",""
+
+class Country(enum.Enum):
+    '''
+    ENUM containing 2 things about a country: code, label
+    '''
+    def __new__(cls, *args, **kwds):
+        obj = object.__new__(cls)
+        obj._value_ = args[0]
+        return obj
+
+    # ignore the first param since it's already set by __new__
+    def __init__(self, _: str, label: str):
+        self._label = label
+
+    def __str__(self):
+        return self.value
+
+    @property
+    def code(self):
+        return (self.value)
+
+    @property
+    def label(self):
+        return (self._operator_labels)
+
+    AT="AT","Austria",
+    BE="BE","Belgium",
+    BG="BG","Bulgaria",
+    CH="CH","Switzerland",
+    CZ="CZ","Czech",
+    DE="DE","Germany",
+    DK="DK","Denmark",
+    EE="EE","Estonia",
+    ES="ES","Spain",
+    FI="FI","Finland",
+    FR="FR","France",
+    GR="GR","Greece",
+    HR="HR","Croatia",
+    HU="HU","Hungary",
+    IE="IE","Ireland",
+    IT="IT","Italy",
+    LT="LT","Lithuania",
+    LU="LU","Luxemburg",
+    LV="LV","Latvia",
+    NL="NL","Netherlands",
+    PL="PL","Poland",
+    PT="PT","Portugal",
+    RO="RO","Romania",
+    SE="SE","Sweden",
+    SI="SI","Slovenia",
+    SK="SK","Slovakia",
+    UK="UK","UK",
+    UA="UA","Ukraine",
+    MD="MD","Moldova",
+    TR="TR","Turkey",
+    MK="MK","North Macedonia",
+    RS="RS","Serbia"
+
+
 
 
 class Area(enum.Enum):
@@ -152,9 +293,6 @@ class Indicator(enum.Enum):
 
 
 
-
-
-
 DATASET_MAPPINGS = {
     '1': 'Operators and Operational data',
     '2': 'Points and CMP Unsuccessful Request',
@@ -164,130 +302,39 @@ DATASET_MAPPINGS = {
     '6': 'Aggregate Interconnections'
 }
 
-
-PSRTYPE_MAPPINGS = {
-    'A03': 'Mixed',
-    'A04': 'Generation',
-    'A05': 'Load',
-    'B01': 'Biomass',
-    'B02': 'Fossil Brown coal/Lignite',
-    'B03': 'Fossil Coal-derived gas',
-    'B04': 'Fossil Gas',
-    'B05': 'Fossil Hard coal',
-    'B06': 'Fossil Oil',
-    'B07': 'Fossil Oil shale',
-    'B08': 'Fossil Peat',
-    'B09': 'Geothermal',
-    'B10': 'Hydro Pumped Storage',
-    'B11': 'Hydro Run-of-river and poundage',
-    'B12': 'Hydro Water Reservoir',
-    'B13': 'Marine',
-    'B14': 'Nuclear',
-    'B15': 'Other renewable',
-    'B16': 'Solar',
-    'B17': 'Waste',
-    'B18': 'Wind Offshore',
-    'B19': 'Wind Onshore',
-    'B20': 'Other',
-    'B21': 'AC Link',
-    'B22': 'DC Link',
-    'B23': 'Substation',
-    'B24': 'Transformer'}
-
-DOCSTATUS = {'A01': 'Intermediate',
-             'A02': 'Final',
-             'A05': 'Active',
-             'A09': 'Cancelled',
-             'X01': 'Estimated'}
-
-BSNTYPE = {'A29': 'Already allocated capacity (AAC)',
-           'A43': 'Requested capacity (without price)',
-           'A46': 'System Operator redispatching',
-           'A53': 'Planned maintenance',
-           'A54': 'Unplanned outage',
-           'A85': 'Internal redispatch',
-           'A95': 'Frequency containment reserve',
-           'A96': 'Automatic frequency restoration reserve',
-           'A97': 'Manual frequency restoration reserve',
-           'A98': 'Replacement reserve',
-           'B01': 'Interconnector network evolution',
-           'B02': 'Interconnector network dismantling',
-           'B03': 'Counter trade',
-           'B04': 'Congestion costs',
-           'B05': 'Capacity allocated (including price)',
-           'B07': 'Auction revenue',
-           'B08': 'Total nominated capacity',
-           'B09': 'Net position',
-           'B10': 'Congestion income',
-           'B11': 'Production unit'}
-
-MARKETAGREEMENTTYPE = {'A01': 'Daily',
-                       'A02': 'Weekly',
-                       'A03': 'Monthly',
-                       'A04': 'Yearly',
-                       'A05': 'Total',
-                       'A06': 'Long term',
-                       'A07': 'Intraday',
-                       'A13': 'Hourly'}
-
-DOCUMENTTYPE = {'A09': 'Finalised schedule',
-                'A11': 'Aggregated energy data report',
-                'A15': 'Acquiring system operator reserve schedule',
-                'A24': 'Bid document',
-                'A25': 'Allocation result document',
-                'A26': 'Capacity document',
-                'A31': 'Agreed capacity',
-                'A38': 'Reserve allocation result document',
-                'A44': 'Price Document',
-                'A61': 'Estimated Net Transfer Capacity',
-                'A63': 'Redispatch notice',
-                'A65': 'System total load',
-                'A68': 'Installed generation per type',
-                'A69': 'Wind and solar forecast',
-                'A70': 'Load forecast margin',
-                'A71': 'Generation forecast',
-                'A72': 'Reservoir filling information',
-                'A73': 'Actual generation',
-                'A74': 'Wind and solar generation',
-                'A75': 'Actual generation per type',
-                'A76': 'Load unavailability',
-                'A77': 'Production unavailability',
-                'A78': 'Transmission unavailability',
-                'A79': 'Offshore grid infrastructure unavailability',
-                'A80': 'Generation unavailability',
-                'A81': 'Contracted reserves',
-                'A82': 'Accepted offers',
-                'A83': 'Activated balancing quantities',
-                'A84': 'Activated balancing prices',
-                'A85': 'Imbalance prices',
-                'A86': 'Imbalance volume',
-                'A87': 'Financial situation',
-                'A88': 'Cross border balancing',
-                'A89': 'Contracted reserve prices',
-                'A90': 'Interconnection network expansion',
-                'A91': 'Counter trade notice',
-                'A92': 'Congestion costs',
-                'A93': 'DC link capacity',
-                'A94': 'Non EU allocations',
-                'A95': 'Configuration document',
-                'B11': 'Flow-based allocations'}
-
-PROCESSTYPE = {
-    'A01': 'Day ahead',
-    'A02': 'Intra day incremental',
-    'A16': 'Realised',
-    'A18': 'Intraday total',
-    'A31': 'Week ahead',
-    'A32': 'Month ahead',
-    'A33': 'Year ahead',
-    'A39': 'Synchronisation process',
-    'A40': 'Intraday process',
-    'A46': 'Replacement reserve',
-    'A47': 'Manual frequency restoration reserve',
-    'A51': 'Automatic frequency restoration reserve',
-    'A52': 'Frequency containment reserve',
-    'A56': 'Frequency restoration reserve'
+REGIONS = {
+    'BE': 'WE',
+    'NL': 'WE',
+    'DE': 'WE',
+    'FR': 'WE',
+    'CH': 'WE',
+    'AT': 'WE',
+    'CZ': 'EE',
+    'UK': 'NE',
+    'NO': 'NE',
+    'HU': 'EE',
+    'IT': 'SE',
+    'ES': 'SE',
+    'SI': 'EE',
+    'RS': 'EE',
+    'PL': 'EE',
+    'ME': 'EE', # Montenegro
+    'DK': 'NE',
+    'RO': 'EE',
+    'LT': 'EE',
+    'BG': 'EE',
+    'SE': 'NE',
+    'LV': 'EE',
+    'IE': 'NE',
+    'BA': 'EE',
+    'FI': 'NE',
+    'MK': 'EE',
+    'PT': 'SE',
+    'GR': 'SE',
+    'MT': 'SE'
 }
+
+
 
 # neighbouring bidding zones that have cross_border flows
 NEIGHBOURS = {

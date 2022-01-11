@@ -6,17 +6,17 @@ from pandas.tseries.offsets import YearBegin, YearEnd
 import pytz
 import requests
 import simplejson
+import urllib.request
+import urllib.parse
 
+from typing import List
 from bs4 import BeautifulSoup
 
 from entsog.exceptions import InvalidPSRTypeError, InvalidBusinessParameterError
 from .exceptions import NoMatchingDataError, PaginationError
-from .mappings import Area, NEIGHBOURS, lookup_area, Indicator, lookup_indicator
-from .parsers import parse_general, parse_prices, parse_loads, parse_generation, \
-    parse_installed_capacity_per_plant, parse_crossborder_flows, \
-    parse_unavailabilities, parse_contracted_reserve, parse_imbalance_prices_zip, \
-    parse_netpositions, parse_procured_balancing_capacity
-from .decorators import retry, paginated, year_limited, day_limited
+from .mappings import Area, NEIGHBOURS, lookup_area, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
+from .parsers import parse_aggregate_data, parse_general, parse_interconnections
+from .decorators import month_limited, operator_limited, retry, paginated, year_limited, day_limited
 
 
 __title__ = "Entsog-py"
@@ -84,14 +84,14 @@ class EntsogRawClient:
         base_params = {
             'timeZone' : 'UCT'
         }
-        print("-------------------------------------------")
-        print(url)
         params.update(base_params)
 
         logging.debug(f'Performing request to {url} with params {params}')
+
+        params = urllib.parse.urlencode(params, safe = ',') # ENTSOG uses comma-seperated valuess
+
         response = self.session.get(url=url, params=params,
-                                    proxies=self.proxies, timeout=self.timeout, 
-                                    verify=False) # TODO: Important to remove as it raises security concerns. However due to weird SSL issues within NP, only dirty solution.
+                                    proxies=self.proxies, timeout=self.timeout)#,verify=False) # TODO: Important to remove as it raises security concerns. However due to weird SSL issues within NP, only dirty solution.
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
@@ -336,10 +336,9 @@ class EntsogRawClient:
     """
 
     def query_operators(self,
-    country_code: Optional[Union[Area, str]] = None,
-    operator_key : Optional[str] = None,
-    has_data : int = 1,
-    limit : int = -1) -> str:
+        country_code : Union[Country, str],
+        has_data : int = 1,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -354,26 +353,14 @@ class EntsogRawClient:
         -------
         str
         """
+        params = {
+                'limit': limit,
+                'hasData' : has_data
+        }
 
         if country_code is not None:
-            area = lookup_area(country_code)
-            params = {
-                'operatorKey' : list(area.code),
-                'hasData' : has_data,
-                'limit': limit
-            }
-        elif operator_key is not None:
-            params = {
-                'limit': limit,
-                'operatorKey' : operator_key,
-                'hasData' : has_data
-            }
-        else:
-            params = {
-                'limit': limit,
-                'hasData' : has_data
-            }
-        
+            params['operatorCountryKey'] = lookup_country(country_code).code
+
         response = self._base_request(endpoint = '/operators',params=params)
 
         return response.text
@@ -496,9 +483,9 @@ class EntsogRawClient:
     """
 
     def query_operator_point_directions(self,
-    country_code: Optional[Union[Area, str]] = None,
-    has_data : int = 1,
-    limit : int = -1) -> str:
+        country_code : Union[Country, str],
+        has_data : int = 1,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -507,26 +494,19 @@ class EntsogRawClient:
 
         Parameters
         ----------
-        country Union[Area, str]
+        country_code : Union[Country, str]
         limit: int
 
         Returns
         -------
         str
         """
-
+        params = {
+            'limit': limit,
+            'hasData' : has_data
+        }
         if country_code is not None:
-            area = lookup_area(country_code)
-            params = {
-                'operatorKey' : list(area.code),
-                'hasData' : has_data,
-                'limit': limit
-            }
-        else:
-            params = {
-                'limit': limit,
-                'hasData' : has_data
-            }
+            params['tSOCountry'] = lookup_country(country_code).code
         
         response = self._base_request(endpoint = '/operatorpointdirections',params=params)
 
@@ -591,8 +571,13 @@ class EntsogRawClient:
     """
 
     def query_interconnections(self,
-    country_code: Optional[Union[Area, str]] = None,
-    limit : int = -1) -> str:
+        from_country_code : Union[Country, str],
+        to_country_code : Union[Country, str]  = None,
+        from_balancing_zone : Union[BalancingZone, str] = None,
+        to_balancing_zone : Union[BalancingZone, str] = None,
+        from_operator: str = None,
+        to_operator: str = None,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -608,17 +593,27 @@ class EntsogRawClient:
         -------
         str
         """
+        params = {
+            'limit': limit
+        }
 
-        if country_code is not None:
-            area = lookup_area(country_code)
-            params = {
-                'operatorKey' : list(area.code),
-                'limit': limit
-            }
-        else:
-            params = {
-                'limit': limit
-            }
+
+
+        if from_country_code is not None:
+            params['fromCountryKey'] = lookup_country(from_country_code).code
+        if to_country_code is not None:
+            params['toCountryKey'] = lookup_country(to_country_code).code
+
+        if from_balancing_zone is not None:
+            params['fromBzKey'] = lookup_balancing_zone(from_balancing_zone).code
+        if to_balancing_zone is not None:
+            params['toBzKeys'] = lookup_balancing_zone(to_balancing_zone).code
+
+        if from_operator is not None:
+            params['fromOperatorKey'] = from_operator
+        if to_operator is not None:
+            params['toOperatorKey'] = to_operator
+        
 
         response = self._base_request(endpoint = '/interconnections',params=params)
 
@@ -644,8 +639,10 @@ class EntsogRawClient:
     "dataSet"
     """
     def query_aggregate_interconnections(self,
-    country_code: Optional[Union[Area, str]] = None,
-    limit : int = -1) -> str:
+        country_code : Union[Country, str],
+        balancing_zone : Union[BalancingZone, str] = None,
+        operator_key: str = None,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -661,17 +658,18 @@ class EntsogRawClient:
         -------
         str
         """
-
+        params = {
+            'limit': limit
+        }
         if country_code is not None:
-            area = lookup_area(country_code)
-            params = {
-                'operatorKey' : list(area.code),
-                'limit': limit
-            }
-        else:
-            params = {
-                'limit': limit
-            }
+            country_code = lookup_country(country_code)
+            params['countryKey'] = country_code.code
+        if balancing_zone is not None:
+            balancing_zone = lookup_balancing_zone(balancing_zone)
+            params['bzKey'] = balancing_zone.code
+        if operator_key is not None:
+            params['operatorKey'] = operator_key
+
         
         response = self._base_request(endpoint = '/aggregateInterconnections',params=params)
 
@@ -712,8 +710,8 @@ class EntsogRawClient:
     "isArchived"
     """
     def query_urgent_market_messages(self,
-    country_code: Union[Area, str],
-    limit : int = -1) -> str:
+        balancing_zone : Union[BalancingZone, str],
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -722,19 +720,21 @@ class EntsogRawClient:
         Parameters
         ----------
 
-        country Union[Area, str]
+        balancing_zone : Union[BalancingZone, str]
         limit: int
 
         Returns
         -------
         str
         """
-        area = lookup_area(country_code)
         params = {
-            'operatorKey' : list(area.code),
-            'limit': limit
+            'limit' : limit
         }
-        
+        if balancing_zone is not None:
+            balancing_zone = lookup_balancing_zone(balancing_zone)
+            params['balancingZoneKey'] = balancing_zone.code
+
+
         response = self._base_request(endpoint = '/urgentmarketmessages',params=params)
 
         return response.text    
@@ -785,8 +785,8 @@ class EntsogRawClient:
     <property>Point key</property>
     """
     def query_tariffs(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    limit : int = -1) -> str:
+        country_code: Union[Area, str],
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -804,13 +804,15 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
+
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
             'limit': limit
         }
+        if country_code is not None:
+            country_code = lookup_country(country_code)
+            params['countryKey'] = country_code.code
         
         response = self._base_request(endpoint = '/tariffsfulls',params=params)
 
@@ -844,7 +846,7 @@ class EntsogRawClient:
     """
 
     def query_tariffs_sim(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
+    country_code : Union[Country, str],
     limit : int = -1) -> str:
     
         """
@@ -863,13 +865,14 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
             'limit': limit
         }
+        if country_code is not None:
+            country_code = lookup_country(country_code)
+            params['countryKey'] = country_code.code
         
         response = self._base_request(endpoint = '/tariffsSimulations',params=params)
 
@@ -909,9 +912,10 @@ class EntsogRawClient:
     """
 
     def query_aggregated_data(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    period_type : str = 'day',
-    limit : int = -1) -> str:
+        country_code : Union[Country, str] = None,
+        balancing_zone: Union[BalancingZone, str] = None,
+        period_type : str = 'day',
+        limit : int = -1) -> str:
         """
         Type: JSON
         Latest nominations, allocations, physical flow
@@ -928,15 +932,23 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
+
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
-            'periodType' : period_type,
             'limit': limit
         }
-        
+        if country_code is not None:
+            country_code = lookup_country(country_code)
+            params['countryKey'] = country_code.code
+
+        if balancing_zone is not None:
+            balancing_zone = lookup_balancing_zone(balancing_zone)
+            params['bzKey'] = balancing_zone.code
+
+        if period_type is not None:
+            params['periodType'] = period_type
+
         response = self._base_request(endpoint = '/aggregatedData',params=params)
 
         return response.text
@@ -982,9 +994,9 @@ class EntsogRawClient:
     """
 
     def query_interruptions(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    period_type : str = 'day',
-    limit : int = -1) -> str:
+        country_code: Union[Country, str],
+        period_type : str = 'day',
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1002,14 +1014,16 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
-            'periodType' : period_type,
             'limit': limit
         }
+        if country_code is not None:
+            params['countryKey'] = lookup_country(country_code).code
+
+        if period_type is not None:
+            params['periodType'] = period_type
         
         response = self._base_request(endpoint = '/interruptions',params=params)
 
@@ -1061,9 +1075,9 @@ class EntsogRawClient:
     """
 
     def query_CMP_auction_premiums(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    period_type : str = 'day',
-    limit : int = -1) -> str:
+        #country_code: Union[Area, str],
+        period_type : str = 'day',
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1081,11 +1095,11 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
+
+
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
             'periodType' : period_type,
             'limit': limit
         }
@@ -1133,9 +1147,9 @@ class EntsogRawClient:
     "isArchived"
     """
     def query_CMP_unavailable_firm_capacity(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    period_type : str = 'day',
-    limit : int = -1) -> str:
+        #country_code: Union[Area, str],
+        period_type : str = 'day',
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1153,15 +1167,14 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
+        #area = lookup_area(country_code)
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
             'periodType' : period_type,
             'limit': limit
         }
-        
+
         response = self._base_request(endpoint = '/cmpunavailables',params=params)
 
         return response.text
@@ -1213,9 +1226,9 @@ class EntsogRawClient:
     """
 
     def query_CMP_unsuccesful_requests(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    period_type: str = 'day',
-    limit : int = -1) -> str:
+        #country_code: Union[Area, str],
+        period_type: str = 'day',
+        limit : int = -1) -> str:
 
         """
         Type: JSON
@@ -1233,11 +1246,10 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
+
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
             'periodType' : period_type,
             'limit': limit
         }
@@ -1285,13 +1297,10 @@ class EntsogRawClient:
     """
 
     def query_operational_data(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    period_type: str = 'day',
-    # TODO: type hinting
-    indicators = None,
-    #indicators : Union[list[Indicator],list[str]] = None,
-    #indicator, #: Optional[list[str]] = None,
-    limit : int = -1) -> str:
+        #country_code: Union[Area, str],
+        period_type: str = 'day',
+        indicators : Union[List[Indicator], List[str]] = None,
+        limit : int = -1) -> str:
         
         """
         Type: JSON
@@ -1310,16 +1319,14 @@ class EntsogRawClient:
         -------
         str
         """
-        area = lookup_area(country_code)
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
-            'operatorKey' : list(area.code),
             'periodType' : period_type,
             'limit': limit
         }
 
-        if indicators:
+        if indicators is not None:
             decoded_indicators = []
             for indicator in indicators:
                 decoded_indicators.append(lookup_indicator(indicator).code)
@@ -1331,9 +1338,6 @@ class EntsogRawClient:
         return response.text
 
 class EntsogPandasClient(EntsogRawClient):
-
-    BALANCING_ZONES = self.query_balancing_zones()
-    INTERCONNECTIONS = self.query_interconnections()
 
     def query_connection_points(self, limit : int = -1) -> str:
         """
@@ -1361,10 +1365,9 @@ class EntsogPandasClient(EntsogRawClient):
 
 
     def query_operators(self,
-    country_code: Optional[Union[Area, str]] = None,
-    operator_key : Optional[str] = None,
-    has_data : int = 1,
-    limit : int = -1) -> str:
+        country_code : Union[Country, str],
+        has_data : int = 1,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1379,10 +1382,9 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-
-        area = lookup_area(country_code)
+        country_code = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_operators(
-            country_code = area , operator_key = operator_key, has_data = has_data, limit =limit
+            country_code = country_code, has_data = has_data, limit =limit
         )
         data = parse_general(json)
 
@@ -1413,9 +1415,9 @@ class EntsogPandasClient(EntsogRawClient):
 
 
     def query_operator_point_directions(self,
-    country_code: Optional[Union[Area, str]] = None,
-    has_data : int = 1,
-    limit : int = -1) -> str:
+        country_code: Optional[Union[Country, str]] = None,
+        has_data : int = 1,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1432,17 +1434,22 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         
-        area = lookup_area(country_code)
+        country_code = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_operator_point_directions(
-            country_code = area ,has_data = has_data, limit =limit
+            country_code = country_code ,has_data = has_data, limit =limit
         )
         data = parse_general(json)
 
         return data    
 
     def query_interconnections(self,
-    country_code: Optional[Union[Area, str]] = None,
-    limit : int = -1) -> str:
+        from_country_code : Union[Country, str],
+        to_country_code : Union[Country, str]  = None,
+        from_balancing_zone : Union[BalancingZone, str] = None,
+        to_balancing_zone : Union[BalancingZone, str] = None,
+        from_operator: str = None,
+        to_operator: str = None,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1458,19 +1465,44 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
+        params = {
+            'limit': limit
+        }
 
-        area = lookup_area(country_code)
+
+
+        if from_country_code is not None:
+            from_country_code = lookup_country(from_country_code).code
+        if to_country_code is not None:
+            to_country_code = lookup_country(to_country_code).code
+
+        if from_balancing_zone is not None:
+            from_balancing_zone = lookup_balancing_zone(from_balancing_zone).code
+        if to_balancing_zone is not None:
+            to_balancing_zone = lookup_balancing_zone(to_balancing_zone).code
+
+        if from_operator is not None:
+            from_operator = from_operator
+        if to_operator is not None:
+            to_operator = to_operator
+
+
         json = super(EntsogPandasClient, self).query_interconnections(
-            country_code = area ,limit =limit
+            from_country_code,
+            to_country_code,
+            from_balancing_zone,
+            to_balancing_zone,
+            from_operator,
+            to_operator
         )
-        data = parse_general(json)
+        data = parse_interconnections(json)
 
         return data    
 
 
     def query_aggregate_interconnections(self,
-    country_code: Optional[Union[Area, str]] = None,
-    limit : int = -1) -> str:
+        country_code: Optional[Union[Country, str]] = None,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1486,17 +1518,19 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        country_code = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_aggregate_interconnections(
-            country_code = area ,limit =limit
+            country_code = country_code ,limit =limit
         )
         data = parse_general(json)
 
         return data   
 
+    @operator_limited
     def query_urgent_market_messages(self,
-    country_code: Union[Area, str],
-    limit : int = -1) -> str:
+        balancing_zone : Union[BalancingZone, str],
+        operator: List[str] = None,
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1512,9 +1546,10 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        balancing_zone = lookup_balancing_zone(balancing_zone)
+
         json = super(EntsogPandasClient, self).query_urgent_market_messages(
-            country_code = area ,limit =limit
+            balancing_zone = balancing_zone , operator = operator, limit =limit
         )
         data = parse_general(json)
 
@@ -1522,8 +1557,8 @@ class EntsogPandasClient(EntsogRawClient):
 
     @year_limited
     def query_tariffs(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    limit : int = -1) -> str:
+        country_code: Union[Country, str],
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1541,9 +1576,9 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        country_code = lookup_area(country_code)
         json = super(EntsogPandasClient, self).query_tariffs(
-            start = start, end = end, country_code = area ,limit =limit
+            start = start, end = end, country_code = country_code ,limit =limit
         )
         data = parse_general(json)
 
@@ -1551,8 +1586,8 @@ class EntsogPandasClient(EntsogRawClient):
 
     @year_limited
     def query_tariffs_sim(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    limit : int = -1) -> str:
+        country_code: Union[Area, str],
+        limit : int = -1) -> str:
     
         """
         Type: JSON
@@ -1570,18 +1605,21 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        country_code = lookup_area(country_code)
         json = super(EntsogPandasClient, self).query_tariffs_sim(
-            start = start, end = end, country_code = area ,limit =limit
+            start = start, end = end, country_code = country_code ,limit =limit
         )
         data = parse_general(json)
 
         return data   
 
-    @year_limited
+    @month_limited
     def query_aggregated_data(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Area, str],
-    limit : int = -1) -> str:
+        country_code : Union[Country, str] = None,
+        balancing_zone : Union[BalancingZone, str] = None,
+        group_type : str = None,
+        entry_exit : bool = False,
+        limit : int = -1) -> str:
         """
         Type: JSON
         Latest nominations, allocations, physical flow
@@ -1597,11 +1635,15 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        country_code = lookup_area(country_code)
+        if balancing_zone is not None:
+            balancing_zone = lookup_balancing_zone(balancing_zone)
+
+
         json = super(EntsogPandasClient, self).query_aggregated_data(
-            start = start, end = end, country_code = area ,limit =limit
+            start = start, end = end, country_code = country_code, balancing_zone = balancing_zone ,limit =limit
         )
-        data = parse_general(json)
+        data = parse_aggregate_data(json, group_type, entry_exit)
 
         return data
 

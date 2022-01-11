@@ -3,6 +3,8 @@ from entsog import EntsogRawClient, EntsogPandasClient
 import pandas as pd
 import json
 
+from entsog.mappings import BalancingZone
+
 def get_area():
     client = EntsogRawClient()
     data = json.loads(client.query_operator_point_directions(limit = -1))
@@ -30,8 +32,8 @@ def get_area():
 client = EntsogPandasClient()
 
 start = pd.Timestamp(2021, 1, 1)
-end = pd.Timestamp(2021, 1, 31)
-country_code = 'DE'
+end = pd.Timestamp(2021, 10, 1)
+country_code = 'ZZ'
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
 
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
@@ -58,7 +60,10 @@ country_code = 'DE'
 
 
 
-client.query_aggregated_data(start = start, end = end, country_code = country_code).to_csv(f'data/query_aggregated_data_{country_code}.csv',sep = ';')
+#client.query_aggregated_data(start = start, end = end, country_code = country_code, group_type = 'country',entry_exit = True).to_csv(f'data/query_aggregated_data_{country_code}.csv',sep = ';')
 
+balancing_zone = 'DE_GASPOOL'
+
+client.query_aggregated_data(start = start, end = end, balancing_zone = balancing_zone, group_type = 'balancing_zone',entry_exit = True).to_csv(f'data/query_aggregated_data_{balancing_zone}.csv',sep = ';')
 
 #get_area()
