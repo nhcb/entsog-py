@@ -33,7 +33,7 @@ client = EntsogPandasClient()
 
 start = pd.Timestamp(2021, 1, 1)
 end = pd.Timestamp(2021, 10, 1)
-country_code = 'ZZ'
+country_code = 'DE'
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
 
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
@@ -60,10 +60,10 @@ country_code = 'ZZ'
 
 
 
-#client.query_aggregated_data(start = start, end = end, country_code = country_code, group_type = 'country',entry_exit = True).to_csv(f'data/query_aggregated_data_{country_code}.csv',sep = ';')
+client.query_aggregated_data(start = start, end = end, country_code = country_code,period_type='day', group_type = 'country',entry_exit = True).to_csv(f'data/query_aggregated_data_{country_code}.csv',sep = ';')
 
 balancing_zone = 'DE_GASPOOL'
 
-client.query_aggregated_data(start = start, end = end, balancing_zone = balancing_zone, group_type = 'balancing_zone',entry_exit = True).to_csv(f'data/query_aggregated_data_{balancing_zone}.csv',sep = ';')
+#client.query_aggregated_data(start = start, end = end, balancing_zone = balancing_zone, group_type = 'balancing_zone',entry_exit = True).to_csv(f'data/query_aggregated_data_{balancing_zone}.csv',sep = ';')
 
 #get_area()

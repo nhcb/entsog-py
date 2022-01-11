@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 from entsog.exceptions import InvalidPSRTypeError, InvalidBusinessParameterError
 from .exceptions import NoMatchingDataError, PaginationError
-from .mappings import Area, NEIGHBOURS, lookup_area, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
+from .mappings import Area, NEIGHBOURS, lookup_country, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
 from .parsers import parse_aggregate_data, parse_general, parse_interconnections
 from .decorators import month_limited, operator_limited, retry, paginated, year_limited, day_limited
 
@@ -1167,7 +1167,7 @@ class EntsogRawClient:
         -------
         str
         """
-        #area = lookup_area(country_code)
+        #area = lookup_country(country_code)
         params = {
             'from' : self._datetime_to_str(start),
             'to' : self._datetime_to_str(end),
@@ -1576,7 +1576,7 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        country_code = lookup_area(country_code)
+        country_code = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_tariffs(
             start = start, end = end, country_code = country_code ,limit =limit
         )
@@ -1605,7 +1605,7 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        country_code = lookup_area(country_code)
+        country_code = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_tariffs_sim(
             start = start, end = end, country_code = country_code ,limit =limit
         )
@@ -1636,7 +1636,8 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        country_code = lookup_area(country_code)
+        if country_code is not None:
+            country_code = lookup_country(country_code)
         if balancing_zone is not None:
             balancing_zone = lookup_balancing_zone(balancing_zone)
 
@@ -1668,7 +1669,7 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        area = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_interruptions(
             start = start, end = end, country_code = area ,limit =limit
         )
@@ -1696,7 +1697,7 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        area = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_CMP_auction_premiums(
             start = start, end = end, country_code = area ,limit =limit
         )
@@ -1723,7 +1724,7 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        area = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_CMP_unavailable_firm_capacity(
             start = start, end = end, country_code = area ,limit =limit
         )
@@ -1751,7 +1752,7 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_area(country_code)
+        area = lookup_country(country_code)
         json = super(EntsogPandasClient, self).query_CMP_unsuccesful_requests(
             start = start, end = end, country_code = area ,limit =limit
         )
