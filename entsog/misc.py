@@ -3,6 +3,8 @@ from dateutil import rrule
 from itertools import tee
 import re
 
+from typing import List
+
 def year_blocks(start, end):
     """
     Create pairs of start and end with max a year in between, to deal with usage restrictions on the API
