@@ -1617,6 +1617,7 @@ class EntsogPandasClient(EntsogRawClient):
     def query_aggregated_data(self, start: pd.Timestamp, end: pd.Timestamp,
         country_code : Union[Country, str] = None,
         balancing_zone : Union[BalancingZone, str] = None,
+        period_type : str = 'day',
         group_type : str = None,
         entry_exit : bool = False,
         limit : int = -1) -> str:
@@ -1641,7 +1642,7 @@ class EntsogPandasClient(EntsogRawClient):
 
 
         json = super(EntsogPandasClient, self).query_aggregated_data(
-            start = start, end = end, country_code = country_code, balancing_zone = balancing_zone ,limit =limit
+            start = start, end = end, country_code = country_code, balancing_zone = balancing_zone , period_type = period_type, limit =limit
         )
         data = parse_aggregate_data(json, group_type, entry_exit)
 

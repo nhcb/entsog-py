@@ -133,6 +133,7 @@ def parse_aggregate_data(json_text,
         'direction_key']).agg(
             value = ('value', sum) # KWh/d
         )
+
     return df.reset_index()
 
 
