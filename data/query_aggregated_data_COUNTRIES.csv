@@ -1,0 +1,1199 @@
+;period_from;period_to;region_key;country_key;adjacent_bz_key;adjacent_systems_key;adjacent_systems_label;indicator;direction_key;note;value
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;1743666.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;171149797.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;167765420.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;352300249.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;4041269.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;152095981.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;HU---------;TransmissionHU---------;Hungary;Allocation;exit;;25414633.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;HU---------;TransmissionHU---------;Hungary;Nomination/Renomination;exit;;45265392.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;HU---------;TransmissionHU---------;Hungary;Physical Flow;exit;;25133877.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Allocation;entry;;0.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Allocation;exit;;733321909.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;entry;;0.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;exit;;733321909.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Physical Flow;entry;;0.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Physical Flow;exit;;733974117.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SI---------;TransmissionSI---------;Slovenia;Allocation;exit;;30279800.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SI---------;TransmissionSI---------;Slovenia;Nomination/Renomination;exit;;32911900.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SI---------;TransmissionSI---------;Slovenia;Physical Flow;exit;;31062765.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Allocation;entry;;1060142216.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Allocation;exit;;7640107.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;entry;;1264427148.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;exit;;7038093.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Physical Flow;entry;;1042939755.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Physical Flow;exit;;0.0
+24;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;1755626.0
+25;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;176998916.0
+26;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;115856927.0
+27;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;379203520.0
+28;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;4260327.0
+29;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;176664813.0
+30;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;HU---------;TransmissionHU---------;Hungary;Allocation;exit;;25200933.0
+31;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;HU---------;TransmissionHU---------;Hungary;Nomination/Renomination;exit;;40342505.0
+32;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;HU---------;TransmissionHU---------;Hungary;Physical Flow;exit;;24448322.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Allocation;entry;;0.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Allocation;exit;;732905609.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;entry;;0.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;exit;;732905609.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Physical Flow;entry;;0.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;IT---------;TransmissionIT---------;Italy;Physical Flow;exit;;731326190.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SI---------;TransmissionSI---------;Slovenia;Allocation;exit;;33363200.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SI---------;TransmissionSI---------;Slovenia;Nomination/Renomination;exit;;32927315.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SI---------;TransmissionSI---------;Slovenia;Physical Flow;exit;;34097476.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Allocation;entry;;1057205916.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Allocation;exit;;7679107.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;entry;;1260243994.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;exit;;7313329.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Physical Flow;entry;;1038133649.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;WE;AT;SK---------;TransmissionSK---------;Slovakia;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Allocation;entry;;156415.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Allocation;exit;;445461937.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Physical Flow;entry;;0.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Physical Flow;exit;;445305522.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Final Consumers;Final Consumers;Allocation;entry;;0.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Final Consumers;Final Consumers;Allocation;exit;;223622617.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;223622617.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;0.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;0.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;80814388.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Physical Flow;exit;;0.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Nomination/Renomination;entry;;0.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Nomination/Renomination;exit;;0.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Physical Flow;entry;;116135261.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Physical Flow;exit;;0.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Nomination/Renomination;entry;Gassco;0.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Nomination/Renomination;exit;Gassco;0.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Physical Flow;entry;Gassco;468239636.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Physical Flow;exit;Gassco;0.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;entry;;0.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;exit;;0.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;entry;;0.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;exit;;0.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;0.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;0.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;0.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;0.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;0.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;0.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;89000688.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;0.0
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;0.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;0.0
+33;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;34031392.0
+34;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;0.0
+35;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;entry;;0.0
+36;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;exit;;0.0
+37;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Physical Flow;entry;;0.0
+38;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Physical Flow;exit;;311270325.0
+39;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;entry;;0.0
+40;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;exit;;0.0
+41;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;entry;;568167052.0
+42;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;exit;;0.0
+43;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Nomination/Renomination;entry;;0.0
+44;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Nomination/Renomination;exit;;0.0
+45;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Physical Flow;entry;;0.0
+46;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Physical Flow;exit;;392200936.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Allocation;entry;;159475.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Allocation;exit;;459575592.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Physical Flow;entry;;0.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Distribution;Distribution;Physical Flow;exit;;459416117.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Final Consumers;Final Consumers;Allocation;entry;;0.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Final Consumers;Final Consumers;Allocation;exit;;282131690.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;282469477.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;0.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;0.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;69845265.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;LNG Terminals;LNG Terminals;Physical Flow;exit;;0.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Nomination/Renomination;entry;;0.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Nomination/Renomination;exit;;0.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Physical Flow;entry;;121719190.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Storage;Storage;Physical Flow;exit;;0.0
+62;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Nomination/Renomination;entry;Gassco;0.0
+63;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Nomination/Renomination;exit;Gassco;0.0
+64;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Physical Flow;entry;Gassco;468267389.0
+65;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;-----------;Transmission;Norway;Physical Flow;exit;Gassco;0.0
+66;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;entry;;0.0
+67;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;exit;;0.0
+68;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;entry;;0.0
+69;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;exit;;0.0
+70;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;0.0
+71;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;0.0
+72;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;0.0
+73;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;0.0
+74;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;0.0
+75;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;0.0
+76;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;73272406.0
+77;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;0.0
+78;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;0.0
+79;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;0.0
+80;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;42572025.0
+81;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;0.0
+82;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;entry;;0.0
+83;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;exit;;0.0
+84;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Physical Flow;entry;;423884.0
+85;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;FR----------;TransmissionFR----------;TRF;Physical Flow;exit;;168330003.0
+86;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;entry;;0.0
+87;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;exit;;0.0
+88;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;entry;;549888327.0
+89;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;exit;;0.0
+90;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Nomination/Renomination;entry;;0.0
+91;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Nomination/Renomination;exit;;0.0
+92;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Physical Flow;entry;;0.0
+93;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;BE;UK-IUK-----;TransmissionUK-IUK-----;IUK;Physical Flow;exit;;407655924.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Final Consumers;Final Consumers;Allocation;exit;;88824020.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;97804696.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;88921123.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Production;Production;Allocation;entry;;1145291.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Production;Production;Nomination/Renomination;entry;;1159710.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Production;Production;Physical Flow;entry;;1145291.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Allocation;entry;;38592035.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Allocation;exit;;0.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Nomination/Renomination;entry;;40323219.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Nomination/Renomination;exit;;0.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Physical Flow;entry;;35522882.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Physical Flow;exit;;0.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;entry;;64085777.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;exit;;851654.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;entry;;64085777.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;exit;;851654.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;entry;;35821028.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;exit;;0.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Allocation;entry;;7420000.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Allocation;exit;;93964264.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Nomination/Renomination;entry;;7420000.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Nomination/Renomination;exit;;93964264.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Physical Flow;entry;;0.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Physical Flow;exit;;86638271.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Allocation;entry;;1308000.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Allocation;exit;;0.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Nomination/Renomination;entry;;1308000.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Nomination/Renomination;exit;;0.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;entry;;0.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;exit;;0.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Allocation;entry;;0.0
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Allocation;exit;;13148000.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Nomination/Renomination;entry;;0.0
+33;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Nomination/Renomination;exit;;13148000.0
+34;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Physical Flow;entry;;0.0
+35;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Physical Flow;exit;;13147225.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Final Consumers;Final Consumers;Allocation;exit;;94452331.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;98757595.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;94565359.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Production;Production;Allocation;entry;;1145238.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Production;Production;Nomination/Renomination;entry;;1145710.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Production;Production;Physical Flow;entry;;1145238.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Allocation;entry;;36100819.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Allocation;exit;;0.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Nomination/Renomination;entry;;36100819.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Nomination/Renomination;exit;;0.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Physical Flow;entry;;34726422.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;-----------;Storage;Storage;Physical Flow;exit;;0.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;entry;;67505889.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;exit;;862171.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;entry;;67505889.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;exit;;862171.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;entry;;42936620.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;exit;;0.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Allocation;entry;;7000000.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Allocation;exit;;101168936.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Nomination/Renomination;entry;;7000000.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Nomination/Renomination;exit;;101168936.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Physical Flow;entry;;0.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;GR---------;TransmissionGR---------;Greece;Physical Flow;exit;;94326174.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Allocation;entry;;628000.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Allocation;exit;;240000.0
+62;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Nomination/Renomination;entry;;628000.0
+63;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Nomination/Renomination;exit;;240000.0
+64;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;entry;;0.0
+65;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;exit;;0.0
+66;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Allocation;entry;;0.0
+67;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Allocation;exit;;13148000.0
+68;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Nomination/Renomination;entry;;0.0
+69;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Nomination/Renomination;exit;;13148000.0
+70;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Physical Flow;entry;;0.0
+71;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;BG;RO-TBP-----;TransmissionRO-TBP-----;RO_DTS;Physical Flow;exit;;13148055.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Allocation;entry;;178258042.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Allocation;exit;;11281000.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Nomination/Renomination;entry;;178258042.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Nomination/Renomination;exit;;11281000.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Physical Flow;entry;;172583694.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Physical Flow;exit;;0.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;1336941734.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;34800.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;1336941734.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;34800.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;750229390.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;0.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;0.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;889622328.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;0.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;889622328.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;0.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;771796223.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Allocation;entry;;0.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Allocation;exit;;26496000.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;entry;;0.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;exit;;26496000.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;entry;;0.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;exit;;26399825.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Allocation;entry;;81000000.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Allocation;exit;;284820469.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;entry;;81000000.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;exit;;284820469.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Physical Flow;entry;;0.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Physical Flow;exit;;205031673.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;|TransmissionDE-GASPOOL-;Transmission|TransmissionDE-GASPOOL-;GASPOOL,Transmission;Allocation;entry;;0.0
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;|TransmissionDE-GASPOOL-;Transmission|TransmissionDE-GASPOOL-;GASPOOL,Transmission;Nomination/Renomination;entry;;0.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;CZ;|TransmissionDE-GASPOOL-;Transmission|TransmissionDE-GASPOOL-;GASPOOL,Transmission;Physical Flow;entry;;465894344.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Allocation;entry;;172351391.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Allocation;exit;;9281000.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Nomination/Renomination;entry;;172351391.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Nomination/Renomination;exit;;9281000.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Physical Flow;entry;;160933461.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;-----------;Storage;Storage;Physical Flow;exit;;0.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;1338035816.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;34800.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;1338035816.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;34800.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;761823713.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;0.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;0.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;896213411.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;0.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;896213411.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;0.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;770545064.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Allocation;entry;;0.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Allocation;exit;;26496000.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;entry;;0.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;exit;;26496000.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;entry;;0.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;exit;;26382743.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Allocation;entry;;81000000.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Allocation;exit;;282725139.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;entry;;81000000.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;exit;;282725139.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Physical Flow;entry;;0.0
+62;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;SK---------;TransmissionSK---------;Slovakia;Physical Flow;exit;;202951305.0
+63;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;|TransmissionDE-GASPOOL-;Transmission|TransmissionDE-GASPOOL-;GASPOOL,Transmission;Allocation;entry;;0.0
+64;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;|TransmissionDE-GASPOOL-;Transmission|TransmissionDE-GASPOOL-;GASPOOL,Transmission;Nomination/Renomination;entry;;0.0
+65;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;CZ;|TransmissionDE-GASPOOL-;Transmission|TransmissionDE-GASPOOL-;GASPOOL,Transmission;Physical Flow;entry;;460973469.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Final Consumers;Final Consumers;Allocation;exit;;158766972.3
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;467960819.3
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Production;Production;Allocation;entry;;60393108.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Production;Production;Nomination/Renomination;entry;;67938936.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Production;Production;Physical Flow;entry;;131604861.926
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Allocation;entry;;1236651288.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Allocation;exit;;139789684.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Nomination/Renomination;entry;;1359680668.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Nomination/Renomination;exit;;139716454.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Physical Flow;entry;;1493759871.01
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Physical Flow;exit;;76914997.936
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Transmission;Russia;Allocation;entry;Nord Stream 2;400898592.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Transmission;Russia;Nomination/Renomination;entry;Nord Stream 2;400898592.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;-----------;Transmission;Russia;Physical Flow;entry;Nord Stream 2;0.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Allocation;entry;;163062504.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Allocation;exit;;12568539.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;165222504.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;exit;;31482375.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;306231448.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Physical Flow;exit;;43978804.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;1601560.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;154568028.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;1601560.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;154568028.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;0.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;145132591.8
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Allocation;entry;;17760000.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Allocation;exit;;127328268.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;entry;;17760000.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;exit;;127328268.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Physical Flow;entry;;0.0
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Physical Flow;exit;;240028174.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Allocation;entry;;889657128.0
+33;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Allocation;exit;;1251898307.0
+34;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;entry;;889657128.0
+35;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;exit;;1251898307.0
+36;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Physical Flow;entry;;1543592446.0
+37;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Physical Flow;exit;;2990918733.0
+38;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;166409232.0
+39;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;1608.0
+40;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;166409232.0
+41;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;1608.0
+42;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;596698200.7
+43;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;823041.088
+44;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;1608.0
+45;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;166409232.0
+46;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;1608.0
+47;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;166409232.0
+48;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;153554215.0
+49;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;650649962.0
+50;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Allocation;entry;;19094880.0
+51;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Allocation;exit;;86719784.0
+52;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Nomination/Renomination;entry;;19094880.0
+53;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Nomination/Renomination;exit;;86719784.0
+54;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Physical Flow;entry;;0.0
+55;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Physical Flow;exit;;67598090.0
+56;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Allocation;entry;;0.0
+57;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Allocation;exit;;246233390.0
+58;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;entry;;0.0
+59;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;exit;;246233390.0
+60;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Physical Flow;exit;;769527693.0
+61;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Allocation;entry;;514285507.0
+62;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Allocation;exit;;351055392.0
+63;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;entry;;517999507.0
+64;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;exit;;351055392.0
+65;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;entry;;1357450460.6
+66;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;exit;;596747783.5
+67;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Allocation;entry;;0.0
+68;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Allocation;exit;;3912000.0
+69;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;entry;;0.0
+70;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;exit;;3912000.0
+71;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;entry;;0.0
+72;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;exit;;4047494.0
+73;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;entry;;927747250.0
+74;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;exit;;70128000.0
+75;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;entry;;927747250.0
+76;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;exit;;70128000.0
+77;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;entry;;857558300.0
+78;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;exit;;0.0
+79;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Final Consumers;Final Consumers;Allocation;exit;;200137163.3
+80;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;505700972.2
+81;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Production;Production;Allocation;entry;;59929759.0
+82;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Production;Production;Nomination/Renomination;entry;;67840603.0
+83;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Production;Production;Physical Flow;entry;;131284426.014
+84;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Allocation;entry;;1229923882.0
+85;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Allocation;exit;;61164816.0
+86;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Nomination/Renomination;entry;;1368271402.0
+87;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Nomination/Renomination;exit;;65388936.0
+88;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Physical Flow;entry;;1518889708.15
+89;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Storage;Storage;Physical Flow;exit;;92029217.31
+90;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Transmission;Russia;Allocation;entry;Nord Stream 2;400898592.0
+91;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Transmission;Russia;Nomination/Renomination;entry;Nord Stream 2;400898592.0
+92;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;-----------;Transmission;Russia;Physical Flow;entry;Nord Stream 2;0.0
+93;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Allocation;entry;;170491149.0
+94;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Allocation;exit;;12287976.0
+95;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;172651149.0
+96;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;exit;;30604443.0
+97;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;356002866.1
+98;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;AT---------;TransmissionAT---------;Austria;Physical Flow;exit;;42589147.0
+99;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;166560.0
+100;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;136551344.0
+101;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;166560.0
+102;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;136551344.0
+103;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;0.0
+104;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;138831516.07
+105;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Allocation;entry;;17760000.0
+106;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Allocation;exit;;131183971.0
+107;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;entry;;17760000.0
+108;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;exit;;131183971.0
+109;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Physical Flow;entry;;0.0
+110;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CH---------;TransmissionCH---------;Switzerland;Physical Flow;exit;;251417520.0
+111;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Allocation;entry;;896248211.0
+112;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Allocation;exit;;1257652710.0
+113;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;entry;;896248211.0
+114;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;exit;;1257652710.0
+115;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Physical Flow;entry;;1541066754.0
+116;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;CZ---------;TransmissionCZ---------;Czech;Physical Flow;exit;;3004442519.0
+117;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;166409232.0
+118;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;1488.0
+119;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;166361232.0
+120;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;1488.0
+121;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;666295560.2
+122;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;784417.088
+123;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;1488.0
+124;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;166409232.0
+125;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;1488.0
+126;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;166409232.0
+127;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;168823583.0
+128;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;746135790.0
+129;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Allocation;entry;;19094880.0
+130;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Allocation;exit;;88908784.0
+131;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Nomination/Renomination;entry;;19094880.0
+132;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Nomination/Renomination;exit;;88908784.0
+133;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Physical Flow;entry;;0.0
+134;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;DK-SE-------;TransmissionDK-SE-------;Joint Bal Zone DK/SE;Physical Flow;exit;;69745253.0
+135;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Allocation;entry;;0.0
+136;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Allocation;exit;;246524192.0
+137;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;entry;;0.0
+138;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;exit;;246524192.0
+139;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;FR----------;TransmissionFR----------;TRF;Physical Flow;exit;;696676759.2
+140;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Allocation;entry;;533463408.0
+141;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Allocation;exit;;351042648.0
+142;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;entry;;537813408.0
+143;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;exit;;351042648.0
+144;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;entry;;1395600695.6
+145;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;NL---------;TransmissionNL---------;Netherlands;Physical Flow;exit;;620234004.0
+146;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Allocation;entry;;0.0
+147;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Allocation;exit;;3912000.0
+148;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;entry;;0.0
+149;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;exit;;3912000.0
+150;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;entry;;0.0
+151;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;exit;;4033977.0
+152;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;entry;;927800832.0
+153;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;exit;;70128000.0
+154;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;entry;;927800832.0
+155;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;exit;;70128000.0
+156;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;entry;;857726644.0
+157;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;DE;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Allocation;entry;;86719784.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Allocation;exit;;19094880.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Nomination/Renomination;entry;;86719784.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Nomination/Renomination;exit;;19094880.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Physical Flow;entry;;67569304.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Physical Flow;exit;;0.0
+6;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Allocation;entry;;88908784.0
+7;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Allocation;exit;;19094880.0
+8;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Nomination/Renomination;entry;;88908784.0
+9;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Nomination/Renomination;exit;;19094880.0
+10;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Physical Flow;entry;;69688213.0
+11;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;DK;DE-GASPOOL-|TransmissionDE-NCG-----;TransmissionDE-GASPOOL-|TransmissionDE-NCG-----;GASPOOL,NCG;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Final Consumers;Final Consumers;Allocation;exit;;656504138.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;658211049.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;351918767.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;279254788.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;371088623.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Production;Production;Allocation;entry;;712738.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Production;Production;Nomination/Renomination;entry;;0.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Production;Production;Physical Flow;entry;;1511599.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Allocation;entry;;72134616.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Allocation;exit;;9974067.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Nomination/Renomination;entry;;52734999.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Nomination/Renomination;exit;;9974067.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Physical Flow;entry;;78218431.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Physical Flow;exit;;0.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Allocation;entry;;145406072.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Allocation;exit;;264000.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;entry;;84392118.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;exit;;0.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Physical Flow;entry;;149937276.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Physical Flow;exit;;0.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Allocation;entry;;5996433.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Allocation;exit;;7211256.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Nomination/Renomination;entry;;0.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Nomination/Renomination;exit;;6627708.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Physical Flow;entry;;0.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Physical Flow;exit;;12485093.0
+26;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Final Consumers;Final Consumers;Allocation;exit;;786517260.0
+27;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;788562205.0
+28;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;445365323.0
+29;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;327635149.0
+30;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;430686317.0
+31;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Production;Production;Allocation;entry;;712738.0
+32;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Production;Production;Nomination/Renomination;entry;;0.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Production;Production;Physical Flow;entry;;1445180.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Allocation;entry;;88850338.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Allocation;exit;;9974067.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Nomination/Renomination;entry;;68729996.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Nomination/Renomination;exit;;0.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Physical Flow;entry;;112714002.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;-----------;Storage;Storage;Physical Flow;exit;;0.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Allocation;entry;;145411051.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Allocation;exit;;264000.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;entry;;85314712.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Nomination/Renomination;exit;;0.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Physical Flow;entry;;143981358.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;FR----------;TransmissionFR----------;TRF;Physical Flow;exit;;580.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Allocation;entry;;5996433.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Allocation;exit;;5842707.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Nomination/Renomination;entry;;0.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Nomination/Renomination;exit;;4573120.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Physical Flow;entry;;0.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;ES;PT---------;TransmissionPT---------;Portugal;Physical Flow;exit;;0.0
+0;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;NE;FI;-----------;Transmission;Russia;Physical Flow;entry;Gazprom;60200388.0
+1;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;entry;;31891111.0
+2;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;exit;;0.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;FI;-----------;Transmission;Russia;Nomination/Renomination;entry;Gazprom;64602080.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;entry;;528460696.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;exit;;1451000.0
+6;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;NE;FI;-----------;Transmission;Russia;Physical Flow;entry;Gazprom;60337948.0
+7;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;entry;;31934421.0
+8;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;exit;;0.0
+9;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;FI;-----------;Transmission;Russia;Nomination/Renomination;entry;Gazprom;65237080.0
+10;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;entry;;624704200.0
+11;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NE;FI;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;exit;;1451000.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Distribution;Distribution;Allocation;exit;;488071481.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Distribution;Distribution;Physical Flow;exit;;618857986.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Final Consumers;Final Consumers;Allocation;exit;;3393369284.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;1907366793.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;1480982645.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;355648997.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Allocation;exit;;0.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;355648997.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;0.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;375213780.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Physical Flow;exit;;0.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Allocation;entry;;771774359.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Allocation;exit;;134799380.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Nomination/Renomination;entry;;2763771980.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Nomination/Renomination;exit;;132570940.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Physical Flow;entry;;805664351.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Physical Flow;exit;;106237043.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;entry;;145732285.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;exit;;0.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;entry;;145732285.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;exit;;0.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;entry;;111799796.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;216567562.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;9499092.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;216567562.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;9499092.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;199470528.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Allocation;entry;;0.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Allocation;exit;;14017152.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;entry;;0.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;exit;;14017152.0
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Physical Flow;entry;;0.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;246233390.0
+33;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;0.0
+34;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;246233390.0
+35;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;0.0
+36;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;256503693.0
+37;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Allocation;entry;;264000.0
+38;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Allocation;exit;;145406072.0
+39;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Nomination/Renomination;entry;;264000.0
+40;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Nomination/Renomination;exit;;145429932.0
+41;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Physical Flow;entry;;0.0
+42;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Physical Flow;exit;;147358241.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Distribution;Distribution;Allocation;exit;;568285206.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Distribution;Distribution;Physical Flow;exit;;719081226.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Final Consumers;Final Consumers;Allocation;exit;;3564531921.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;2035061375.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;1530457146.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;339568986.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Allocation;exit;;0.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;339568986.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;0.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;348709170.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;LNG Terminals;LNG Terminals;Physical Flow;exit;;0.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Allocation;entry;;946935191.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Allocation;exit;;61578515.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Nomination/Renomination;entry;;3137481213.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Nomination/Renomination;exit;;58736016.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Physical Flow;entry;;861798494.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;-----------;Storage;Storage;Physical Flow;exit;;15186268.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;entry;;77732312.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;exit;;0.0
+62;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;entry;;77732312.0
+63;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;exit;;0.0
+64;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;entry;;78228949.0
+65;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;108493958.0
+66;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;8269472.0
+67;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;108493958.0
+68;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;8269472.0
+69;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;89677169.0
+70;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Allocation;entry;;0.0
+71;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Allocation;exit;;14017152.0
+72;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;entry;;0.0
+73;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;exit;;14017152.0
+74;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;CH---------;TransmissionCH---------;Switzerland;Physical Flow;exit;;24.0
+75;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;246524192.0
+76;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;0.0
+77;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;246524192.0
+78;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;0.0
+79;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;232233751.0
+80;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Allocation;entry;;264000.0
+81;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Allocation;exit;;145411051.0
+82;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Nomination/Renomination;entry;;264000.0
+83;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Nomination/Renomination;exit;;145429932.0
+84;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Physical Flow;entry;;575.0
+85;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;ES---------;TransmissionES---------;Spain;Physical Flow;exit;;141464407.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;Distribution;Distribution;Allocation;exit;;43378589.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;Distribution;Distribution;Nomination/Renomination;exit;;48879340.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;Distribution;Distribution;Physical Flow;exit;;43378589.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;Final Consumers;Final Consumers;Allocation;exit;;150634395.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;144274115.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;139167946.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;92729828.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;92608899.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;92729827.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;entry;;93964264.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;exit;;7420000.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;entry;;93964264.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;exit;;7420000.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;entry;;86638271.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;exit;;0.0
+15;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;Distribution;Distribution;Allocation;exit;;49122971.0
+16;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;Distribution;Distribution;Nomination/Renomination;exit;;51507392.0
+17;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;Distribution;Distribution;Physical Flow;exit;;49122971.0
+18;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;Final Consumers;Final Consumers;Allocation;exit;;152885966.0
+19;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;159493822.0
+20;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;142537516.0
+21;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;106400455.0
+22;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;106147414.0
+23;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;106400455.0
+24;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;entry;;101168936.0
+25;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Allocation;exit;;7000000.0
+26;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;entry;;101168936.0
+27;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Nomination/Renomination;exit;;7000000.0
+28;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;entry;;94326174.0
+29;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;SE;GR;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Distribution;Distribution;Allocation;exit;;423538054.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Distribution;Distribution;Nomination/Renomination;exit;;421560189.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Distribution;Distribution;Physical Flow;exit;;423537285.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Production;Production;Allocation;entry;;58651681.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Production;Production;Allocation;exit;;17637151.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Production;Production;Nomination/Renomination;entry;;57318110.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Production;Production;Nomination/Renomination;exit;;17980036.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Production;Production;Physical Flow;entry;;57958015.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Production;Production;Physical Flow;exit;;17637151.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Allocation;entry;;287933888.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Allocation;exit;;312000.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Nomination/Renomination;entry;;290845888.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Nomination/Renomination;exit;;312000.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Physical Flow;entry;;278336670.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Physical Flow;exit;;4950.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Allocation;entry;;25195648.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;25195648.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;25184711.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Physical Flow;exit;;0.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Allocation;exit;;10200000.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Nomination/Renomination;exit;;10200000.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Physical Flow;entry;;0.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Physical Flow;exit;;10203000.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Allocation;exit;;1848000.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Nomination/Renomination;exit;;1848000.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;entry;;0.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;exit;;0.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Allocation;entry;;480000.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;entry;;480000.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Physical Flow;entry;;0.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Physical Flow;exit;;0.0
+31;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Distribution;Distribution;Allocation;exit;;423516428.0
+32;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Distribution;Distribution;Nomination/Renomination;exit;;414211357.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Distribution;Distribution;Physical Flow;exit;;423515727.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Production;Production;Allocation;entry;;58048033.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Production;Production;Allocation;exit;;17162040.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Production;Production;Nomination/Renomination;entry;;57992202.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Production;Production;Nomination/Renomination;exit;;17553640.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Production;Production;Physical Flow;entry;;57336107.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Production;Production;Physical Flow;exit;;17162040.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Allocation;entry;;292257707.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Allocation;exit;;552000.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Nomination/Renomination;entry;;291108245.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Nomination/Renomination;exit;;552000.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Physical Flow;entry;;290960074.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;-----------;Storage;Storage;Physical Flow;exit;;0.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Allocation;entry;;24990048.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;24990048.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;24995266.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;AT---------;TransmissionAT---------;Austria;Physical Flow;exit;;0.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Allocation;exit;;10190400.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Nomination/Renomination;exit;;10190400.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Physical Flow;entry;;0.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;HR---------;TransmissionHR---------;Croatia;Physical Flow;exit;;10193000.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Allocation;exit;;1848000.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Nomination/Renomination;exit;;1848000.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;entry;;0.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;RO---------;TransmissionRO---------;RO_NTS;Physical Flow;exit;;0.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Allocation;entry;;480000.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Nomination/Renomination;entry;;480000.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Physical Flow;entry;;0.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;HU;SK---------;TransmissionSK---------;Slovakia;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Allocation;entry;;190755467.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Allocation;exit;;0.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Nomination/Renomination;entry;;190755467.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Nomination/Renomination;exit;;0.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Physical Flow;entry;;190555556.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;IE;UK-NI------;TransmissionUK-NI------;NI;Allocation;exit;;0.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;IE;UK-NI------;TransmissionUK-NI------;NI;Physical Flow;exit;;0.0
+7;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Allocation;entry;;195928382.0
+8;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Allocation;exit;;0.0
+9;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Nomination/Renomination;entry;;195928382.0
+10;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Nomination/Renomination;exit;;0.0
+11;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;IE;UK---------;TransmissionUK---------;UK;Physical Flow;entry;;195855556.0
+12;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;IE;UK-NI------;TransmissionUK-NI------;NI;Allocation;exit;;0.0
+13;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;IE;UK-NI------;TransmissionUK-NI------;NI;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Distribution;Distribution;Allocation;exit;;1632110490.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Distribution;Distribution;Nomination/Renomination;exit;;1781158157.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Distribution;Distribution;Physical Flow;exit;;1763625720.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Final Consumers;Final Consumers;Allocation;exit;;777774438.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;719695620.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;777774437.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;162335320.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;162335320.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;162437415.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Production;Production;Allocation;entry;;103273811.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Production;Production;Nomination/Renomination;entry;;108570786.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Production;Production;Physical Flow;entry;;103273809.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Allocation;entry;;775734130.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Allocation;exit;;93129895.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Nomination/Renomination;entry;;676851676.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Physical Flow;entry;;682638392.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Physical Flow;exit;;34696.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Allocation;entry;;733321909.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;733321909.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;733970868.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Physical Flow;exit;;0.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Allocation;entry;;10522290.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Allocation;exit;;25613168.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;entry;;10522290.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;exit;;20016000.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Physical Flow;entry;;0.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Physical Flow;exit;;21107956.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;SI---------;TransmissionSI---------;Slovenia;Physical Flow;entry;;0.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CH/IT;IT;SI---------;TransmissionSI---------;Slovenia;Physical Flow;exit;;0.0
+29;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Distribution;Distribution;Allocation;exit;;1582952640.0
+30;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Distribution;Distribution;Nomination/Renomination;exit;;1763970780.0
+31;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Distribution;Distribution;Physical Flow;exit;;1733538206.0
+32;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Final Consumers;Final Consumers;Allocation;exit;;804084136.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;714840685.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;804084143.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;162335320.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;162335320.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;161157969.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Production;Production;Allocation;entry;;102884318.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Production;Production;Nomination/Renomination;entry;;108447539.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Production;Production;Physical Flow;entry;;102884315.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Allocation;entry;;780951741.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Allocation;exit;;53576821.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Nomination/Renomination;entry;;727030462.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Physical Flow;entry;;727411803.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;-----------;Storage;Storage;Physical Flow;exit;;34569.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Allocation;entry;;732905609.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;732905609.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;731326990.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;AT---------;TransmissionAT---------;Austria;Physical Flow;exit;;0.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Allocation;entry;;10522290.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Allocation;exit;;25171304.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;entry;;10522290.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Nomination/Renomination;exit;;20016000.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Physical Flow;entry;;0.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;CH---------;TransmissionCH---------;Switzerland;Physical Flow;exit;;14385635.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;SI---------;TransmissionSI---------;Slovenia;Physical Flow;entry;;0.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CH/IT;IT;SI---------;TransmissionSI---------;Slovenia;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;55000000.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;55000000.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;53210887.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;-----------;Transmission;Belarus;Allocation;entry;Gazprom Belarus;129868563.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;-----------;Transmission;Belarus;Nomination/Renomination;entry;Gazprom Belarus;115059678.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;-----------;Transmission;Belarus;Physical Flow;entry;Gazprom Belarus;129868563.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Allocation;entry;;15157000.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Allocation;exit;;0.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;entry;;15157000.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;exit;;0.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;entry;;0.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;exit;;0.0
+12;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;54400000.0
+13;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;54400000.0
+14;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;56612725.0
+15;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;-----------;Transmission;Belarus;Allocation;entry;Gazprom Belarus;93306161.0
+16;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;-----------;Transmission;Belarus;Nomination/Renomination;entry;Gazprom Belarus;115059678.0
+17;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;-----------;Transmission;Belarus;Physical Flow;entry;Gazprom Belarus;93306161.0
+18;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Allocation;entry;;15783000.0
+19;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Allocation;exit;;0.0
+20;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;entry;;15783000.0
+21;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Nomination/Renomination;exit;;0.0
+22;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;entry;;28823358.0
+23;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LT;EE-LV------;TransmissionEE-LV------;Joint Bal Zone EE/LV;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Final Consumers;Final Consumers;Allocation;exit;;39969763.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;38560170.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;39659790.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Allocation;entry;;101966444.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Allocation;exit;;3185000.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Nomination/Renomination;entry;;101966444.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Nomination/Renomination;exit;;3185000.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Physical Flow;entry;;79866467.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Transmission;Estonia;Allocation;entry;Elering;21000.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Transmission;Estonia;Nomination/Renomination;entry;Elering;21000.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Transmission;Estonia;Physical Flow;entry;Elering;0.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Transmission;Russia;Allocation;entry;Gazprom;21000.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Transmission;Russia;Nomination/Renomination;entry;Gazprom;21000.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;-----------;Transmission;Russia;Physical Flow;entry;Gazprom;0.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Allocation;entry;;0.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Allocation;exit;;15157000.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Nomination/Renomination;entry;;0.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Nomination/Renomination;exit;;15157000.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Physical Flow;entry;;0.0
+19;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Final Consumers;Final Consumers;Allocation;exit;;39921308.0
+20;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;37908338.0
+21;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;40633964.0
+22;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Allocation;entry;;103906054.0
+23;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Allocation;exit;;2395000.0
+24;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Nomination/Renomination;entry;;103906054.0
+25;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Nomination/Renomination;exit;;2395000.0
+26;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Storage;Storage;Physical Flow;entry;;118091265.0
+27;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Transmission;Estonia;Allocation;entry;Elering;21000.0
+28;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Transmission;Estonia;Nomination/Renomination;entry;Elering;21000.0
+29;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Transmission;Estonia;Physical Flow;entry;Elering;0.0
+30;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Transmission;Russia;Allocation;entry;Gazprom;21000.0
+31;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Transmission;Russia;Nomination/Renomination;entry;Gazprom;21000.0
+32;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;-----------;Transmission;Russia;Physical Flow;entry;Gazprom;0.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Allocation;entry;;0.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Allocation;exit;;15783000.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Nomination/Renomination;entry;;0.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Nomination/Renomination;exit;;15783000.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;LV;LT---------;TransmissionLT---------;Lithuania;Physical Flow;exit;;28823358.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Distribution;Distribution;Physical Flow;exit;;842762162.9
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Final Consumers;Final Consumers;Allocation;exit;;526761768.2
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;391825598.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;546892642.4
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;40194000.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;0.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;48469855.9
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Production;Production;Allocation;entry;;728927952.7
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Production;Production;Nomination/Renomination;entry;;723137985.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Production;Production;Physical Flow;entry;;1107782303.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Nomination/Renomination;entry;;1301885640.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Nomination/Renomination;exit;;116007548.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Physical Flow;entry;;860779394.3
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Physical Flow;exit;;65915374.4
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;entry;;87262599.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;exit;;474489989.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;entry;;87262599.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;exit;;474609989.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;exit;;308121913.4
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;26169819.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;204559695.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;29255016.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;233250576.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;3333.3
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;520090278.8
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;290219424.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;57786475.2
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;290219424.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;58438752.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;444113906.9
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;115921697.9
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;60835968.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;498047755.0
+33;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;60835968.0
+34;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;498144754.0
+35;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;208437000.1
+36;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;937214878.9
+37;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Allocation;entry;;0.0
+38;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Allocation;exit;;459542053.0
+39;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Nomination/Renomination;entry;;0.0
+40;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Nomination/Renomination;exit;;18694080.0
+41;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Physical Flow;entry;;0.0
+42;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Physical Flow;exit;;459260339.2
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Distribution;Distribution;Physical Flow;exit;;850297000.3
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Final Consumers;Final Consumers;Allocation;exit;;623951091.2
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;488684381.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;644444124.8
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;45144000.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;0.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;54375759.1
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Production;Production;Allocation;entry;;733614067.1
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Production;Production;Nomination/Renomination;entry;;725853410.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Production;Production;Physical Flow;entry;;1128740986.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Nomination/Renomination;entry;;1355617220.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Nomination/Renomination;exit;;99938746.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Physical Flow;entry;;953070175.9
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;-----------;Storage;Storage;Physical Flow;exit;;79770525.8
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;entry;;156093359.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Allocation;exit;;483053104.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;entry;;156093359.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Nomination/Renomination;exit;;483053104.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;Physical Flow;exit;;279937060.0
+62;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;24858960.0
+63;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;247815531.0
+64;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;29255016.0
+65;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;252211587.0
+66;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;4444.4
+67;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;539902534.9
+68;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;290206680.0
+69;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;21688300.4
+70;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;290206680.0
+71;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;21960752.0
+72;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;472095295.1
+73;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;80763672.1
+74;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;entry;;60835968.0
+75;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Allocation;exit;;518962656.0
+76;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;entry;;60835968.0
+77;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Nomination/Renomination;exit;;518962656.0
+78;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;entry;;207338716.0
+79;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;DE-NCG-----;TransmissionDE-NCG-----;NCG;Physical Flow;exit;;982253916.6
+80;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Allocation;entry;;0.0
+81;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Allocation;exit;;484774072.0
+82;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Nomination/Renomination;entry;;0.0
+83;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Nomination/Renomination;exit;;0.0
+84;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Physical Flow;entry;;0.0
+85;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;NL;UK---------;TransmissionUK---------;UK;Physical Flow;exit;;484701694.2
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Allocation;entry;;4945142.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Allocation;exit;;541880158.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Nomination/Renomination;entry;;0.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Physical Flow;entry;;11449162.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Physical Flow;exit;;531494266.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Final Consumers;Final Consumers;Allocation;exit;;183649258.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;182588609.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;183673954.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;60000000.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;60000000.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;58371445.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Production;Production;Allocation;entry;;72537347.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Production;Production;Allocation;exit;;3974756.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Production;Production;Nomination/Renomination;entry;;59398966.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Production;Production;Nomination/Renomination;exit;;3772020.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Production;Production;Physical Flow;entry;;72537347.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Production;Production;Physical Flow;exit;;3974756.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Allocation;entry;;174692000.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Allocation;exit;;2112000.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Nomination/Renomination;entry;;174692000.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Nomination/Renomination;exit;;0.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Physical Flow;entry;;163390493.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Physical Flow;exit;;0.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Transmission;Belarus;Nomination/Renomination;entry;Gazprom Belarus;11456160.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Transmission;Belarus;Physical Flow;entry;Gazprom Belarus;1027369017.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;-----------;Transmission;Ukraine;Physical Flow;exit;Gas TSO UA;0.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Allocation;entry;;26496000.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Allocation;exit;;0.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;entry;;26496000.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;exit;;0.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Physical Flow;entry;;26399825.0
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Physical Flow;exit;;0.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;3912000.0
+33;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;0.0
+34;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;65088000.0
+35;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;0.0
+36;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;4042579.0
+37;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;857558300.0
+38;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;entry;;0.0
+39;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;exit;;148509184.0
+40;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;entry;;0.0
+41;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;exit;;157549643.0
+42;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;entry;;157549643.0
+43;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;exit;;0.0
+44;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;entry;;148509184.0
+45;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;exit;;0.0
+46;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;entry;;157549643.0
+47;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;exit;;0.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Allocation;entry;;4928605.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Allocation;exit;;552363995.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Nomination/Renomination;entry;;0.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Physical Flow;entry;;11445994.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Distribution;Distribution;Physical Flow;exit;;542203584.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Final Consumers;Final Consumers;Allocation;exit;;183704415.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;181286721.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;183727352.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;60000000.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;60000000.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;55619919.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Production;Production;Allocation;entry;;73164342.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Production;Production;Allocation;exit;;4339077.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Production;Production;Nomination/Renomination;entry;;58944446.0
+62;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Production;Production;Nomination/Renomination;exit;;4176165.0
+63;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Production;Production;Physical Flow;entry;;73164342.0
+64;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Production;Production;Physical Flow;exit;;4339077.0
+65;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Allocation;entry;;188418200.0
+66;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Allocation;exit;;1518000.0
+67;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Nomination/Renomination;entry;;188418200.0
+68;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Nomination/Renomination;exit;;1518000.0
+69;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Physical Flow;entry;;186281729.0
+70;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Storage;Storage;Physical Flow;exit;;0.0
+71;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Transmission;Belarus;Nomination/Renomination;entry;Gazprom Belarus;1027126224.0
+72;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Transmission;Belarus;Physical Flow;entry;Gazprom Belarus;1027126546.0
+73;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;-----------;Transmission;Ukraine;Physical Flow;exit;Gas TSO UA;0.0
+74;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Allocation;entry;;26496000.0
+75;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Allocation;exit;;0.0
+76;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;entry;;26496000.0
+77;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Nomination/Renomination;exit;;0.0
+78;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Physical Flow;entry;;26382743.0
+79;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;CZ---------;TransmissionCZ---------;Czech;Physical Flow;exit;;0.0
+80;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;entry;;3912000.0
+81;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Allocation;exit;;0.0
+82;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;entry;;74040000.0
+83;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Nomination/Renomination;exit;;927800832.0
+84;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;entry;;4028769.0
+85;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;DE-GASPOOL-;TransmissionDE-GASPOOL-;GASPOOL;Physical Flow;exit;;857726644.0
+86;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;entry;;0.0
+87;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Nomination/Renomination;exit;;157310520.0
+88;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;entry;;0.0
+89;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL---------;TransmissionPL---------;Poland H-gas;Physical Flow;exit;;157554768.0
+90;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;entry;;157554768.0
+91;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Allocation;exit;;0.0
+92;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;entry;;148358520.0
+93;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Nomination/Renomination;exit;;0.0
+94;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;entry;;157554768.0
+95;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;PL;PL-YAMAL---;TransmissionPL-YAMAL---;TGPS (YAMAL);Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Distribution;Distribution;Allocation;exit;;47999683.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Distribution;Distribution;Nomination/Renomination;exit;;47999683.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Distribution;Distribution;Physical Flow;exit;;45806454.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Final Consumers;Final Consumers;Allocation;exit;;2469102.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;2500890.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;62384280.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;129611000.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Allocation;exit;;1848650.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;129611000.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;1848650.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;109283868.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Allocation;entry;;340380.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Allocation;exit;;24000000.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Nomination/Renomination;entry;;340380.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Nomination/Renomination;exit;;24000000.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Physical Flow;entry;;0.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Physical Flow;exit;;16103000.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Allocation;entry;;7211256.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Allocation;exit;;5996433.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Nomination/Renomination;entry;;7211258.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Nomination/Renomination;exit;;5996433.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Physical Flow;entry;;12711655.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Physical Flow;exit;;0.0
+23;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Distribution;Distribution;Allocation;exit;;50514411.0
+24;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Distribution;Distribution;Nomination/Renomination;exit;;50514411.0
+25;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Distribution;Distribution;Physical Flow;exit;;56191773.0
+26;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Final Consumers;Final Consumers;Allocation;exit;;3079697.0
+27;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;3083701.0
+28;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;73447790.0
+29;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;149811000.0
+30;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Allocation;exit;;2002158.0
+31;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;149811000.0
+32;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;exit;;2039607.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;128813125.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Allocation;entry;;403728.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Allocation;exit;;22500000.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Nomination/Renomination;entry;;403728.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Nomination/Renomination;exit;;22500000.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Physical Flow;entry;;0.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;-----------;Storage;Storage;Physical Flow;exit;;0.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Allocation;entry;;5842707.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Allocation;exit;;5996433.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Nomination/Renomination;entry;;5842709.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Nomination/Renomination;exit;;5996433.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Physical Flow;entry;;0.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;Iberia;PT;ES---------;TransmissionES---------;Spain;Physical Flow;exit;;0.0
+0;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Distribution;Distribution;Nomination/Renomination;exit;;297953119.7
+1;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Distribution;Distribution;Physical Flow;exit;;299147326.5
+2;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;103997694.5
+3;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;102868033.0
+4;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Production;Production;Nomination/Renomination;entry;;251502008.3
+5;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Production;Production;Physical Flow;entry;;253278022.4
+6;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Nomination/Renomination;entry;;99477754.13
+7;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Nomination/Renomination;exit;;9190301.497
+8;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Physical Flow;entry;;92510445.04
+9;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Physical Flow;exit;;7230810.971
+10;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;exit;;0.0
+11;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Nomination/Renomination;entry;;13148000.0
+12;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Nomination/Renomination;exit;;1308000.001
+13;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Physical Flow;entry;;13146924.08
+14;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Physical Flow;exit;;0.0
+15;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Nomination/Renomination;entry;;1848000.0
+16;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Nomination/Renomination;exit;;0.0
+17;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Physical Flow;entry;;0.0
+18;2021-01-01T05:00:00+01:00;2021-01-02T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Physical Flow;exit;;0.0
+19;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Distribution;Distribution;Nomination/Renomination;exit;;314261808.7
+20;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Distribution;Distribution;Physical Flow;exit;;319548604.9
+21;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;113342162.0
+22;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;111966906.3
+23;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Production;Production;Nomination/Renomination;entry;;254147145.4
+24;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Production;Production;Physical Flow;entry;;253083226.9
+25;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Nomination/Renomination;entry;;126499238.4
+26;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Nomination/Renomination;exit;;1898096.943
+27;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Physical Flow;entry;;125567115.4
+28;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;-----------;Storage;Storage;Physical Flow;exit;;1929541.34
+29;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;BG-GTNTT---;TransmissionBG-GTNTT---;GTNTT-BG;Physical Flow;exit;;0.0
+30;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Nomination/Renomination;entry;;13387999.9996
+31;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Nomination/Renomination;exit;;628000.0001
+32;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Physical Flow;entry;;13147760.2
+33;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;BG-NGTS----;TransmissionBG-NGTS----;NGTN-BG;Physical Flow;exit;;0.0
+34;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Nomination/Renomination;entry;;1848000.0
+35;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Nomination/Renomination;exit;;0.0
+36;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Physical Flow;entry;;0.0
+37;2021-01-02T05:00:00+01:00;2021-01-03T05:00:00+01:00;CE;RO;HU---------;TransmissionHU---------;Hungary;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;-----------;Distribution;Distribution;Allocation;exit;;27023816.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;-----------;Distribution;Distribution;Nomination/Renomination;exit;;28296554.1
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;-----------;Distribution;Distribution;Physical Flow;exit;;27039777.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;AT---------;TransmissionAT---------;Austria;Allocation;entry;;30385200.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;30385200.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;30334719.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Allocation;entry;;31992.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Allocation;exit;;5956344.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Nomination/Renomination;entry;;31992.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Nomination/Renomination;exit;;5956344.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Physical Flow;entry;;0.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Physical Flow;exit;;5915434.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Allocation;entry;;0.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Allocation;exit;;0.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;entry;;0.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;exit;;0.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Physical Flow;entry;;0.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Physical Flow;exit;;0.0
+18;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;-----------;Distribution;Distribution;Allocation;exit;;27427379.0
+19;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;-----------;Distribution;Distribution;Nomination/Renomination;exit;;28675803.6
+20;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;-----------;Distribution;Distribution;Physical Flow;exit;;27382763.0
+21;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;AT---------;TransmissionAT---------;Austria;Allocation;entry;;33674400.0
+22;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;AT---------;TransmissionAT---------;Austria;Nomination/Renomination;entry;;33674400.0
+23;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;AT---------;TransmissionAT---------;Austria;Physical Flow;entry;;33612406.0
+24;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Allocation;entry;;18000.0
+25;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Allocation;exit;;5956344.0
+26;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Nomination/Renomination;entry;;31992.0
+27;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Nomination/Renomination;exit;;5956344.0
+28;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Physical Flow;entry;;0.0
+29;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;HR---------;TransmissionHR---------;Croatia;Physical Flow;exit;;5928968.0
+30;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Allocation;entry;;0.0
+31;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Allocation;exit;;0.0
+32;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;entry;;0.0
+33;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Nomination/Renomination;exit;;0.0
+34;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Physical Flow;entry;;0.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;CE;SI;IT---------;TransmissionIT---------;Italy;Physical Flow;exit;;0.0
+0;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Distribution;Distribution;Nomination/Renomination;exit;;26337397.0
+1;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Distribution;Distribution;Physical Flow;exit;;2563199846.0
+2;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Final Consumers;Final Consumers;Allocation;exit;;728460942.0
+3;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;579252971.0
+4;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;728480254.0
+5;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;530614467.0
+6;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;530071469.0
+7;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;530622794.0
+8;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Production;Production;Allocation;entry;;366736776.0
+9;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Production;Production;Nomination/Renomination;entry;;391389313.0
+10;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Production;Production;Physical Flow;entry;;366067252.0
+11;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Allocation;entry;;170446711.0
+12;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Nomination/Renomination;entry;;109172726.0
+13;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Nomination/Renomination;exit;;6554574.0
+14;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Physical Flow;entry;;163938339.0
+15;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Physical Flow;exit;;63271.0
+16;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;388411273.0
+17;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;0.0
+18;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;389298827.0
+19;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;0.0
+20;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;392267216.0
+21;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;0.0
+22;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;IE---------;TransmissionIE---------;Ireland;Physical Flow;entry;;0.0
+23;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;IE---------|TransmissionUK-NI------;TransmissionIE---------|TransmissionUK-NI------;Ireland,NI;Nomination/Renomination;exit;;189946078.0
+24;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;IE---------|TransmissionUK-NI------;TransmissionIE---------|TransmissionUK-NI------;Ireland,NI;Physical Flow;exit;;190365000.0
+25;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;exit;;0.0
+26;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;NL---------;TransmissionNL---------;Netherlands;Physical Flow;exit;;0.0
+27;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Allocation;entry;;0.0
+28;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Allocation;exit;;388411273.0
+29;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Nomination/Renomination;entry;;54942634.0
+30;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Nomination/Renomination;exit;;388739007.0
+31;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Physical Flow;entry;;54929167.0
+32;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Physical Flow;exit;;351364256.0
+33;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK-IUK-----;TransmissionUK-IUK-----;IUK;Nomination/Renomination;exit;;0.0
+34;2021-01-01T06:00:00+01:00;2021-01-02T06:00:00+01:00;UK;UK;UK-IUK-----;TransmissionUK-IUK-----;IUK;Physical Flow;exit;;0.0
+35;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Distribution;Distribution;Nomination/Renomination;exit;;28237937.0
+36;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Distribution;Distribution;Physical Flow;exit;;2553094306.0
+37;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Final Consumers;Final Consumers;Allocation;exit;;789850389.0
+38;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Final Consumers;Final Consumers;Nomination/Renomination;exit;;619413112.0
+39;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Final Consumers;Final Consumers;Physical Flow;exit;;786648402.0
+40;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;LNG Terminals;LNG Terminals;Allocation;entry;;518634214.0
+41;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;LNG Terminals;LNG Terminals;Nomination/Renomination;entry;;519426659.0
+42;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;LNG Terminals;LNG Terminals;Physical Flow;entry;;518634214.0
+43;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Production;Production;Allocation;entry;;374426523.0
+44;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Production;Production;Nomination/Renomination;entry;;372989218.0
+45;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Production;Production;Physical Flow;entry;;374426523.0
+46;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Allocation;entry;;201838140.0
+47;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Nomination/Renomination;entry;;117368242.0
+48;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Nomination/Renomination;exit;;3563672.0
+49;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Physical Flow;entry;;198283352.0
+50;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;-----------;Storage;Storage;Physical Flow;exit;;0.0
+51;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;entry;;383178832.0
+52;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Allocation;exit;;0.0
+53;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;entry;;383178832.0
+54;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Nomination/Renomination;exit;;0.0
+55;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;entry;;407658122.0
+56;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;BE-LUX------;TransmissionBE-LUX------;BeLux;Physical Flow;exit;;0.0
+57;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;IE---------;TransmissionIE---------;Ireland;Physical Flow;entry;;0.0
+58;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;IE---------|TransmissionUK-NI------;TransmissionIE---------|TransmissionUK-NI------;Ireland,NI;Nomination/Renomination;exit;;195041271.0
+59;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;IE---------|TransmissionUK-NI------;TransmissionIE---------|TransmissionUK-NI------;Ireland,NI;Physical Flow;exit;;195659700.0
+60;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;NL---------;TransmissionNL---------;Netherlands;Nomination/Renomination;exit;;0.0
+61;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;NL---------;TransmissionNL---------;Netherlands;Physical Flow;exit;;0.0
+62;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Allocation;entry;;0.0
+63;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Allocation;exit;;383178832.0
+64;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Nomination/Renomination;entry;;56553383.0
+65;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Nomination/Renomination;exit;;383178832.0
+66;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Physical Flow;entry;;56566944.0
+67;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK---------;TransmissionUK---------;UK;Physical Flow;exit;;424786144.0
+68;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK-IUK-----;TransmissionUK-IUK-----;IUK;Nomination/Renomination;exit;;0.0
+69;2021-01-02T06:00:00+01:00;2021-01-03T06:00:00+01:00;UK;UK;UK-IUK-----;TransmissionUK-IUK-----;IUK;Physical Flow;exit;;0.0

@@ -7,7 +7,7 @@ from .exceptions import NoMatchingDataError, PaginationError
 import pandas as pd
 import logging
 
-from .misc import year_blocks, day_blocks, month_blocks
+from .misc import year_blocks, day_blocks, month_blocks, week_blocks
 
 
 def retry(func):
@@ -128,6 +128,33 @@ def day_limited(func):
         return df
 
     return day_wrapper
+
+def week_limited(func):
+    """Deals with calls where you cannot query more than a year, by splitting
+    the call up in blocks per year"""
+
+    @wraps(func)
+    def week_wrapper(*args, start, end, **kwargs):
+        blocks = week_blocks(start, end)
+        frames = []
+        for _start, _end in blocks:
+            try:
+                frame = func(*args, start=_start, end=_end, **kwargs)
+            except NoMatchingDataError:
+                print(f"NoMatchingDataError: between {_start} and {_end}", file=sys.stderr)
+                frame = None
+            frames.append(frame)
+
+        if sum([f is None for f in frames]) == len(frames):
+            # All the data returned are void
+            raise NoMatchingDataError
+
+        df = pd.concat(frames)
+        return df
+
+    return week_wrapper
+
+
 
 def operator_limited(func):
     """Deals with calls where you cannot query more than one operator, by splitting

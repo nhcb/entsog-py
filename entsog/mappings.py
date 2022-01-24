@@ -1,6 +1,7 @@
 import enum
 from logging import error
 from typing import Union
+import numpy as np
 
 def lookup_area(s: Union['Area', str]) -> 'Area':
     if isinstance(s, Area):
@@ -159,7 +160,7 @@ class Country(enum.Enum):
     AT="AT","Austria",
     BE="BE","Belgium",
     BG="BG","Bulgaria",
-    CH="CH","Switzerland",
+    #CH="CH","Switzerland",
     CZ="CZ","Czech",
     DE="DE","Germany",
     DK="DK","Denmark",
@@ -302,36 +303,39 @@ DATASET_MAPPINGS = {
     '6': 'Aggregate Interconnections'
 }
 
+# TODO: All countries must be represented in operational_aggregates, or this does NOT work
 REGIONS = {
-    'BE': 'WE',
-    'NL': 'WE',
-    'DE': 'WE',
-    'FR': 'WE',
-    'CH': 'WE',
+    'BE': 'NWE',
+    'NL': 'NWE',
+    'DE': 'NWE',
+    'FR': 'NWE',
+    'CH': 'CH/IT',
     'AT': 'WE',
-    'CZ': 'EE',
-    'UK': 'NE',
+    'CZ': 'CE',
+    'UK': 'UK',
     'NO': 'NE',
-    'HU': 'EE',
-    'IT': 'SE',
-    'ES': 'SE',
-    'SI': 'EE',
-    'RS': 'EE',
-    'PL': 'EE',
-    'ME': 'EE', # Montenegro
+    'HU': 'CE',
+    'IT': 'CH/IT',
+    'ES': 'Iberia',
+    'SI': 'CE',
+    'RS': 'CE',
+    'PL': 'CE',
+    'ME': 'CE', # Montenegro
     'DK': 'NE',
-    'RO': 'EE',
-    'LT': 'EE',
-    'BG': 'EE',
+    'RO': 'CE',
+    'LT': 'CE',
+    'BG': 'CE',
     'SE': 'NE',
-    'LV': 'EE',
-    'IE': 'NE',
-    'BA': 'EE',
+    'LV': 'CE',
+    'IE': 'UK',
+    'BA': 'CE',
     'FI': 'NE',
-    'MK': 'EE',
-    'PT': 'SE',
+    'MK': 'CE',
+    'PT': 'Iberia',
     'GR': 'SE',
-    'MT': 'SE'
+    'MT': 'SE',
+    'RU' : 'EE',
+    'Undefined' : 'Undefined'
 }
 
 

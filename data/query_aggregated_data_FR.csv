@@ -1,0 +1,886 @@
+;period_from;period_to;region_key;country_key;bz_key;adjacent_bz_key;adjacent_systems_key;adjacent_systems_label;operator_key;points_names;indicator;direction_key;note;value
+0;2021-01-01T05:00:00+01:00;2021-01-01T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9099550.457
+1;2021-01-01T05:00:00+01:00;2021-01-01T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4292061.5
+2;2021-01-01T05:00:00+01:00;2021-01-01T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5726977.791
+3;2021-01-01T05:00:00+01:00;2021-01-01T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+4;2021-01-01T05:00:00+01:00;2021-01-01T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9710331.0
+5;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9679438.0
+6;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+7;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9197060.491
+8;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4674562.0
+9;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;3688153.962
+10;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+11;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10613269.0
+12;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+13;2021-01-01T06:00:00+01:00;2021-01-01T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7707807.0
+14;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9228131.0
+15;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;1460658.0
+16;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9606624.114
+17;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4694710.0
+18;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;3896005.987
+19;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+20;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10745326.0
+21;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+22;2021-01-01T07:00:00+01:00;2021-01-01T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7136847.0
+23;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9874005.0
+24;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2147154.0
+25;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9658816.32
+26;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4670875.5
+27;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;7653215.0
+28;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+29;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10748457.0
+30;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+31;2021-01-01T08:00:00+01:00;2021-01-01T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6927781.0
+32;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10054686.0
+33;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2320227.0
+34;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9670871.757
+35;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4681450.0
+36;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;8047952.8
+37;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+38;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10764277.0
+39;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+40;2021-01-01T09:00:00+01:00;2021-01-01T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6836056.0
+41;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9898685.0
+42;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2156126.0
+43;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9676419.388
+44;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4618770.5
+45;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;8671145.9
+46;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+47;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10766187.0
+48;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+49;2021-01-01T10:00:00+01:00;2021-01-01T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5613667.0
+50;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9923316.0
+51;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2184695.0
+52;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9711326.404
+53;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4681322.0
+54;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9825230.6
+55;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+56;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10773418.0
+57;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+58;2021-01-01T11:00:00+01:00;2021-01-01T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5535663.0
+59;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10359765.0
+60;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2640935.0
+61;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9697734.06
+62;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4659430.0
+63;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9846594.7
+64;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+65;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10782543.0
+66;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+67;2021-01-01T12:00:00+01:00;2021-01-01T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5877851.0
+68;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10375855.0
+69;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2670383.0
+70;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9663514.315
+71;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4545504.5
+72;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9838580.3
+73;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+74;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10848246.0
+75;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+76;2021-01-01T13:00:00+01:00;2021-01-01T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5866022.0
+77;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10396456.0
+78;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2707270.0
+79;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9743575.78
+80;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4679989.5
+81;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9870224.5
+82;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+83;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10846418.0
+84;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+85;2021-01-01T14:00:00+01:00;2021-01-01T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5914467.0
+86;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10502301.0
+87;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2822303.0
+88;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9735450.862
+89;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4680424.5
+90;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9913472.5
+91;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+92;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10888983.0
+93;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+94;2021-01-01T15:00:00+01:00;2021-01-01T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6016161.0
+95;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10434039.0
+96;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2752164.0
+97;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9753230.576
+98;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4658348.5
+99;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9862662.7
+100;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+101;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10884882.0
+102;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+103;2021-01-01T16:00:00+01:00;2021-01-01T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6038293.0
+104;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;11586480.0
+105;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;3928225.0
+106;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9762526.81
+107;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4600068.5
+108;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9871001.0
+109;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+110;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10889168.0
+111;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+112;2021-01-01T17:00:00+01:00;2021-01-01T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6081421.0
+113;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10951596.0
+114;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;4815815.0
+115;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9758944.787
+116;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4620428.5
+117;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;10525247.7
+118;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+119;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10906476.0
+120;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+121;2021-01-01T18:00:00+01:00;2021-01-01T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6124891.0
+122;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9997540.0
+123;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;5916735.0
+124;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9744124.807
+125;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4702032.0
+126;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;10497530.0
+127;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+128;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10932173.0
+129;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+130;2021-01-01T19:00:00+01:00;2021-01-01T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6090405.0
+131;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9501429.0
+132;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;6861909.0
+133;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9748599.054
+134;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4659759.0
+135;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9953255.7
+136;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+137;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10954667.0
+138;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+139;2021-01-01T20:00:00+01:00;2021-01-01T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6055446.0
+140;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9344542.0
+141;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;6706745.0
+142;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9757488.8
+143;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4701452.5
+144;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9919590.2
+145;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+146;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10976371.0
+147;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+148;2021-01-01T21:00:00+01:00;2021-01-01T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6020715.0
+149;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9515050.0
+150;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;6879326.0
+151;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9766491.616
+152;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4639875.5
+153;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9125053.0
+154;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+155;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10990516.0
+156;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+157;2021-01-01T22:00:00+01:00;2021-01-01T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5998257.0
+158;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9382603.0
+159;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;6684293.0
+160;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9754920.206
+161;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4671403.5
+162;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;7177008.7
+163;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+164;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11017308.0
+165;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+166;2021-01-01T23:00:00+01:00;2021-01-02T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5983081.0
+167;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9130956.0
+168;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;5837731.0
+169;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9713289.678
+170;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4714052.5
+171;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;7163950.0
+172;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+173;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11046989.0
+174;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+175;2021-01-02T00:00:00+01:00;2021-01-02T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5980761.0
+176;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;8064647.0
+177;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;4388639.0
+178;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9289323.038
+179;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4714378.5
+180;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;7149614.0
+181;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+182;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11054289.0
+183;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+184;2021-01-02T01:00:00+01:00;2021-01-02T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5917157.0
+185;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;8754526.0
+186;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;3909970.0
+187;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9326955.642
+188;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4672850.0
+189;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;7172122.8
+190;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+191;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11206685.0
+192;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+193;2021-01-02T02:00:00+01:00;2021-01-02T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5878333.0
+194;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9743825.0
+195;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;4737189.0
+196;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9290964.93
+197;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4702499.0
+198;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;7160084.7
+199;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+200;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11235920.0
+201;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+202;2021-01-02T03:00:00+01:00;2021-01-02T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5881981.0
+203;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10297743.0
+204;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;5267685.0
+205;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9523725.455
+206;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;4618025.5
+207;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6588603.0
+208;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+209;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11262928.0
+210;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+211;2021-01-02T04:00:00+01:00;2021-01-02T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5917683.0
+212;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;11798079.0
+213;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;4659621.0
+214;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9318930.514
+215;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3641610.0
+216;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5885421.6
+217;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+218;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10305203.0
+219;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+220;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5957495.0
+0;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9318930.514
+1;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3641610.0
+2;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5885421.6
+3;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+4;2021-01-02T05:00:00+01:00;2021-01-02T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10305203.0
+5;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;12387689.0
+6;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;4153628.0
+7;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9389870.062
+8;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3178827.2
+9;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5739412.5
+10;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+11;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9732903.0
+12;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;575.0
+13;2021-01-02T06:00:00+01:00;2021-01-02T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;4477502.0
+14;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10241363.0
+15;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;3948561.0
+16;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9514603.532
+17;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3076042.0
+18;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5722285.0
+19;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+20;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9733996.0
+21;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+22;2021-01-02T07:00:00+01:00;2021-01-02T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;3752392.0
+23;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;9518555.0
+24;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;3244357.0
+25;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9749458.236
+26;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3074996.5
+27;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5749129.5
+28;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+29;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9721898.0
+30;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+31;2021-01-02T08:00:00+01:00;2021-01-02T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;3718391.0
+32;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;8913336.0
+33;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;2804167.0
+34;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10075943.24
+35;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3136286.5
+36;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5736601.5
+37;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+38;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9732707.0
+39;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+40;2021-01-02T09:00:00+01:00;2021-01-02T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;3721618.0
+41;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;8569669.0
+42;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;1035463.0
+43;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10412076.03
+44;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3127023.5
+45;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5756698.0
+46;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+47;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9730237.0
+48;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+49;2021-01-02T10:00:00+01:00;2021-01-02T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;3700820.0
+50;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;10470183.0
+51;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+52;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10632867.22
+53;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3147349.2
+54;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5749965.5
+55;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+56;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9733108.0
+57;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+58;2021-01-02T11:00:00+01:00;2021-01-02T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;3733012.0
+59;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;11301321.0
+60;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+61;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10681370.12
+62;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;2981132.5
+63;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5745641.0
+64;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+65;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9744963.0
+66;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+67;2021-01-02T12:00:00+01:00;2021-01-02T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;3968426.0
+68;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;11958721.0
+69;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+70;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10645322.12
+71;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3166482.5
+72;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5706093.0
+73;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+74;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9755154.0
+75;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+76;2021-01-02T13:00:00+01:00;2021-01-02T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;4392855.0
+77;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;11944009.0
+78;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+79;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10537237.04
+80;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3178910.0
+81;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5284168.0
+82;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+83;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9762523.0
+84;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+85;2021-01-02T14:00:00+01:00;2021-01-02T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;4612858.0
+86;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;11892325.0
+87;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+88;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10274577.8
+89;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3107249.2
+90;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5002234.5
+91;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+92;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9781808.0
+93;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+94;2021-01-02T15:00:00+01:00;2021-01-02T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;5017515.0
+95;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;11972518.0
+96;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+97;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10172728.21
+98;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3282558.0
+99;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4815498.5
+100;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+101;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9802212.0
+102;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+103;2021-01-02T16:00:00+01:00;2021-01-02T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6354414.0
+104;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;12609802.0
+105;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+106;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10074810.96
+107;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3282972.8
+108;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4419609.5
+109;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+110;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9807718.0
+111;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+112;2021-01-02T17:00:00+01:00;2021-01-02T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7237984.0
+113;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13366707.0
+114;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+115;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;10079096.49
+116;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3262286.2
+117;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5451097.9
+118;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+119;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9822640.0
+120;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+121;2021-01-02T18:00:00+01:00;2021-01-02T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7259567.0
+122;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13426886.0
+123;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+124;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9894701.967
+125;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3212116.2
+126;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;7667389.0
+127;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+128;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9852545.0
+129;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+130;2021-01-02T19:00:00+01:00;2021-01-02T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7255940.0
+131;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14784086.0
+132;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+133;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9719248.525
+134;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3335479.5
+135;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;8480503.3
+136;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+137;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9865551.0
+138;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+139;2021-01-02T20:00:00+01:00;2021-01-02T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7283198.0
+140;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14814341.0
+141;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+142;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9827732.744
+143;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3335472.0
+144;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;8419965.2
+145;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+146;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9872396.0
+147;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+148;2021-01-02T21:00:00+01:00;2021-01-02T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7318517.0
+149;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;15350657.0
+150;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+151;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9774648.573
+152;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3181363.2
+153;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;8116326.0
+154;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+155;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9895320.0
+156;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+157;2021-01-02T22:00:00+01:00;2021-01-02T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7323065.0
+158;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;15322773.0
+159;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+160;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9688426.227
+161;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3026812.8
+162;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;8119075.5
+163;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+164;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9930973.0
+165;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+166;2021-01-02T23:00:00+01:00;2021-01-03T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7286407.0
+167;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14956591.0
+168;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+169;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9572945.129
+170;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3428276.5
+171;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9400210.8
+172;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+173;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9967521.0
+174;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+175;2021-01-03T00:00:00+01:00;2021-01-03T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7201094.0
+176;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14541418.0
+177;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+178;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9392482.754
+179;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3479594.0
+180;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9462021.5
+181;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+182;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10104410.0
+183;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+184;2021-01-03T01:00:00+01:00;2021-01-03T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7205694.0
+185;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13706232.0
+186;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+187;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9133301.629
+188;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3448924.8
+189;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;10362844.3
+190;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+191;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10079007.0
+192;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+193;2021-01-03T02:00:00+01:00;2021-01-03T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7197817.0
+194;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;12901663.0
+195;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+196;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9103852.288
+197;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3521289.0
+198;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;12731727.8
+199;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+200;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10097002.0
+201;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+202;2021-01-03T03:00:00+01:00;2021-01-03T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7161118.0
+203;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13012918.0
+204;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+205;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9138917.392
+206;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3562417.8
+207;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;13086982.5
+208;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+209;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10156523.0
+210;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+211;2021-01-03T04:00:00+01:00;2021-01-03T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7152632.0
+212;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13219888.0
+213;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+214;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9141222.779
+215;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3191833.5
+216;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;12170337.5
+217;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+218;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10315237.0
+219;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+220;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7131571.0
+0;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9141222.779
+1;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;3191833.5
+2;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;12170337.5
+3;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+4;2021-01-03T05:00:00+01:00;2021-01-03T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10315237.0
+5;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;12277179.0
+6;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+7;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9157203.902
+8;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5281903.5
+9;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;12593835.5
+10;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+11;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9743744.0
+12;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+13;2021-01-03T06:00:00+01:00;2021-01-03T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6714442.0
+14;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;12026566.0
+15;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+16;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9168959.496
+17;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5221327.5
+18;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;12597547.5
+19;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+20;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9715346.0
+21;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+22;2021-01-03T07:00:00+01:00;2021-01-03T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6255533.0
+23;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13286740.0
+24;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+25;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9165077.004
+26;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5595766.5
+27;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6601515.5
+28;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+29;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9722794.0
+30;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+31;2021-01-03T08:00:00+01:00;2021-01-03T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6027731.0
+32;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13874075.0
+33;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+34;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9197047.93
+35;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5515765.5
+36;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5740380.0
+37;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+38;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9728874.0
+39;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+40;2021-01-03T09:00:00+01:00;2021-01-03T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6049915.0
+41;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13837202.0
+42;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+43;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9195094.961
+44;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5540128.0
+45;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5441008.0
+46;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+47;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9745464.0
+48;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+49;2021-01-03T10:00:00+01:00;2021-01-03T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6023057.0
+50;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14025148.0
+51;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+52;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9200183.907
+53;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5477686.0
+54;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5171879.5
+55;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+56;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9727721.0
+57;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+58;2021-01-03T11:00:00+01:00;2021-01-03T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6018128.0
+59;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14311964.0
+60;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+61;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9205154.128
+62;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5497355.0
+63;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5150791.0
+64;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+65;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9729895.0
+66;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+67;2021-01-03T12:00:00+01:00;2021-01-03T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6046818.0
+68;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13966431.0
+69;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+70;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9225467.953
+71;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5147212.5
+72;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5003998.0
+73;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+74;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9742918.0
+75;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+76;2021-01-03T13:00:00+01:00;2021-01-03T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6094295.0
+77;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13681004.0
+78;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+79;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9222484.023
+80;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5227292.0
+81;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4577822.5
+82;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+83;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9759162.0
+84;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+85;2021-01-03T14:00:00+01:00;2021-01-03T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6185333.0
+86;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13349347.0
+87;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+88;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9197706.673
+89;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5213990.5
+90;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4478886.0
+91;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+92;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9756715.0
+93;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+94;2021-01-03T15:00:00+01:00;2021-01-03T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6408576.0
+95;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13960399.0
+96;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+97;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9185659.967
+98;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5173839.0
+99;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4536719.0
+100;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+101;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9776104.0
+102;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+103;2021-01-03T16:00:00+01:00;2021-01-03T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6688057.0
+104;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13065596.0
+105;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+106;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;9186394.519
+107;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5245242.5
+108;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4635620.0
+109;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+110;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9789500.0
+111;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+112;2021-01-03T17:00:00+01:00;2021-01-03T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;6996326.0
+113;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13068797.0
+114;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+115;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE;Physical Flow;entry;;9168780.875
+116;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Sud-Est / SALINE;Physical Flow;exit;;240043.47
+117;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5080433.5
+118;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4707881.0
+119;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+120;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9811170.0
+121;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+122;2021-01-03T18:00:00+01:00;2021-01-03T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7137455.0
+123;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13153372.0
+124;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;309294.0
+125;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;11107241.11
+126;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5255751.0
+127;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4703732.0
+128;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+129;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9818116.0
+130;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+131;2021-01-03T19:00:00+01:00;2021-01-03T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;7248097.0
+132;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13620900.0
+133;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;961337.0
+134;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12490431.68
+135;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5347582.0
+136;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4713231.5
+137;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+138;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9814782.0
+139;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+140;2021-01-03T20:00:00+01:00;2021-01-03T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8015751.0
+141;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14088102.0
+142;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;838571.0
+143;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12535597.92
+144;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5296785.0
+145;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;4820614.5
+146;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+147;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9845588.0
+148;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+149;2021-01-03T21:00:00+01:00;2021-01-03T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8687460.0
+150;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13926888.0
+151;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;751896.0
+152;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12644945.71
+153;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5502347.5
+154;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5691487.0
+155;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+156;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9795334.0
+157;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+158;2021-01-03T22:00:00+01:00;2021-01-03T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8744754.0
+159;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13593623.0
+160;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;763279.0
+161;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12719017.04
+162;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5296293.5
+163;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5736671.0
+164;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+165;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;9936203.0
+166;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+167;2021-01-03T23:00:00+01:00;2021-01-04T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8694281.0
+168;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13588133.0
+169;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;763877.0
+170;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12843012.5
+171;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5386680.0
+172;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5847268.5
+173;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+174;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10111641.0
+175;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+176;2021-01-04T00:00:00+01:00;2021-01-04T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8653933.0
+177;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13447375.0
+178;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;776995.0
+179;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12818902.61
+180;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5314569.0
+181;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5814843.0
+182;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+183;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10137347.0
+184;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+185;2021-01-04T01:00:00+01:00;2021-01-04T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8640883.0
+186;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13404896.0
+187;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;778416.0
+188;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12910839.73
+189;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5342706.0
+190;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5992232.183
+191;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+192;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10181409.0
+193;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+194;2021-01-04T02:00:00+01:00;2021-01-04T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8626937.0
+195;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13264051.0
+196;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;786827.0
+197;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12915007.06
+198;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5372237.5
+199;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5971136.5
+200;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+201;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10232728.0
+202;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+203;2021-01-04T03:00:00+01:00;2021-01-04T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8624136.0
+204;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13342235.0
+205;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;789652.0
+206;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;12669203.3
+207;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5412489.0
+208;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5957936.0
+209;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+210;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10335776.0
+211;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+212;2021-01-04T04:00:00+01:00;2021-01-04T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8554803.0
+213;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13445186.0
+214;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;796667.0
+215;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;16103615.07
+216;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5382410.0
+217;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5450621.662
+218;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+219;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10581127.0
+220;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+221;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8492377.0
+0;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;16103615.07
+1;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;5382410.0
+2;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5450621.662
+3;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+4;2021-01-04T05:00:00+01:00;2021-01-04T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10581127.0
+5;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;12982698.0
+6;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;26340.0
+7;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;51501970.24
+8;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6588942.5
+9;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;5762720.7
+10;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+11;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10999787.0
+12;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+13;2021-01-04T06:00:00+01:00;2021-01-04T07:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8278846.0
+14;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13643222.0
+15;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+16;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;59854650.8
+17;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6539025.0
+18;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6012421.1
+19;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+20;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11015880.0
+21;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+22;2021-01-04T07:00:00+01:00;2021-01-04T08:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8120936.0
+23;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13936672.0
+24;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+25;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;54573725.81
+26;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6417588.5
+27;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6032471.4
+28;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+29;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11022598.0
+30;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+31;2021-01-04T08:00:00+01:00;2021-01-04T09:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8131394.0
+32;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13902133.0
+33;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+34;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;53691708.78
+35;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6652608.0
+36;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6034777.2
+37;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+38;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11022702.0
+39;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+40;2021-01-04T09:00:00+01:00;2021-01-04T10:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8158858.0
+41;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;13958335.0
+42;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+43;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;57967148.4
+44;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6592177.5
+45;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6008832.5
+46;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+47;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11026164.0
+48;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+49;2021-01-04T10:00:00+01:00;2021-01-04T11:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8180126.0
+50;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;14804986.0
+51;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+52;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;76560058.56
+53;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6619648.5
+54;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6044163.6
+55;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+56;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11044390.0
+57;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+58;2021-01-04T11:00:00+01:00;2021-01-04T12:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8350972.0
+59;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;16631951.0
+60;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+61;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;76724215.47
+62;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6610711.0
+63;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6029541.5
+64;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+65;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11057629.0
+66;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+67;2021-01-04T12:00:00+01:00;2021-01-04T13:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;8769038.0
+68;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;18186196.0
+69;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+70;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;76497021.97
+71;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6517328.0
+72;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6025881.6
+73;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+74;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11034481.0
+75;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+76;2021-01-04T13:00:00+01:00;2021-01-04T14:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9078488.0
+77;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;19053936.0
+78;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+79;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;81434224.46
+80;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6363046.0
+81;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6025931.7
+82;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+83;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;10971564.0
+84;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+85;2021-01-04T14:00:00+01:00;2021-01-04T15:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9253592.0
+86;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;20405093.0
+87;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+88;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;75531523.8
+89;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6487580.0
+90;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6022821.5
+91;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+92;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11087941.0
+93;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+94;2021-01-04T15:00:00+01:00;2021-01-04T16:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9274524.0
+95;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;22261987.0
+96;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+97;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;71834611.61
+98;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6487295.5
+99;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6028698.1
+100;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+101;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11176056.0
+102;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+103;2021-01-04T16:00:00+01:00;2021-01-04T17:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9336897.0
+104;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23245478.0
+105;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+106;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;86872093.06
+107;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6333051.5
+108;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;6972898.86
+109;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+110;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11424308.0
+111;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+112;2021-01-04T17:00:00+01:00;2021-01-04T18:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9328956.0
+113;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23397618.0
+114;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+115;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;86466032.33
+116;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6468380.0
+117;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9686430.7
+118;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+119;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12356956.0
+120;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+121;2021-01-04T18:00:00+01:00;2021-01-04T19:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9247621.0
+122;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23352619.0
+123;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+124;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;85593932.58
+125;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6520109.0
+126;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;8897902.5
+127;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+128;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12362761.0
+129;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+130;2021-01-04T19:00:00+01:00;2021-01-04T20:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9199318.0
+131;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23319798.0
+132;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+133;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;85084693.58
+134;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6497849.5
+135;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9383950.5
+136;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+137;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12354765.0
+138;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+139;2021-01-04T20:00:00+01:00;2021-01-04T21:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9204878.0
+140;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23317114.0
+141;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+142;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;86195247.49
+143;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6521468.0
+144;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9393853.0
+145;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+146;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12373517.0
+147;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+148;2021-01-04T21:00:00+01:00;2021-01-04T22:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9225043.0
+149;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23254281.0
+150;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+151;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;85916091.54
+152;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6474614.0
+153;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9370786.5
+154;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+155;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12381129.0
+156;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+157;2021-01-04T22:00:00+01:00;2021-01-04T23:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9247836.0
+158;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23241951.0
+159;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+160;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;85147136.12
+161;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6508789.0
+162;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9398737.5
+163;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+164;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12413516.0
+165;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+166;2021-01-04T23:00:00+01:00;2021-01-05T00:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9282421.0
+167;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23069815.0
+168;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+169;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;85025795.72
+170;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;7299981.5
+171;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9383896.0
+172;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+173;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12432188.0
+174;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+175;2021-01-05T00:00:00+01:00;2021-01-05T01:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9286186.0
+176;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;22872135.0
+177;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+178;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;84711031.19
+179;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6939895.0
+180;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9390836.0
+181;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+182;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12136607.0
+183;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+184;2021-01-05T01:00:00+01:00;2021-01-05T02:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9257491.0
+185;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23132846.0
+186;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+187;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;85455232.25
+188;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;7001073.0
+189;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9376111.0
+190;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+191;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12066357.0
+192;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+193;2021-01-05T02:00:00+01:00;2021-01-05T03:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9176164.0
+194;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;23114519.0
+195;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+196;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;85565828.16
+197;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6918855.0
+198;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9381304.5
+199;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+200;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12138910.0
+201;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+202;2021-01-05T03:00:00+01:00;2021-01-05T04:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9183357.0
+203;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;22711704.0
+204;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+205;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;87676080.45
+206;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6826609.5
+207;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;9390312.0
+208;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+209;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;12213546.0
+210;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+211;2021-01-05T04:00:00+01:00;2021-01-05T05:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9124869.0
+212;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;entry;;22613299.0
+213;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0002;Lussagnet;Physical Flow;exit;;0.0
+214;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;-----------;Storage;Storage;FR-TSO-0003;Atlantique|Nord-Est / SERENE Nord|Nord-Ouest / SEDIANE|Sud-Est / SALINE;Physical Flow;entry;;87991946.14
+215;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;BE-L-ZONE--;TransmissionBE-L-ZONE--;L-Zone;FR-TSO-0003;Blaregnies L (BE) / Taisnières B (FR);Physical Flow;entry;;6887680.5
+216;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;BE-LUX------;TransmissionBE-LUX------;BeLux;FR-TSO-0003;VIRTUALYS;Physical Flow;entry;;10405251.0
+217;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;CH---------;TransmissionCH---------;Switzerland;FR-TSO-0003;Oltingue (FR) / Rodersdorf (CH);Physical Flow;entry;;0.0
+218;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;DE-NCG-----;TransmissionDE-NCG-----;NCG;FR-TSO-0003;Obergailbach (FR) / Medelsheim (DE);Physical Flow;entry;;11442187.0
+219;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;entry;;0.0
+220;2021-01-05T05:00:00+01:00;2021-01-05T06:00:00+01:00;NWE;FR;FR----------;ES---------;TransmissionES---------;Spain;FR-TSO-0002;VIP PIRINEOS;Physical Flow;exit;;9142760.0

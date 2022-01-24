@@ -1,6 +1,10 @@
 from entsog import EntsogRawClient,EntsogPandasClient
 import json
 
+import pandas as pd
+
+
+
 def get_operator_mappings():
     client = EntsogPandasClient()
     operators = client.query_operators()
@@ -41,5 +45,32 @@ def get_operator_mappings():
 
     with open('mapping/countries.json', 'w') as fp:
         json.dump(c, fp)
+
+
+def get_area():
+    client = EntsogRawClient()
+    data = json.loads(client.query_operator_point_directions(limit = -1))
+
+    df = pd.json_normalize(data['operatorpointdirections'])
+
+    df_drop = df.drop_duplicates(subset=['tSOCountry'])
+
+    c = {}
+    for idx, item in df_drop.iterrows():
+        country = item['tSOCountry']
+
+        filtered = df[df['tSOCountry'] == country]
+
+
+        operatorKey = filtered.loc[:,'operatorKey'].drop_duplicates()
+        #print(operatorKey)
+        operatorLabel = filtered.loc[:,'operatorLabel'].drop_duplicates()
+
+        if country is None:
+            country = 'misc'
+
+        print(f"{country}   ={country},   {tuple(operatorKey)},  {tuple(operatorLabel)} ,")
+
+        
 
 get_operator_mappings()

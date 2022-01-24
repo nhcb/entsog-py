@@ -53,6 +53,29 @@ def month_blocks(start, end):
     return res
 
 
+def week_blocks(start, end):
+    """
+    Create pairs of start and end with max a week in between, to deal with usage restrictions on the API
+
+    Parameters
+    ----------
+    start : dt.datetime | pd.Timestamp
+    end : dt.datetime | pd.Timestamp
+
+    Returns
+    -------
+    ((pd.Timestamp, pd.Timestamp))
+    """
+    rule = rrule.WEEKLY
+
+    res = []
+    for day in rrule.rrule(rule, dtstart=start, until=end):
+        res.append(pd.Timestamp(day))
+    res.append(end)
+    res = sorted(set(res))
+    res = pairwise(res)
+    return res
+
 def day_blocks(start, end):
     """
     Create pairs of start and end with max a day in between, to deal with usage restrictions on the API
@@ -105,4 +128,7 @@ def to_snake_case(name : str) -> str:
     -------
     str
     """
-    return re.sub(r'(?<!^)(?=[A-Z])', '_', name).lower()
+    regex = re.compile('((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))')
+    name = regex.sub(r'_\1', name).lower()
+
+    return name
