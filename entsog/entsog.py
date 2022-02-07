@@ -97,9 +97,8 @@ class EntsogRawClient:
                                     proxies=self.proxies, timeout=self.timeout)#,verify=False) # TODO: Important to remove as it raises security concerns. However due to weird SSL issues within NP, only dirty solution.
         try:
             response.raise_for_status()
-            print(response.url)
         except requests.HTTPError as e:
-            soup = BeautifulSoup(response.text, 'html.parser')
+            soup = BeautifulSoup(response.text, response.url, 'html.parser')
             text = soup.find_all('text')
             if len(text):
                 error_text = soup.find('text').text
@@ -119,7 +118,7 @@ class EntsogRawClient:
             raise e
         else:
             if response.headers.get('content-type', '') == 'application/xml':
-                if 'No matching data found' in response.text:
+                if 'No matching data found' in response.text, response.url:
                     raise NoMatchingDataError
             return response
 
@@ -203,7 +202,7 @@ class EntsogRawClient:
 
         response = self._base_request(endpoint = '/connectionpoints')
 
-        return response.text
+        return response.text, response.url
 
     """
     "operatorLogoUrl",
@@ -362,7 +361,7 @@ class EntsogRawClient:
 
         response = self._base_request(endpoint = '/operators',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """
     "tpMapX",
@@ -402,7 +401,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/balancingzones',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """
     "pointKey",
@@ -507,7 +506,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/operatorpointdirections',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """
     "pointKey",
@@ -613,7 +612,7 @@ class EntsogRawClient:
 
         response = self._base_request(endpoint = '/interconnections',params=params)
 
-        return response.text    
+        return response.text, response.url    
 
 
 
@@ -668,7 +667,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/aggregateInterconnections',params=params)
 
-        return response.text    
+        return response.text, response.url    
     """
     "id",
     "messageId",
@@ -731,7 +730,7 @@ class EntsogRawClient:
 
         response = self._base_request(endpoint = '/urgentmarketmessages',params=params)
 
-        return response.text    
+        return response.text, response.url    
     """
     <property>Tariff Period</property>
     <property>Tariff Period Remarks</property>
@@ -808,7 +807,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/tariffsfulls',params=params)
 
-        return response.text    
+        return response.text, response.url    
 
     """
     <property>Tariff Period</property>
@@ -866,7 +865,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/tariffsSimulations',params=params)
 
-        return response.text    
+        return response.text, response.url    
 
 
     """
@@ -939,7 +938,7 @@ class EntsogRawClient:
 
         response = self._base_request(endpoint = '/aggregatedData',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """"
     periodFrom",
@@ -1013,7 +1012,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/interruptions',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """
     "auctionFrom",
@@ -1090,7 +1089,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/cmpauctions',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """
     "periodFrom",
@@ -1159,7 +1158,7 @@ class EntsogRawClient:
 
         response = self._base_request(endpoint = '/cmpunavailables',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """
     "auctionFrom",
@@ -1236,7 +1235,7 @@ class EntsogRawClient:
         
         response = self._base_request(endpoint = '/cmpUnsuccessfulRequests',params=params)
 
-        return response.text
+        return response.text, response.url
 
     """
     "id",
@@ -1318,7 +1317,7 @@ class EntsogRawClient:
 
         response = self._base_request(endpoint = '/operationaldatas',params=params)
 
-        return response.text
+        return response.text, response.url
 
 
 
@@ -1349,10 +1348,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
 
-        json = super(EntsogPandasClient, self).query_connection_points(
+        json, url = super(EntsogPandasClient, self).query_connection_points(
 
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data    
 
@@ -1375,10 +1375,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         country_code = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_operators(
+        json, url = super(EntsogPandasClient, self).query_operators(
             country_code = country_code, has_data = has_data
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data    
 
@@ -1397,10 +1398,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
 
-        json = super(EntsogPandasClient, self).query_balancing_zones(
+        json, url = super(EntsogPandasClient, self).query_balancing_zones(
 
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data    
 
@@ -1426,10 +1428,11 @@ class EntsogPandasClient(EntsogRawClient):
         """
         if country_code is not None:
             country_code = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_operator_point_directions(
+        json, url = super(EntsogPandasClient, self).query_operator_point_directions(
             country_code = country_code ,has_data = has_data
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data    
 
@@ -1472,7 +1475,7 @@ class EntsogPandasClient(EntsogRawClient):
             to_operator = to_operator
 
 
-        json = super(EntsogPandasClient, self).query_interconnections(
+        json, url = super(EntsogPandasClient, self).query_interconnections(
             from_country_code,
             to_country_code,
             from_balancing_zone,
@@ -1504,10 +1507,11 @@ class EntsogPandasClient(EntsogRawClient):
         """
         if country_code is not None:
             country_code = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_aggregate_interconnections(
+        json, url = super(EntsogPandasClient, self).query_aggregate_interconnections(
             country_code = country_code
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data   
 
@@ -1532,10 +1536,11 @@ class EntsogPandasClient(EntsogRawClient):
         """
         balancing_zone = lookup_balancing_zone(balancing_zone)
 
-        json = super(EntsogPandasClient, self).query_urgent_market_messages(
+        json, url = super(EntsogPandasClient, self).query_urgent_market_messages(
             balancing_zone = balancing_zone , operator = operator
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data   
 
@@ -1560,10 +1565,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         country_code = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_tariffs(
+        json, url = super(EntsogPandasClient, self).query_tariffs(
             start = start, end = end, country_code = country_code
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data     
 
@@ -1588,10 +1594,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         country_code = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_tariffs_sim(
+        json, url = super(EntsogPandasClient, self).query_tariffs_sim(
             start = start, end = end, country_code = country_code
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data   
 
@@ -1627,7 +1634,7 @@ class EntsogPandasClient(EntsogRawClient):
             balancing_zone = lookup_balancing_zone(balancing_zone)
 
 
-        json = super(EntsogPandasClient, self).query_aggregated_data(
+        json, url = super(EntsogPandasClient, self).query_aggregated_data(
             start = start, end = end, country_code = country_code, balancing_zone = balancing_zone , period_type = period_type
         )
 
@@ -1655,10 +1662,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         area = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_interruptions(
+        json, url = super(EntsogPandasClient, self).query_interruptions(
             start = start, end = end, country_code = area
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data
 
@@ -1682,10 +1690,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         area = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_CMP_auction_premiums(
+        json, url = super(EntsogPandasClient, self).query_CMP_auction_premiums(
             start = start, end = end, country_code = area
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data
 
@@ -1708,10 +1717,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         area = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_CMP_unavailable_firm_capacity(
+        json, url = super(EntsogPandasClient, self).query_CMP_unavailable_firm_capacity(
             start = start, end = end, country_code = area
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data
 
@@ -1735,10 +1745,11 @@ class EntsogPandasClient(EntsogRawClient):
         str
         """
         area = lookup_country(country_code)
-        json = super(EntsogPandasClient, self).query_CMP_unsuccesful_requests(
+        json, url = super(EntsogPandasClient, self).query_CMP_unsuccesful_requests(
             start = start, end = end, country_code = area
         )
         data = parse_general(json)
+        data['url'] = url
 
         return data
 
@@ -1799,7 +1810,7 @@ class EntsogPandasClient(EntsogRawClient):
         indicators : Union[List[Indicator],List[str]] = None) -> str:
 
         try:
-            json = super(EntsogPandasClient, self).query_operational_data(
+            json, url = super(EntsogPandasClient, self).query_operational_data(
                 start = start, 
                 end = end, 
                 operator = operator,
@@ -1808,6 +1819,7 @@ class EntsogPandasClient(EntsogRawClient):
             )
 
             data = parse_general(json)
+            data['url'] = url
             return data
 
         except Exception as e:
@@ -1861,7 +1873,6 @@ class EntsogPandasClient(EntsogRawClient):
             "last_update_date_time",
             "direction_key",
             "value",
-            "last_update_date_time",
             "flow_status",
             "is_cmp_relevant",
             "booking_platform_key",
