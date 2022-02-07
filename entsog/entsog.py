@@ -1,3 +1,4 @@
+import time
 from itertools import count
 import logging
 from multiprocessing.sharedctypes import Value
@@ -1753,6 +1754,27 @@ class EntsogPandasClient(EntsogRawClient):
 
         return data
 
+    @day_limited
+    def query_operational_data_all(self,
+        start: pd.Timestamp, 
+        end: pd.Timestamp,
+        period_type: str = 'day',
+        indicators : Union[List[Indicator],List[str]] = None) -> str:
+        
+        # Dangerous yet faster function, I noticed it can at least get two indicators based on both daily and hourly period type...
+
+        json, url = super(EntsogPandasClient, self).query_operational_data(
+            start = start, 
+            end = end,
+            period_type = period_type,
+            indicators = indicators
+        )
+
+        data = parse_general(json)
+        data['url'] = url
+        return data
+
+        
 
     def query_operational_data(self, 
         start: pd.Timestamp, 
@@ -1790,7 +1812,8 @@ class EntsogPandasClient(EntsogRawClient):
                     operator = operator, 
                     period_type = period_type, 
                     indicators= indicators)
-
+                # Sleep as we are requesting a lot when there are multiple operators.
+                time.sleep(0.5)
                 data.append(small)
             except Exception as e:
                 print(f"{operator}: {e}")

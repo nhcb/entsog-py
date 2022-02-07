@@ -157,38 +157,48 @@ class Country(enum.Enum):
     def label(self):
         return (self._operator_labels)
 
-    AT="AT","Austria",
-    BE="BE","Belgium",
-    BG="BG","Bulgaria",
-    #CH="CH","Switzerland",
-    CZ="CZ","Czech",
-    DE="DE","Germany",
-    DK="DK","Denmark",
-    EE="EE","Estonia",
-    ES="ES","Spain",
-    FI="FI","Finland",
-    FR="FR","France",
-    GR="GR","Greece",
-    HR="HR","Croatia",
-    HU="HU","Hungary",
-    IE="IE","Ireland",
-    IT="IT","Italy",
-    LT="LT","Lithuania",
-    LU="LU","Luxemburg",
-    LV="LV","Latvia",
-    NL="NL","Netherlands",
-    PL="PL","Poland",
-    PT="PT","Portugal",
-    RO="RO","Romania",
-    SE="SE","Sweden",
-    SI="SI","Slovenia",
-    SK="SK","Slovakia",
-    UK="UK","UK",
-    UA="UA","Ukraine",
-    MD="MD","Moldova",
-    TR="TR","Turkey",
-    MK="MK","North Macedonia",
-    RS="RS","Serbia"
+    AL = "AL",   "Albania"
+    CH = "CH",   "Switzerland"
+    AT = "AT",   "Austria"
+    AZ = "AZ",   "Azerbaijan"
+    BA = "BA",   "Bosnia Herzegovina"
+    BE = "BE",   "Belgium"
+    BG = "BG",   "Bulgaria"
+    BY = "BY",   "Belarus"
+    CY = "CY",   "Cyprus"
+    CZ = "CZ",   "Czechia"
+    DE = "DE",   "Germany"
+    DK = "DK",   "Denmark"
+    EE = "EE",   "Estonia"
+    ES = "ES",   "Spain"
+    FI = "FI",   "Finland"
+    FR = "FR",   "France"
+    GR = "GR",   "Greece"
+    HR = "HR",   "Croatia"
+    HU = "HU",   "Hungary"
+    IE = "IE",   "Ireland"
+    UK = "UK",   "United Kingdom"
+    IT = "IT",   "Italy"
+    LT = "LT",   "Lithuania"
+    LU = "LU",   "Luxemburg"
+    LV = "LV",   "Latvia"
+    LY = "LY",   "Libya"
+    MD = "MD",   "Moldavia"
+    MK = "MK",   "North Macedonia"
+    MT = "MT",   "Malta"
+    NL = "NL",   "Netherlands"
+    NO = "NO",   "Norway"
+    PL = "PL",   "Poland"
+    PT = "PT",   "Portugal"
+    RO = "RO",   "Romania"
+    RS = "RS",   "Serbia"
+    RU = "RU",   "Russia"
+    SE = "SE",   "Sweden"
+    SI = "SI",   "Slovenia"
+    SK = "SK",   "Slovakia"
+    TN = "TN",   "Tunisia"
+    TR = "TR",   "Turkey"
+    UA = "UA",   "Ukraine"
 
 
 
@@ -218,33 +228,48 @@ class Area(enum.Enum):
         return (self._operator_labels)
 
     # One element tuple consists of (element, )
-    BE   =   ('BE-TSO-0001',),  ('Fluxys Belgium',) ,
-    BG   =   ('BG-TSO-0001',),  ('Bulgartransgaz',) ,
-    CZ   =   ('CZ-TSO-0001',),  ('NET4GAS',) ,
-    DE   =   ('DE-TSO-0001', 'DE-TSO-0002', 'DE-TSO-0003', 'DE-TSO-0005', 'DE-TSO-0009', 'DE-TSO-0010', 'DE-TSO-0013', 'DE-TSO-0014', 'DE-TSO-0006', 'DE-TSO-0004', 'DE-TSO-0007', 'DE-TSO-0008', 'DE-TSO-0015', 'DE-TSO-0016', 'DE-TSO-0017', 'DE-TSO-0018', 'DE-TSO-0020'),  ('GASCADE Gastransport', 'Thyssengas', 'ONTRAS', 'Gasunie Deutschland ', 'Open Grid Europe', 'bayernets', 'jordgas Transport', 'terranets bw', 'Gastransport Nord', 'GRTgaz Deutschland', 'Fluxys TENP', 'Nowega', 'GOAL', 'OPAL Gastransport', 'NEL Gastransport', 'Fluxys Deutschland', 'LBTG') ,
-    EE   =   ('EE-TSO-0001',),  ('Elering',) ,
-    ES   =   ('ES-TSO-0006',),  ('Enagas',) ,
-    FR   =   ('FR-TSO-0002', 'FR-TSO-0003'),  ('TERÉGA', 'GRTgaz') ,
-    GR   =   ('GR-TSO-0001',),  ('DESFA',) ,
-    HR   =   ('HR-TSO-0001',),  ('Plinacro Ltd',) ,
-    IE   =   ('IE-TSO-0002',),  ('GNI',) ,
-    IT   =   ('IT-TSO-0001', 'IT-TSO-0003', 'IT-TSO-0004'),  ('Snam Rete Gas', 'SGI', 'ITG') ,
-    LV   =   ('LV-TSO-0001',),  ('Conexus',) ,
-    NL   =   ('NL-TSO-0001', 'UK-TSO-0004'),  ('GTS', 'BBL company') ,
-    PL   =   ('PL-TSO-0002', 'PL-TSO-0001'),  ('GAZ-SYSTEM', 'GAZ-SYSTEM (ISO)') ,
-    PT   =   ('PT-TSO-0001',),  ('REN - Gasodutos',) ,
-    RO   =   ('RO-TSO-0001',),  ('Transgaz',) ,
-    SI   =   ('SI-TSO-0001',),  ('Plinovodi',) ,
-    UA   =   ('UA-TSO-0001',),  ('Gas TSO UA',) ,
-    UK   =   ('UK-TSO-0001', 'UK-TSO-0002', 'IE-TSO-0001', 'UK-TSO-0003'),  ('National Grid Gas', 'Premier Transmission', 'GNI (UK)', 'Interconnector') ,
-    LU   =   ('LU-TSO-0001',),  ('Creos Luxembourg',) ,
-    HU   =   ('HU-TSO-0001',),  ('FGSZ',) ,
-    AT   =   ('AT-TSO-0001', 'AT-TSO-0003'),  ('Gas Connect Austria', 'TAG') ,
-    LT   =   ('LT-TSO-0001',),  ('Amber Grid',) ,
-    SK   =   ('SK-TSO-0001',),  ('eustream',) ,
-    FI   =   ('FI-TSO-0003',),  ('Gasgrid Finland',) ,
-    CH   =   ('AL-TSO-0001',),  ('TAP',) ,
-    DK   =   ('DK-TSO-0001'),  ('Energinet',) 
+    CH = ("AL-TSO-0001","CH-TSO-0001","CH-TSO-0002","CH-TSO-0003","CH-TSO-0004",),   ("TAP AG","Swissgas","FluxSwiss","South Stream","NABUCCO",)
+    AL = ("AL-TSO-0002","AL-TSO-0003","AL-TSO-0004","AL-TSO-0005",),   ("TEE","MIE Albania & Albgaz","Albgaz","ALKOGAP",)
+    AT = ("AT-TSO-0001","AT-TSO-0002","AT-TSO-0003","AT-TSO-0004","AT-TSO-0005","AT-TSO-0006","AT-TSO-0007","AT-TSO-0008","AT-TSO-0009",),   ("GCA","BOG","TAG GmbH","TIGAS","OÖ. Ferngas","Salzburg","KELAG Netz","EVA","South Stream AT",)
+    AZ = ("AZ-TSO-0001","AZ-TSO-0002","AZ-TSO-0003",),   ("BP Exp (Shah Deniz)","W-Stream Caspian","SMO",)
+    BA = ("BA-TSO-0001",),   ("BH Gas",)
+    BE = ("BE-TSO-0001","BE-TSO-0002",),   ("Fluxys Belgium","Unknown",)
+    BG = ("BG-TSO-0001","BG-TSO-0002","BG-TSO-0003","BG-TSO-0004",),   ("Bulgartransgaz","IBS Future Operator","ICGB","South Stream BG",)
+    BY = ("BY-TSO-0001",),   ("Gazprom Belarus",)
+    CY = ("CY-TSO-0001",),   ("Cy",)
+    CZ = ("CZ-TSO-0001",),   ("N4G",)
+    DE = ("DE-TSO-0001","DE-TSO-0002","DE-TSO-0003","DE-TSO-0004","DE-TSO-0005","DE-TSO-0006","DE-TSO-0007","DE-TSO-0008","DE-TSO-0009","DE-TSO-0010","DE-TSO-0011","DE-TSO-0012","DE-TSO-0013","DE-TSO-0014","DE-TSO-0015","DE-TSO-0016","DE-TSO-0017","DE-TSO-0018","DE-TSO-0019","DE-TSO-0020","DE-TSO-0021","DE-TSO-0022",),   ("GASCADE","Thyssengas","ONTRAS Gastransport GmbH","GRTD","GUD","GTG","Fluxys TENP GmbH","Nowega","OGE","Bayernets","Tauerngasleitung","OPAL NEL Transport","JGT (TSO)","TNBW","GOAL","OPAL","NEL","Fluxys Deutschland","Fluxys TENP & OGE","LBTG","GRTD und OGE","Germany DCS",)
+    DK = ("DK-TSO-0001","DK-TSO-0002",),   ("Energinet","DONG",)
+    EE = ("EE-TSO-0001","EE-TSO-0002",),   ("Elering","Balti Gaas",)
+    ES = ("ES-TSO-0001","ES-TSO-0002","ES-TSO-0003","ES-TSO-0004","ES-TSO-0005","ES-TSO-0006","ES-TSO-0007","ES-TSO-0008","ES-TSO-0009","ES-TSO-0010",),   ("Medgaz","Reganosa (LSO)","Saggas","ETN","BBG","Enagas","GNA","EMPL","Reganosa","Enagas (LSO)",)
+    FI = ("FI-TSO-0001","FI-TSO-0002","FI-TSO-0003",),   ("Gasum","Baltic Connector Oy","Gasgrid Finland",)
+    FR = ("FR-TSO-0001","FR-TSO-0002","FR-TSO-0003",),   ("Gaz de Normandie","TERÉGA","GRTgaz",)
+    GR = ("GR-TSO-0001","GR-TSO-0002","GR-TSO-0003","GR-TSO-0004","GR-TSO-0005",),   ("DESFA S.A.","IGI Poseidon","Future Greek Trans-M","HRADF","East Med Operator",)
+    HR = ("HR-TSO-0001",),   ("Plinacro",)
+    HU = ("HU-TSO-0001","HU-TSO-0002",),   ("FGSZ","MGT",)
+    UK = ("IE-TSO-0001","UK-TSO-0001","UK-TSO-0002","UK-TSO-0003","UK-TSO-0005","UK-TSO-0006","UK-TSO-0007",),   ("GNI (UK)","National Grid","PTL","IUK","Belfast Gas","BGE (NI)","White Stream",)
+    IE = ("IE-TSO-0002",),   ("GNI",)
+    IT = ("IT-TSO-0001","IT-TSO-0002","IT-TSO-0003","IT-TSO-0004","IT-TSO-0005",),   ("SNAM RETE GAS","Galsi","S.G.I. S.p.A.","Infrastrutture Trasporto Gas","ENURA",)
+    LT = ("LT-TSO-0001",),   ("Amber Grid",)
+    LU = ("LU-TSO-0001",),   ("CREOS",)
+    LV = ("LV-TSO-0001",),   ("Conexus Baltic Grid JSC",)
+    LY = ("LY-TSO-0001",),   ("Green Stream",)
+    MD = ("MD-TSO-0001","RO-TSO-0004",),   ("Moldovatransgaz LLC","Vestmoldtransgaz",)
+    MK = ("MK-TSO-0001","MK-TSO-0002","MK-TSO-0003",),   ("Makpetrol","GA-MA - Skopje","MER",)
+    MT = ("MT-TSO-0001","MT-TSO-0002","MT-TSO-0003",),   ("MEW Malta","Melita TransGas","ICM",)
+    NL = ("NL-TSO-0001","UK-TSO-0004",),   ("GTS","BBL",)
+    NO = ("NO-TSO-0001",),   ("Gassco",)
+    PL = ("PL-TSO-0001","PL-TSO-0002",),   ("GAZ-SYSTEM (ISO)","GAZ-SYSTEM",)
+    PT = ("PT-TSO-0001","PT-TSO-0002",),   ("REN","REN Atlantico",)
+    RO = ("RO-TSO-0001","RO-TSO-0002","RO-TSO-0003",),   ("Transgaz","GdF Energy Romania","AGRI",)
+    RS = ("RS-TSO-0001","RS-TSO-0002","RS-TSO-0003",),   ("Srbijagas","Kosovo TSO","GASTRANS",)
+    RU = ("RU-TSO-0001","RU-TSO-0002","RU-TSO-0003","RU-TSO-0004",),   ("Gazprom","Nord Stream","Nord Stream 2","Chornomornaftogaz",)
+    SE = ("SE-TSO-0001","SE-TSO-0002",),   ("Swedegas","Svenska Kraftnat",)
+    SI = ("SI-TSO-0001",),   ("Plinovodi",)
+    SK = ("SK-TSO-0001","SK-TSO-0002",),   ("Eustream","Eastring",)
+    TN = ("TN-TSO-0001",),   ("TMPC",)
+    TR = ("TR-TSO-0001","TR-TSO-0002","TR-TSO-0003","TR-TSO-0004",),   ("Botas","TANAP","Leviathan TSO","TAGTAS",)
+    UA = ("UA-TSO-0001",),   ("Gas TSO UA",)
 
 # TODO: Add label containing description
 class Indicator(enum.Enum):
@@ -305,36 +330,48 @@ DATASET_MAPPINGS = {
 
 # TODO: All countries must be represented in operational_aggregates, or this does NOT work
 REGIONS = {
-    'BE': 'NWE',
-    'NL': 'NWE',
-    'DE': 'NWE',
-    'FR': 'NWE',
-    'CH': 'CH/IT',
-    'AT': 'WE',
-    'CZ': 'CE',
-    'UK': 'UK',
-    'NO': 'NE',
-    'HU': 'CE',
-    'IT': 'CH/IT',
-    'ES': 'Iberia',
-    'SI': 'CE',
-    'RS': 'CE',
-    'PL': 'CE',
-    'ME': 'CE', # Montenegro
-    'DK': 'NE',
-    'RO': 'CE',
-    'LT': 'CE',
-    'BG': 'CE',
-    'SE': 'NE',
-    'LV': 'CE',
-    'IE': 'UK',
-    'BA': 'CE',
-    'FI': 'NE',
-    'MK': 'CE',
-    'PT': 'Iberia',
-    'GR': 'SE',
-    'MT': 'SE',
-    'RU' : 'EE',
+    "AL" : "Southern Europe",
+    "CH" : "Western Europe",
+    "AT" : "Western Europe",
+    "AZ" : "Western Asia",
+    "BA" : "Southern Europe",
+    "BE" : "Western Europe",
+    "BG" : "Eastern Europe",
+    "BY" : "Eastern Europe",
+    "CY" : "Western Asia",
+    "CZ" : "Eastern Europe",
+    "DE" : "Western Europe",
+    "DK" : "Northern Europe",
+    "EE" : "Northern Europe",
+    "ES" : "Southern Europe",
+    "FI" : "Northern Europe",
+    "FR" : "Western Europe",
+    "GR" : "Southern Europe",
+    "HR" : "Southern Europe",
+    "HU" : "Eastern Europe",
+    "IE" : "Northern Europe",
+    "UK" : "Western Europe",
+    "IT" : "Southern Europe",
+    "LT" : "Northern Europe",
+    "LU" : "Western Europe",
+    "LV" : "Northern Europe",
+    "LY" : "Northern Africa",
+    "MD" : "Eastern Europe",
+    "MK" : "Southern Europe",
+    "MT" : "Southern Europe",
+    "NL" : "Western Europe",
+    "NO" : "Northern Europe",
+    "PL" : "Eastern Europe",
+    "PT" : "Southern Europe",
+    "RO" : "Eastern Europe",
+    "RS" : "Southern Europe",
+    "RU" : "Eastern Europe",
+    "SE" : "Northern Europe",
+    "SI" : "Southern Europe",
+    "SK" : "Eastern Europe",
+    "TN" : "Northern Africa",
+    "TR" : "Western Asia",
+    "UA" : "Eastern Europe",
     'Undefined' : 'Undefined'
 }
 

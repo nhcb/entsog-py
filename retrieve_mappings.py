@@ -1,13 +1,14 @@
 from entsog import EntsogRawClient,EntsogPandasClient
 import json
 
+from entsog.parsers import parse_general
 import pandas as pd
 
 
 
 def get_operator_mappings():
     client = EntsogPandasClient()
-    operators = client.query_operators()
+    operators = client.query_operators(country_code= None)
     points = client.query_operator_point_directions()
     countries = operators.drop_duplicates(subset=['operator_country_key'])
 
@@ -71,6 +72,62 @@ def get_area():
 
         print(f"{country}   ={country},   {tuple(operatorKey)},  {tuple(operatorLabel)} ,")
 
+def check_new_operators():
+    client = EntsogRawClient()
+
+    json, url = client.query_operators(country_code= None)
+
+    data = parse_general(json)
+
+    result = {}
+    for index, item in data.iterrows():
+        country = item['operator_country_key']
+        # Only TSO's
+        if 'TSO' not in item['operator_key']:
+            continue
+
+        if country in result.keys():
+
+            result[country]['operators'].append(item['operator_key'])
+            result[country]['operator_labels'].append(item['operator_label'])
+
+        else:
+
+            result[country] = {
+                'operators' : [item['operator_key']],
+                'operator_labels' : [item['operator_label']],
+                'label' : item['operator_country_label']
+            }
+
+    # Print result
+
+    # Countries
+    for key,value in result.items():
+
+        print(f"""{key} = "{key}",   "{value['label']}" """)
+
+    # Enum area
+    for key, value in result.items():
+        parsed_operators = ','.join([f'"{o}"' for o in value['operators']])
+        parsed_operator_labels = ','.join([f'"{o}"' for o in value['operator_labels']])
+
+        print(f"""{key} = ({parsed_operators},),   ({parsed_operator_labels},)""")
+
+    regions = pd.read_csv("https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv")
+
+    # Regions
+    for key,value in result.items():
+
+        try:
+            region = str(regions[regions['alpha-2'] == key]['sub-region'].iloc[0])
+            print(f"""{key} : "{region}" """)
+        except Exception as e:
+            print(f"""{key} : "REGION" """)
+            next
         
 
-get_operator_mappings()
+
+
+
+#get_operator_mappings()
+check_new_operators()
