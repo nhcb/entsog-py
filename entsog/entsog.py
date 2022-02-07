@@ -118,7 +118,7 @@ class EntsogRawClient:
             raise e
         else:
             if response.headers.get('content-type', '') == 'application/xml':
-                if 'No matching data found' in response.text, response.url:
+                if 'No matching data found' in response.text:
                     raise NoMatchingDataError
             return response
 
