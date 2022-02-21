@@ -18,8 +18,8 @@ from bs4 import BeautifulSoup
 from entsog.exceptions import InvalidPSRTypeError, InvalidBusinessParameterError
 from .exceptions import NoMatchingDataError, PaginationError
 from .mappings import Area, NEIGHBOURS, lookup_area, lookup_country, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
-from .parsers import parse_aggregate_data, parse_general, parse_interconnections, parse_grouped_operational_aggregates
-from .decorators import month_limited, operator_limited, retry, paginated, year_limited, day_limited, week_limited
+from .parsers import *
+from .decorators import *
 
 
 __title__ = "Entsog-py"
@@ -95,7 +95,8 @@ class EntsogRawClient:
         params = urllib.parse.urlencode(params, safe = ',') # ENTSOG uses comma-seperated values
         
         response = self.session.get(url=url, params=params,
-                                    proxies=self.proxies, timeout=self.timeout)#,verify=False) # TODO: Important to remove as it raises security concerns. However due to weird SSL issues within NP, only dirty solution.
+                                    proxies=self.proxies, timeout=self.timeout)#,verify=False)
+
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
@@ -122,6 +123,62 @@ class EntsogRawClient:
                 if 'No matching data found' in response.text:
                     raise NoMatchingDataError
             return response
+
+
+    @retry
+    def _base_offset_request(self, endpoint: str, params: Dict) -> requests.Response:
+
+        """
+        Parameters
+        ----------
+        endpoint: str
+            endpoint to url to gather data, in format /<endpoint>
+        params : dict
+
+        Returns
+        -------
+        requests.Response
+        """
+        offsets = 100_000
+        offset = 0
+        responses_text = []
+        responses_url = []
+        url = URL + endpoint
+        base_params = {
+            'limit' : offsets,
+            'timeZone' : 'UCT'
+        }
+        params.update(base_params)
+        
+        while 1==1:
+            print(offset)
+            params['offset'] = offset
+            logging.debug(f'Performing request to {url} with params {params}')
+            print(f'Performing request to {url} with params {params}')
+            params_parsed = urllib.parse.urlencode(params, safe = ',') # ENTSOG uses comma-seperated values
+            response = self.session.get(url=url, params=params_parsed,
+                                        proxies=self.proxies, timeout=self.timeout)
+            offset += offsets
+            try:
+                response.raise_for_status()
+                responses_text.append(response.text)
+                responses_url.append(response.url)
+                
+            except requests.exceptions.HTTPError as e:
+                print("-----------------------------------------------------")
+                response_json = simplejson.loads(response.text)
+  
+                if 'error' in response_json.keys():
+                    error_text = response_json['error']['message']
+                    if 'Not Found' in error_text:
+                        raise NoMatchingDataError
+                raise e
+            else:
+                if response.headers.get('content-type', '') == 'application/xml':
+                    if 'Not Found' in response.text:
+                        raise NoMatchingDataError
+
+        return responses_text, responses_url
 
     @staticmethod
     def _datetime_to_str(dtm: pd.Timestamp) -> str:
@@ -705,7 +762,7 @@ class EntsogRawClient:
     "isArchived"
     """
     def query_urgent_market_messages(self,
-        balancing_zone : Union[BalancingZone, str]) -> str:
+        balancing_zone : Union[BalancingZone, str] = None) -> str:
     
         """
         Type: JSON
@@ -724,6 +781,7 @@ class EntsogRawClient:
         params = {
 
         }
+
         if balancing_zone is not None:
             balancing_zone = lookup_balancing_zone(balancing_zone)
             params['balancingZoneKey'] = balancing_zone.code
@@ -981,9 +1039,7 @@ class EntsogRawClient:
     "isArchived"
     """
 
-    def query_interruptions(self, start: pd.Timestamp, end: pd.Timestamp,
-        country_code: Union[Country, str],
-        period_type : str = 'day') -> str:
+    def query_interruptions(self) -> str:
     
         """
         Type: JSON
@@ -1001,19 +1057,10 @@ class EntsogRawClient:
         -------
         str
         """
-        params = {
-            'from' : self._datetime_to_str(start),
-            'to' : self._datetime_to_str(end),
-        }
-        if country_code is not None:
-            params['countryKey'] = lookup_country(country_code).code
+ 
+        response_text, response_url = self._base_offset_request(endpoint = '/interruptions')
 
-        if period_type is not None:
-            params['periodType'] = period_type
-        
-        response = self._base_request(endpoint = '/interruptions',params=params)
-
-        return response.text, response.url
+        return response_text, response_url
 
     """
     "auctionFrom",
@@ -1407,8 +1454,6 @@ class EntsogPandasClient(EntsogRawClient):
 
         return data    
 
-
-
     def query_operator_point_directions(self,
         country_code: Optional[Union[Country, str]] = None,
         has_data : int = 1) -> str:
@@ -1516,10 +1561,8 @@ class EntsogPandasClient(EntsogRawClient):
 
         return data   
 
-    @operator_limited
     def query_urgent_market_messages(self,
-        balancing_zone : Union[BalancingZone, str],
-        operator: List[str] = None) -> str:
+        balancing_zone : Union[BalancingZone, str] = None) -> str:
     
         """
         Type: JSON
@@ -1528,18 +1571,17 @@ class EntsogPandasClient(EntsogRawClient):
         Parameters
         ----------
 
-        country Union[Area, str]
-        limit: int
-
         Returns
         -------
         str
         """
-        balancing_zone = lookup_balancing_zone(balancing_zone)
+        if balancing_zone:
+            balancing_zone = lookup_balancing_zone(balancing_zone)
 
         json, url = super(EntsogPandasClient, self).query_urgent_market_messages(
-            balancing_zone = balancing_zone , operator = operator
+            balancing_zone = balancing_zone
         )
+
         data = parse_general(json)
         data['url'] = url
 
@@ -1547,7 +1589,8 @@ class EntsogPandasClient(EntsogRawClient):
 
     @week_limited
     def query_tariffs(self, start: pd.Timestamp, end: pd.Timestamp,
-        country_code: Union[Country, str]) -> str:
+        country_code: Union[Country, str],
+        verbose: bool = True) -> str:
     
         """
         Type: JSON
@@ -1569,14 +1612,15 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_tariffs(
             start = start, end = end, country_code = country_code
         )
-        data = parse_general(json)
+        data = parse_tariffs(json, verbose)
         data['url'] = url
 
         return data     
 
     @week_limited
     def query_tariffs_sim(self, start: pd.Timestamp, end: pd.Timestamp,
-        country_code: Union[Country, str]) -> str:
+        country_code: Union[Country, str],
+        verbose: bool = True) -> str:
     
         """
         Type: JSON
@@ -1598,7 +1642,7 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_tariffs_sim(
             start = start, end = end, country_code = country_code
         )
-        data = parse_general(json)
+        data = parse_tariffs_sim(json, verbose)
         data['url'] = url
 
         return data   
@@ -1608,8 +1652,7 @@ class EntsogPandasClient(EntsogRawClient):
         country_code : Union[Country, str] = None,
         balancing_zone : Union[BalancingZone, str] = None,
         period_type : str = 'day',
-        group_type : str = None,
-        entry_exit : bool = False) -> str:
+        verbose: bool = True) -> str:
         """
         Type: JSON
         Latest nominations, allocations, physical flow
@@ -1625,8 +1668,6 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        if self._interconnections is None:
-            self._interconnections = self.query_interconnections()
 
 
         if country_code is not None:
@@ -1639,13 +1680,12 @@ class EntsogPandasClient(EntsogRawClient):
             start = start, end = end, country_code = country_code, balancing_zone = balancing_zone , period_type = period_type
         )
 
-        data = parse_aggregate_data(json_text = json, interconnections= self._interconnections, group_type= group_type, entry_exit = entry_exit)
+        data = parse_aggregate_data(json, verbose)
+        data['url'] = url
 
         return data
 
-    @week_limited
-    def query_interruptions(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Country, str]) -> str:
+    def query_interruptions(self, verbose: bool = True) -> str:
     
         """
         Type: JSON
@@ -1662,18 +1702,23 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        area = lookup_country(country_code)
-        json, url = super(EntsogPandasClient, self).query_interruptions(
-            start = start, end = end, country_code = area
-        )
-        data = parse_general(json)
-        data['url'] = url
 
-        return data
+        json_list, url_list = super(EntsogPandasClient, self).query_interruptions()
+        frames = []
+
+        for n_offset in range(1,len(json_list)):
+            json = json_list[n_offset]
+            url = url_list[n_offset]
+            frame = parse_interruptions(json, verbose)
+            frame['url'] = url
+            frames.append(frame)
+
+        return pd.DataFrame(frames)
 
 
     def query_CMP_auction_premiums(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Country, str]) -> str:
+    country_code: Union[Country, str],
+    verbose: bool = True) -> str:
     
         """
         Type: JSON
@@ -1694,13 +1739,14 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_CMP_auction_premiums(
             start = start, end = end, country_code = area
         )
-        data = parse_general(json)
+        data = parse_CMP_auction_premiums(json, verbose)
         data['url'] = url
 
         return data
 
     def query_CMP_unavailable_firm_capacity(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Country, str]) -> str:
+    country_code: Union[Country, str],
+    verbose: bool = True) -> str:
     
         """
         Type: JSON
@@ -1721,14 +1767,15 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_CMP_unavailable_firm_capacity(
             start = start, end = end, country_code = area
         )
-        data = parse_general(json)
+        data = parse_CMP_unavailable_firm_capacity(json, verbose)
         data['url'] = url
 
         return data
 
     @week_limited
     def query_CMP_unsuccesful_requests(self, start: pd.Timestamp, end: pd.Timestamp,
-    country_code: Union[Country, str]) -> str:
+    country_code: Union[Country, str],
+    verbose: bool = True) -> str:
 
         """
         Type: JSON
@@ -1749,7 +1796,7 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_CMP_unsuccesful_requests(
             start = start, end = end, country_code = area
         )
-        data = parse_general(json)
+        data = parse_CMP_unsuccesful_requests(json, verbose)
         data['url'] = url
 
         return data
@@ -1759,9 +1806,11 @@ class EntsogPandasClient(EntsogRawClient):
         start: pd.Timestamp, 
         end: pd.Timestamp,
         period_type: str = 'day',
-        indicators : Union[List[Indicator],List[str]] = None) -> str:
+        indicators : Union[List[Indicator],List[str]] = None,
+        verbose: bool = True) -> str:
         
         # Dangerous yet faster function, I noticed it can at least get two indicators based on both daily and hourly period type...
+        # For daily, it will take about 1.5m to obtain a month of data.
 
         json, url = super(EntsogPandasClient, self).query_operational_data(
             start = start, 
@@ -1770,8 +1819,10 @@ class EntsogPandasClient(EntsogRawClient):
             indicators = indicators
         )
 
-        data = parse_general(json)
+        data = parse_operational_data(json, verbose)
+
         data['url'] = url
+
         return data
 
         

@@ -34,7 +34,7 @@ def get_area():
 client = EntsogPandasClient()
 
 start = pd.Timestamp(2021, 1, 1)
-end = pd.Timestamp(2022, 1, 18)
+end = pd.Timestamp(2021,1, 6)
 country_code = 'DE'
 # data = client.query_interruptions(country_code= 'DE',start = start, end = end, limit = -1)
 
@@ -85,13 +85,19 @@ balancing_zone = 'DE_GASPOOL'
 
 import time
 tik = time.time()
-data = client.get_grouped_operational_aggregates(start = start, end = end, indicators = ['physical_flow'], country_code= country_code, period_type= 'day')
 
-for group in data:
-    data[group].to_csv(f'data/get_operational_aggregates_{country_code}_{group}.csv',sep = ';')
+data = client.query_interruptions(
+    start = start,
+    end = end,
+    country_code= country_code,
+    verbose = False
+)
+
+
 
 tok = time.time()
 
+print(data)
 print(f'Script took: {(tok-tik)/60} minutes')
 
 

@@ -53,7 +53,6 @@ def _lookup(s, object):
     return _object
 
 
-
 class BalancingZone(enum.Enum):
     '''
     ENUM containing 3 things about a BalancingZone: Key, Label, Manager

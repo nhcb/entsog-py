@@ -27,8 +27,176 @@ def _extract_data(json_text):
 def parse_general(json_text):
     df = _extract_data(json_text)
     df.columns = [to_snake_case(col) for col in df.columns]
-
+    print(df.columns)
     return df
+
+
+def parse_operational_data(json_text: str, verbose: bool):
+    data = parse_general(json_text)
+    columns = ['point_key','point_label','period_from','period_to','period_type','unit','indicator','direction_key','value','item_remarks','general_remarks']
+    if verbose:
+        return data
+    else:
+        return data[columns]
+
+def parse_CMP_unsuccesful_requests(json_text: str, verbose: bool):
+    data = parse_general(json_text)
+    columns = ['point_key','point_label','capacity_from','capacity_to','unit','direction_key',
+    'requested_volume',
+    'allocated_volume',
+    'unallocated_volume',
+    'last_update_date_time',
+    'occurence_count',
+    'item_remarks','general_remarks']
+
+
+
+    if verbose:
+        return data
+    else:
+        return data[columns]
+
+def parse_CMP_unavailable_firm_capacity(json_text: str, verbose: bool):
+
+    data = parse_general(json_text)
+    columns = ['point_key','point_label','period_from','period_to','unit','allocation_process','direction_key',
+    'requested_volume',
+    'allocated_volume',
+    'unallocated_volume',
+    'last_update_date_time',
+    'item_remarks','general_remarks']
+
+
+
+    if verbose:
+        return data
+    else:
+        return data[columns]
+
+def parse_CMP_auction_premiums(json_text: str, verbose: bool):
+
+    data = parse_general(json_text)
+    columns = ['point_key','point_label','auction_from','auction_to','capacity_from','capacity_to','unit','booking_platform_key','booking_platform_url','direction_key',
+    'auction_premium',
+    'cleared_price',
+    'reserve_price',
+    'last_update_date_time',
+    'item_remarks','general_remarks']
+
+
+
+    if verbose:
+        return data
+    else:
+        return data[columns]
+
+
+def parse_interruptions(json_text: str, verbose: bool):
+
+    data = parse_general(json_text)
+    columns = ['point_key','point_label','period_from','period_to','direction_key','unit', 'interruption_type', 'capacity_type', 'capacity_commercial_type',
+    'value',
+    'restoration_information',
+    'last_update_date_time',
+    'item_remarks','general_remarks']
+
+
+    if verbose:
+        return data
+    else:
+        return data[columns]
+
+
+def parse_tariffs_sim(json_text: str, verbose: bool):
+
+    data = parse_general(json_text)
+    
+    renamed_columns = {
+            'product_simulation_cost_in_euro' : 'product_simulation_cost_in_euro'
+        }
+
+    data = data.rename(
+        columns = renamed_columns
+    )
+
+    columns = ['point_key','point_label','period_from','period_to','direction_key','connection', 'tariff_capacity_type', 'tariff_capacity_unit', 'tariff_capacity_remarks',
+    'product_type',
+    'operator_currency',
+    'product_simulation_cost_in_local_currency',
+    'product_simulation_cost_in_euro',
+    'product_simulation_cost_remarks',
+    'exchange_rate_reference_date',
+    'last_update_date_time',
+    'remarks',
+    'item_remarks',
+    'general_remarks']
+
+    if verbose:
+        return data
+    else:
+        return data[columns]
+
+
+
+def parse_tariffs(json_text: str, verbose: bool):
+    # https://transparency.entsog.eu/api/v1/tariffsfulls
+
+    data = parse_general(json_text)
+
+    renamed_columns = {
+            'applicable_tariff_per_local_currency_k_wh_d_value' : 'applicable_tariff_per_local_currency_kwh_d_value',
+            'applicable_tariff_per_local_currency_k_wh_d_unit' :'applicable_tariff_per_local_currency_kwh_d_unit',
+            'applicable_tariff_per_local_currency_k_wh_h_value' :'applicable_tariff_per_local_currency_kwh_h_value',
+            'applicable_tariff_per_local_currency_k_wh_h_unit' :'applicable_tariff_per_local_currency_kwh_h_unit',
+            'applicable_tariff_per_eurk_wh_d_unit' :'applicable_tariff_per_eur_kwh_d_unit',
+            'applicable_tariff_per_eurk_wh_d_value' :'applicable_tariff_per_eur_kwh_d_value',
+            'applicable_tariff_per_eurk_wh_h_unit' :'applicable_tariff_per_eur_kwh_h_unit',
+            'applicable_tariff_per_eurk_wh_h_value' :'applicable_tariff_per_eur_kwh_h_value',
+            'applicable_commodity_tariff_local_currency' :'applicable_commodity_tariff_local_currency'
+        }
+
+    data = data.rename(
+        columns = renamed_columns
+    )  
+    print(data.columns)
+    columns = [
+    'point_key','point_label',
+    'period_from','period_to','direction_key',
+    'product_period_from','product_period_to',
+    'product_type','connection', 
+    'multiplier', 'multiplier_factor_remarks',
+    'discount_for_interruptible_capacity_value','discount_for_interruptible_capacity_remarks',
+    'seasonal_factor','seasonal_factor_remarks',
+    'applicable_tariff_per_local_currency_kwh_d_value',
+    'applicable_tariff_per_local_currency_kwh_d_unit',
+    'applicable_tariff_per_local_currency_kwh_h_value',
+    'applicable_tariff_per_local_currency_kwh_h_unit',
+
+    'applicable_tariff_per_eur_kwh_d_unit',
+    'applicable_tariff_per_eur_kwh_d_value',
+    'applicable_tariff_per_eur_kwh_h_unit',
+    'applicable_tariff_per_eur_kwh_h_value',
+
+    'applicable_tariff_in_common_unit_value',
+    'applicable_tariff_in_common_unit_unit',
+
+    'applicable_commodity_tariff_local_currency',
+    'applicable_commodity_tariff_euro',
+    'applicable_commodity_tariff_remarks',
+
+    'exchange_rate_reference_date',
+
+    'last_update_date_time',
+    'remarks',
+    'item_remarks',
+    'general_remarks']
+
+    if verbose:
+        data = data
+    else:
+        data =  data[columns]
+
+    return data
 
 
 def parse_interconnections(json_text):
@@ -41,7 +209,32 @@ def parse_interconnections(json_text):
 
     return df
 
+
 def parse_aggregate_data(
+    json_text,
+    verbose: bool
+    ):
+
+    data = parse_general(json_text)
+
+    data['adjacent_bz_key'] = data['adjacent_systems_key'].str.extract(r"^Transmission(.*)$").fillna('-----------').replace(r'^\s*$','-----------', regex = True)
+    columns = [
+        'country_key','country_label',
+        'bz_key', 'bz_short', 'bz_long',
+        'operator_key','operator_label',
+        'adjacent_systems_key','adjacent_systems_label','adjacent_bz_key',
+        'period_from','period_to','period_type','direction_key','indicator',
+        'unit','value']
+
+
+    if verbose:
+        return data
+    else:
+        return data[columns]
+
+
+# Legacy stuff
+def parse_aggregate_data_complex(
     json_text,
     interconnections : pd.DataFrame,
     group_type : str = None,
