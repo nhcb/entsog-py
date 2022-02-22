@@ -154,7 +154,6 @@ class EntsogRawClient:
             print(offset)
             params['offset'] = offset
             logging.debug(f'Performing request to {url} with params {params}')
-            print(f'Performing request to {url} with params {params}')
             params_parsed = urllib.parse.urlencode(params, safe = ',') # ENTSOG uses comma-seperated values
             response = self.session.get(url=url, params=params_parsed,
                                         proxies=self.proxies, timeout=self.timeout)
@@ -1590,7 +1589,8 @@ class EntsogPandasClient(EntsogRawClient):
     @week_limited
     def query_tariffs(self, start: pd.Timestamp, end: pd.Timestamp,
         country_code: Union[Country, str],
-        verbose: bool = True) -> str:
+        verbose: bool = True,
+        melt: bool = False) -> str:
     
         """
         Type: JSON
@@ -1612,7 +1612,7 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_tariffs(
             start = start, end = end, country_code = country_code
         )
-        data = parse_tariffs(json, verbose)
+        data = parse_tariffs(json, verbose = verbose, melt = melt)
         data['url'] = url
 
         return data     
@@ -1620,7 +1620,8 @@ class EntsogPandasClient(EntsogRawClient):
     @week_limited
     def query_tariffs_sim(self, start: pd.Timestamp, end: pd.Timestamp,
         country_code: Union[Country, str],
-        verbose: bool = True) -> str:
+        verbose: bool = True,
+        melt: bool = False) -> str:
     
         """
         Type: JSON
@@ -1642,7 +1643,7 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_tariffs_sim(
             start = start, end = end, country_code = country_code
         )
-        data = parse_tariffs_sim(json, verbose)
+        data = parse_tariffs_sim(json, verbose = verbose, melt = melt)
         data['url'] = url
 
         return data   
@@ -1809,6 +1810,8 @@ class EntsogPandasClient(EntsogRawClient):
         indicators : Union[List[Indicator],List[str]] = None,
         verbose: bool = True) -> str:
         
+        if len(indicators) > 2:
+            raise NotImplementedError("Specify less than two indicators")
         # Dangerous yet faster function, I noticed it can at least get two indicators based on both daily and hourly period type...
         # For daily, it will take about 1.5m to obtain a month of data.
 

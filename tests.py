@@ -86,11 +86,12 @@ balancing_zone = 'DE_GASPOOL'
 import time
 tik = time.time()
 
-data = client.query_interruptions(
+data = client.query_tariffs_sim(
     start = start,
     end = end,
     country_code= country_code,
-    verbose = False
+    verbose = False,
+    melt = True
 )
 
 

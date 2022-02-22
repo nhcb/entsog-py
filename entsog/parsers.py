@@ -1,3 +1,4 @@
+from ast import boolop
 from cmath import nan
 import sys
 import zipfile
@@ -27,13 +28,17 @@ def _extract_data(json_text):
 def parse_general(json_text):
     df = _extract_data(json_text)
     df.columns = [to_snake_case(col) for col in df.columns]
-    print(df.columns)
     return df
 
 
 def parse_operational_data(json_text: str, verbose: bool):
     data = parse_general(json_text)
-    columns = ['point_key','point_label','period_from','period_to','period_type','unit','indicator','direction_key','value','item_remarks','general_remarks']
+    columns = ['point_key','point_label','period_from','period_to','period_type','unit','indicator','direction_key','flow_status','value',
+    'interruption_type',
+    'restoration_information',
+    'capacity_type',
+    'last_update_date_time'
+    'item_remarks','general_remarks']
     if verbose:
         return data
     else:
@@ -106,8 +111,8 @@ def parse_interruptions(json_text: str, verbose: bool):
     else:
         return data[columns]
 
-
-def parse_tariffs_sim(json_text: str, verbose: bool):
+# TODO: implement melt...
+def parse_tariffs_sim(json_text: str, verbose: bool, melt: bool):
 
     data = parse_general(json_text)
     
@@ -119,7 +124,8 @@ def parse_tariffs_sim(json_text: str, verbose: bool):
         columns = renamed_columns
     )
 
-    columns = ['point_key','point_label','period_from','period_to','direction_key','connection', 'tariff_capacity_type', 'tariff_capacity_unit', 'tariff_capacity_remarks',
+    columns = ['point_key','point_label','period_from','period_to','direction_key','connection',
+    'tariff_capacity_type', 'tariff_capacity_unit', 'tariff_capacity_remarks',
     'product_type',
     'operator_currency',
     'product_simulation_cost_in_local_currency',
@@ -138,7 +144,7 @@ def parse_tariffs_sim(json_text: str, verbose: bool):
 
 
 
-def parse_tariffs(json_text: str, verbose: bool):
+def parse_tariffs(json_text: str, verbose: bool, melt: bool):
     # https://transparency.entsog.eu/api/v1/tariffsfulls
 
     data = parse_general(json_text)
@@ -158,7 +164,7 @@ def parse_tariffs(json_text: str, verbose: bool):
     data = data.rename(
         columns = renamed_columns
     )  
-    print(data.columns)
+    
     columns = [
     'point_key','point_label',
     'period_from','period_to','direction_key',
@@ -167,6 +173,7 @@ def parse_tariffs(json_text: str, verbose: bool):
     'multiplier', 'multiplier_factor_remarks',
     'discount_for_interruptible_capacity_value','discount_for_interruptible_capacity_remarks',
     'seasonal_factor','seasonal_factor_remarks',
+    'operator_currency',
     'applicable_tariff_per_local_currency_kwh_d_value',
     'applicable_tariff_per_local_currency_kwh_d_unit',
     'applicable_tariff_per_local_currency_kwh_h_value',
@@ -191,12 +198,66 @@ def parse_tariffs(json_text: str, verbose: bool):
     'item_remarks',
     'general_remarks']
 
+
     if verbose:
-        data = data
+        columns = data.columns # Pick all
+        data = data[columns]
     else:
         data =  data[columns]
 
-    return data
+
+    if melt:
+        melt_columns_value = [
+        "applicable_tariff_per_local_currency_kwh_d_value",
+        "applicable_tariff_per_local_currency_kwh_h_value",
+        "applicable_tariff_per_eur_kwh_h_value",
+        "applicable_tariff_per_eur_kwh_d_value",
+        "applicable_tariff_in_common_unit_value",
+        ]
+
+        melt_columns_unit = [
+        "applicable_tariff_per_local_currency_kwh_d_unit",
+        "applicable_tariff_per_local_currency_kwh_h_unit",
+        "applicable_tariff_per_eur_kwh_h_unit",
+        "applicable_tariff_per_eur_kwh_d_unit",
+        "applicable_tariff_in_common_unit_unit",
+        ]
+
+        id_columns = list(set(columns) - set(melt_columns_unit) - set(melt_columns_value))
+
+        data_value = pd.melt(
+            data,
+            id_vars = id_columns,
+            value_vars = melt_columns_value,
+            var_name = 'variable',
+            value_name = 'value'
+        )
+
+        data_value['variable'] = data_value["variable"].str.replace("_value$", "")
+        data_unit = pd.melt(
+            data,
+            id_vars = id_columns,
+            value_vars = melt_columns_unit,
+            var_name = 'variable',
+            value_name = 'code'
+        )
+        data_unit['variable'] = data_unit["variable"].str.replace("_unit$", "")
+
+        merge_columns = id_columns.append('variable')
+        
+        data_pivot = data_value.merge(data_unit, on = merge_columns)
+
+        data_pivot['variable'] = data_pivot['variable'].str.extract(r'(local_currency|eur|common_unit)')
+        data_pivot['currency'] = data_pivot['code'].str.extract(r'^(.*?)\/') # ^(.*?)\/ LINE START
+        data_pivot['unit'] = data_pivot['code'].str.extract(r'\((.*?)\)') # \((.*?)\) UNIT IN MIDDLE BETWEEN BRACKETS ()
+        data_pivot['product_code'] = data_pivot['code'].str.extract(r'\)\/(.*?)$') # \)\/(.*?)$ Product after unit       
+        
+        
+        # Regex: applicable_tariff_(.*?)(_unit|_value)
+
+        return data_pivot
+    else:
+        return data
 
 
 def parse_interconnections(json_text):

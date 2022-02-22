@@ -2,6 +2,7 @@ import pandas as pd
 from dateutil import rrule
 from itertools import tee
 import re
+from unidecode import unidecode
 
 from typing import List
 
@@ -117,18 +118,19 @@ def pairwise(iterable):
     next(b, None)
     return zip(a, b)
 
-def to_snake_case(name : str) -> str:
-    """Camel case to snake case
-
+def to_snake_case(string : str) -> str:
+    """Converts any string to snake case
     Parameters
     ----------
     name : str
-
     Returns
     -------
     str
     """
-    regex = re.compile('((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))')
-    name = regex.sub(r'_\1', name).lower()
-
-    return name
+    string = unidecode(string)
+    string = re.sub('[^A-Za-z0-0 _]+', '_', string)
+    string = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', string)
+    string = re.sub('([a-z0-9])([A-Z])', r'\1_\2', string)
+    string = re.sub('_+','_', string.replace(' ', '_'))
+    string = string.lower().replace('m_wh','mwh').lstrip('_').rstrip('_')
+    return string
