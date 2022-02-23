@@ -16,7 +16,7 @@ from typing import List
 from bs4 import BeautifulSoup
 
 from entsog.exceptions import InvalidPSRTypeError, InvalidBusinessParameterError
-from .exceptions import NoMatchingDataError, PaginationError
+from .exceptions import NoMatchingDataError, PaginationError, UnauthorizedError
 from .mappings import Area, NEIGHBOURS, lookup_area, lookup_country, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
 from .parsers import *
 from .decorators import *
@@ -100,16 +100,14 @@ class EntsogRawClient:
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
-            soup = BeautifulSoup(response.text, response.url, 'html.parser')
+            
+            soup = BeautifulSoup(response.text, 'html.parser')
             text = soup.find_all('text')
             if len(text):
                 error_text = soup.find('text').text
                 if 'No matching data found' in error_text:
                     raise NoMatchingDataError
-                elif "check you request against dependency tables" in error_text:
-                    raise InvalidBusinessParameterError
-                elif "is not valid for this area" in error_text:
-                    raise InvalidPSRTypeError
+
                 elif 'amount of requested data exceeds allowed limit' in error_text:
                     requested = error_text.split(' ')[-2]
                     allowed = error_text.split(' ')[-5]
@@ -122,6 +120,9 @@ class EntsogRawClient:
             if response.headers.get('content-type', '') == 'application/xml':
                 if 'No matching data found' in response.text:
                     raise NoMatchingDataError
+                if response.status_code == 401:
+                    raise UnauthorizedError
+
             return response
 
 

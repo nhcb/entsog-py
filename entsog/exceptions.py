@@ -12,3 +12,6 @@ class InvalidPSRTypeError(Exception):
 
 class InvalidBusinessParameterError(Exception):
     pass
+
+class UnauthorizedError(Exception):
+    pass

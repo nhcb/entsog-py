@@ -37,7 +37,7 @@ def parse_operational_data(json_text: str, verbose: bool):
     'interruption_type',
     'restoration_information',
     'capacity_type',
-    'last_update_date_time'
+    'last_update_date_time',
     'item_remarks','general_remarks']
     if verbose:
         return data
