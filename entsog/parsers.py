@@ -34,6 +34,7 @@ def parse_general(json_text):
 def parse_operational_data(json_text: str, verbose: bool):
     data = parse_general(json_text)
     columns = ['point_key','point_label','period_from','period_to','period_type','unit','indicator','direction_key','flow_status','value',
+    'tso_eic_code','tso_item_identifier',
     'interruption_type',
     'restoration_information',
     'capacity_type',

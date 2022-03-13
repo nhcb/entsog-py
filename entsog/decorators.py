@@ -6,6 +6,8 @@ from functools import wraps
 from .exceptions import NoMatchingDataError, PaginationError
 import pandas as pd
 import logging
+import time
+
 
 from .misc import year_blocks, day_blocks, month_blocks, week_blocks
 
@@ -125,6 +127,8 @@ def day_limited(func):
             raise NoMatchingDataError
 
         df = pd.concat(frames)
+
+        time.sleep(0.25)
         return df
 
     return day_wrapper

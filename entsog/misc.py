@@ -128,7 +128,7 @@ def to_snake_case(string : str) -> str:
     str
     """
     string = unidecode(string)
-    string = re.sub('[^A-Za-z0-0 _]+', '_', string)
+    string = re.sub('[^A-Za-z0-9 _]+', '_', string)
     string = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', string)
     string = re.sub('([a-z0-9])([A-Z])', r'\1_\2', string)
     string = re.sub('_+','_', string.replace(' ', '_'))
