@@ -8,7 +8,9 @@ Documentation of the data (user manual) found on https://www.entsog.eu/sites/def
 Heavily inspired upon (and forked from) https://github.com/EnergieID/entsoe-py 
 
 ## Installation
-`python3 -m pip install entsog-py`
+```
+python3 -m pip install entsog-py
+```
 
 ## Usage
 The package comes with 2 clients:

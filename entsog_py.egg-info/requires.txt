@@ -1,5 +1,5 @@
 requests
 pandas
-numpy
-python-dateutil
-beautifulsoup4
+bs4
+unidecode
+simplejson

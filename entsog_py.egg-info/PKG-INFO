@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: entsog-py
-Version: 0.0.1
+Version: 0.0.5
 Summary: A python API wrapper for transparency.entsog.eu
 Home-page: https://github.com/nhcb/entsog-py
 Author: Nicky Sonnemans
@@ -27,8 +27,9 @@ Documentation of the data (user manual) found on https://www.entsog.eu/sites/def
 Heavily inspired upon (and forked from) https://github.com/EnergieID/entsoe-py 
 
 ## Installation
-DOES NOT WORK (YET)
-`python3 -m pip install entsog-py`
+```
+python3 -m pip install entsog-py
+```
 
 ## Usage
 The package comes with 2 clients:

@@ -1,0 +1,5 @@
+include *.md
+include *.py
+include *.txt
+recursive-include dist *.gz
+recursive-include entsog *.pyc
