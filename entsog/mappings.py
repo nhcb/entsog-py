@@ -316,8 +316,6 @@ class Indicator(enum.Enum):
     uioli_available_st = "Available through UIOLI short-term"
 
 
-
-
 DATASET_MAPPINGS = {
     '1': 'Operators and Operational data',
     '2': 'Points and CMP Unsuccessful Request',
@@ -329,7 +327,7 @@ DATASET_MAPPINGS = {
 
 # TODO: All countries must be represented in operational_aggregates, or this does NOT work
 REGIONS = {
-    "AL" : "Southern Europe",
+    "AL" : "Northern Africa",
     "CH" : "Western Europe",
     "AT" : "Western Europe",
     "AZ" : "Western Asia",
@@ -372,60 +370,4 @@ REGIONS = {
     "TR" : "Western Asia",
     "UA" : "Eastern Europe",
     'Undefined' : 'Undefined'
-}
-
-
-
-# neighbouring bidding zones that have cross_border flows
-NEIGHBOURS = {
-    'BE': ['NL', 'DE_AT_LU', 'FR', 'GB', 'DE_LU'],
-    'NL': ['BE', 'DE_AT_LU', 'DE_LU', 'GB', 'NO_2', 'DK_1'],
-    'DE_AT_LU': ['BE', 'CH', 'CZ', 'DK_1', 'DK_2', 'FR', 'IT_NORD', 'IT_NORD_AT', 'NL', 'PL', 'SE_4', 'SI'],
-    'FR': ['BE', 'CH', 'DE_AT_LU', 'DE_LU', 'ES', 'GB', 'IT_NORD', 'IT_NORD_FR'],
-    'CH': ['AT', 'DE_AT_LU', 'DE_LU', 'FR', 'IT_NORD', 'IT_NORD_CH'],
-    'AT': ['CH', 'CZ', 'DE_LU', 'HU', 'IT_NORD', 'SI'],
-    'CZ': ['AT', 'DE_AT_LU', 'DE_LU', 'PL', 'SK'],
-    'GB': ['BE', 'FR', 'IE_SEM', 'NL'],
-    'NO_2': ['DK_1', 'NL', 'NO_5'],
-    'HU': ['AT', 'HR', 'RO', 'RS', 'SK', 'UA'],
-    'IT_NORD': ['CH', 'DE_AT_LU', 'FR', 'SI', 'AT', 'IT_CNOR'],
-    'ES': ['FR', 'PT'],
-    'SI': ['AT', 'DE_AT_LU', 'HR', 'IT_NORD'],
-    'RS': ['AL', 'BA', 'BG', 'HR', 'HU', 'ME', 'MK', 'RO'],
-    'PL': ['CZ', 'DE_AT_LU', 'DE_LU', 'LT', 'SE_4', 'SK', 'UA'],
-    'ME': ['AL', 'BA', 'RS'],
-    'DK_1': ['DE_AT_LU', 'DE_LU', 'DK_2', 'NO_2', 'SE_3', 'NL'],
-    'RO': ['BG', 'HU', 'RS', 'UA'],
-    'LT': ['BY', 'LV', 'PL', 'RU_KGD', 'SE_4'],
-    'BG': ['GR', 'MK', 'RO', 'RS', 'TR'],
-    'SE_3': ['DK_1', 'FI', 'NO_1', 'SE_4'],
-    'LV': ['EE', 'LT', 'RU'],
-    'IE_SEM': ['GB'],
-    'BA': ['HR', 'ME', 'RS'],
-    'NO_1': ['NO_2', 'NO_3', 'NO_5', 'SE_3'],
-    'SE_4': ['DE_AT_LU', 'DE_LU', 'DK_2', 'LT', 'PL'],
-    'NO_5': ['NO_1', 'NO_2', 'NO_3'],
-    'SK': ['CZ', 'HU', 'PL', 'UA'],
-    'EE': ['FI', 'LV', 'RU'],
-    'DK_2': ['DE_AT_LU', 'DE_LU', 'SE_4'],
-    'FI': ['EE', 'NO_4', 'RU', 'SE_1', 'SE_3'],
-    'NO_4': ['SE_2', 'FI', 'SE_1'],
-    'SE_1': ['FI', 'NO_4', 'SE_2'],
-    'SE_2': ['NO_3', 'NO_4', 'SE_3'],
-    'DE_LU': ['AT', 'BE', 'CH', 'CZ', 'DK_1', 'DK_2', 'FR', 'NL', 'PL', 'SE_4'],
-    'MK': ['BG', 'GR', 'RS'],
-    'PT': ['ES'],
-    'GR': ['AL', 'BG', 'IT_BRNN', 'IT_GR', 'MK', 'TR'],
-    'NO_3': ['NO_4', 'NO_5', 'SE_2'],
-    'IT': ['AT', 'FR', 'GR', 'MT', 'ME', 'SI', 'CH'],
-    'IT_BRNN': ['GR', 'IT_SUD'],
-    'IT_SUD': ['IT_BRNN', 'IT_CSUD', 'IT_FOGN', 'IT_ROSN', 'IT_CALA'],
-    'IT_FOGN': ['IT_SUD'],
-    'IT_ROSN': ['IT_SICI', 'IT_SUD'],
-    'IT_CSUD': ['IT_CNOR', 'IT_SARD', 'IT_SUD'],
-    'IT_CNOR': ['IT_NORD', 'IT_CSUD', 'IT_SARD'],
-    'IT_SARD': ['IT_CNOR', 'IT_CSUD'],
-    'IT_SICI': ['IT_CALA', 'IT_ROSN', 'MT'],
-    'IT_CALA': ['IT_SICI', 'IT_SUD'],
-    'MT': ['IT_SICI']
 }

@@ -120,9 +120,11 @@ def pairwise(iterable):
 
 def to_snake_case(string : str) -> str:
     """Converts any string to snake case
+
     Parameters
     ----------
     name : str
+
     Returns
     -------
     str

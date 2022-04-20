@@ -3,7 +3,7 @@ from socket import gaierror
 from time import sleep
 import requests
 from functools import wraps
-from .exceptions import NoMatchingDataError, PaginationError
+from .exceptions import NoMatchingDataError
 import pandas as pd
 import logging
 import time
@@ -36,24 +36,6 @@ def retry(func):
     return retry_wrapper
 
 
-def paginated(func):
-    """Catches a PaginationError, splits the requested period in two and tries
-    again. Finally it concatenates the results"""
-
-    @wraps(func)
-    def pagination_wrapper(*args, start, end, **kwargs):
-        try:
-            df = func(*args, start=start, end=end, **kwargs)
-        except PaginationError:
-            pivot = start + (end - start) / 2
-            df1 = pagination_wrapper(*args, start=start, end=pivot, **kwargs)
-            df2 = pagination_wrapper(*args, start=pivot, end=end, **kwargs)
-            df = pd.concat([df1, df2])
-        return df
-
-    return pagination_wrapper
-
-
 def year_limited(func):
     """Deals with calls where you cannot query more than a year, by splitting
     the call up in blocks per year"""
@@ -75,7 +57,7 @@ def year_limited(func):
             raise NoMatchingDataError
 
         df = pd.concat(frames, sort=True)
-        df = df.loc[~df.index.duplicated(keep='first')]
+        df = df.drop_duplicates(keep = 'first')
         return df
 
     return year_wrapper
@@ -101,7 +83,7 @@ def month_limited(func):
             raise NoMatchingDataError
 
         df = pd.concat(frames, sort=True)
-        df = df.loc[~df.index.duplicated(keep='first')]
+        df = df.drop_duplicates(keep = 'first')
         return df
 
     return month_wrapper
@@ -128,7 +110,8 @@ def day_limited(func):
 
         df = pd.concat(frames)
 
-        time.sleep(0.25)
+        df = df.drop_duplicates(keep = 'first')
+
         return df
 
     return day_wrapper
@@ -154,6 +137,8 @@ def week_limited(func):
             raise NoMatchingDataError
 
         df = pd.concat(frames)
+        df = df.drop_duplicates(keep = 'first')
+
         return df
 
     return week_wrapper
