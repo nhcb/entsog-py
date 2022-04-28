@@ -6,8 +6,6 @@ from functools import wraps
 from .exceptions import NoMatchingDataError
 import pandas as pd
 import logging
-import time
-
 
 from .misc import year_blocks, day_blocks, month_blocks, week_blocks
 
@@ -62,6 +60,7 @@ def year_limited(func):
 
     return year_wrapper
 
+
 def month_limited(func):
     """Deals with calls where you cannot query more than a month, by splitting
     the call up in blocks per month"""
@@ -87,6 +86,7 @@ def month_limited(func):
         return df
 
     return month_wrapper
+
 
 def day_limited(func):
     """Deals with calls where you cannot query more than a year, by splitting
@@ -116,6 +116,7 @@ def day_limited(func):
 
     return day_wrapper
 
+
 def week_limited(func):
     """Deals with calls where you cannot query more than a year, by splitting
     the call up in blocks per year"""
@@ -142,7 +143,6 @@ def week_limited(func):
         return df
 
     return week_wrapper
-
 
 
 def operator_limited(func):

@@ -27,5 +27,5 @@ def check_new_area_codes():
     missing_codes = docs_codes-mapped_codes
 
     # search the name for the missing codes and return them
-    return df_docs_codes[df_docs_codes['code'].isin(docs_codes-mapped_codes)]
+    return df_docs_codes[df_docs_codes['code'].isin(missing_codes)]
 
