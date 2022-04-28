@@ -1,15 +1,15 @@
 import bs4
 import pandas as pd
-
+import json
 from .mappings import REGIONS
 from .misc import to_snake_case
 
 
 def _extract_data(json_text):
-    json = json.loads(json_text)
+    json_data = json.loads(json_text)
 
-    keys = list(json.keys())
-    df = pd.json_normalize(json[keys[1]])
+    keys = list(json_data.keys())
+    df = pd.json_normalize(json_data[keys[1]])
 
     return df
 

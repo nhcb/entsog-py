@@ -1830,17 +1830,17 @@ class EntsogPandasClient(EntsogRawClient):
 
         frames = []
         for operator in operators:
-            try:
-                frame = self._query_operational_data(
-                    start=start,
-                    end=end,
-                    operator=operator,
-                    period_type=period_type,
-                    indicators=indicators,
-                    verbose=verbose)
-                frames.append(frame)
-            except Exception as e:
-                print(f"Failure on operator {operator}: {e}")
+            # try:
+            frame = self._query_operational_data(
+                start=start,
+                end=end,
+                operator=operator,
+                period_type=period_type,
+                indicators=indicators,
+                verbose=verbose)
+            frames.append(frame)
+            # except Exception as e:
+            #     print(f"Failure on operator {operator}: {e}")
 
         result = pd.concat(frames)
 
@@ -1855,24 +1855,24 @@ class EntsogPandasClient(EntsogRawClient):
                                 indicators: Union[List[Indicator], List[str]] = None,
                                 verbose: bool = False) -> pd.DataFrame:
 
-        try:
-            json, url = super(EntsogPandasClient, self).query_operational_data(
-                start=start,
-                end=end,
-                operator=operator,
-                period_type=period_type,
-                indicators=indicators
-            )
+        #try:
+        json_data, url = super(EntsogPandasClient, self).query_operational_data(
+            start=start,
+            end=end,
+            operator=operator,
+            period_type=period_type,
+            indicators=indicators
+        )
 
-            data = parse_operational_data(json, verbose)
-            data['url'] = url
-            return data
+        data = parse_operational_data(json_data, verbose)
+        data['url'] = url
+        return data
 
-        except Exception as e:
-            print(
-                f"Wrong or no data available for OPERATOR: {operator} and INDICATORS:{indicators}. " +
-                f"Due to the poor structure and documentation of the data, this occurs frequently: {e}")
-            return None
+        # except Exception as e:
+        #     print(
+        #         f"Wrong or no data available for OPERATOR: {operator} and INDICATORS:{indicators}. " +
+        #         f"Due to the poor structure and documentation of the data, this occurs frequently: {e}")
+        #     return None
 
     def get_operational_aggregates(
             self,

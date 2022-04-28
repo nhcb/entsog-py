@@ -87,7 +87,7 @@ The Pandas Client works similar to the Raw Client, with extras:
 - Operational data can be either requested as in the raw format (which requires some loading time) or in an aggregate function `query_operational_data_all` which will aggressively request all points in Europe and a lot faster.
 
 ```python
-from Entsog import EntsogPandasClient
+from entsog import EntsogPandasClient
 import pandas as pd
 
 client = EntsogPandasClient()
