@@ -14,7 +14,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.7.0"
+__version__ = "0.8.0"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -1333,7 +1333,7 @@ class EntsogRawClient:
         response = self._base_request(endpoint='/operationaldatas', params=params)
         print(response.url)
         print(response.text)
-        
+
         return response.text, response.url
 
 
@@ -1837,17 +1837,17 @@ class EntsogPandasClient(EntsogRawClient):
 
         frames = []
         for operator in operators:
-            # try:
-            frame = self._query_operational_data(
-                start=start,
-                end=end,
-                operator=operator,
-                period_type=period_type,
-                indicators=indicators,
-                verbose=verbose)
-            frames.append(frame)
-            # except Exception as e:
-            #     print(f"Failure on operator {operator}: {e}")
+            try:
+                frame = self._query_operational_data(
+                    start=start,
+                    end=end,
+                    operator=operator,
+                    period_type=period_type,
+                    indicators=indicators,
+                    verbose=verbose)
+                frames.append(frame)
+            except Exception as e:
+                 print(f"Failure on operator {operator}: {e}")
 
         result = pd.concat(frames)
 
