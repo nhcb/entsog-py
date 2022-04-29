@@ -39,12 +39,21 @@ end = pd.Timestamp(2021,1, 6)
 country_code = 'DE'
 
 tik = time.time()
-data = client.query_operational_data_all(
-    start = start,
-    end = end,
-    verbose = False,
-    indicators= ['physical_flow', 'renomination']
-)
+points = client.query_operator_point_directions()
+mask = points['connected_operators'].str.contains('Gazprom')
+masked_points = points[mask]
+
+print(masked_points)
+
+keys = []
+for idx, item in masked_points.iterrows():
+    keys.append(f"{item['operator_key']}{item['point_key']}{item['direction_key']}")
+
+print(masked_points['id'].tolist())
+
+data = client.query_operational_point_data(start = start, end = end, indicators = ['physical_flow'], point_directions = keys, verbose = False)
+
+print(data.head())
 
 
 tok = time.time()
@@ -53,17 +62,17 @@ print(data.columns)
 print(f'All Operational took: {(tok-tik)/60} minutes')
 
 
-tik = time.time()
-data = client.query_operational_data(
-    start = start,
-    end = end,
-    verbose = False,
-    country_code=country_code,
-    indicators= ['physical_flow', 'renomination']
-)
+#tik = time.time()
+#data = client.query_operational_data(
+#    start = start,
+#    end = end,
+##    verbose = False,
+#    country_code=country_code,
+#    indicators= ['physical_flow', 'renomination']
+#)
 
 
-tok = time.time()
-print(data)
-print(data.columns)
-print(f'{country_code} took: {(tok-tik)/60} minutes')
+#tok = time.time()
+#print(data)
+#print(data.columns)
+#print(f'{country_code} took: {(tok-tik)/60} minutes')

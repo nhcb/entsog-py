@@ -40,8 +40,21 @@ def get_operator_mappings():
             }
         )
 
-    with open('mapping/countries.json', 'w') as fp:
-        json.dump(c, fp)
+    print(c)
+    #with open('mapping/countries.json', 'w') as fp:
+    #    json.dump(c, fp)
+
+def get_point_mappings():
+    client = EntsogPandasClient()
+    points = client.query_operator_point_directions()
+    print(points.columns)
+    print(points.head())
+    print(points['id'])
+    points = points[['point_key','point_label']].drop_duplicates()
+
+    for idx, item in points.iterrows():
+        print(f"""{item['point_label']} = "{item['point_key']}" """)
+
 
 
 def get_area():
@@ -120,3 +133,5 @@ def check_new_operators():
         except Exception as e:
             print(f"""{key} : "REGION" """)
             continue
+
+get_point_mappings()

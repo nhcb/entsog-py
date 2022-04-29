@@ -85,6 +85,7 @@ The Pandas Client works similar to the Raw Client, with extras:
 - API limitations of big requests are automatically dealt with and put into multiple calls.
 - Tariffs (and simulated tariffs) can be melted into nice storable format. Instead of having row with EUR, local currency, shared currency for each seperate product, it will create a row for each.
 - Operational data can be either requested as in the raw format (which requires some loading time) or in an aggregate function `query_operational_data_all` which will aggressively request all points in Europe and a lot faster.
+- It's easier to navigate points, for instance if you want to check gazprom points. See below.
 
 ```python
 from entsog import EntsogPandasClient
@@ -140,8 +141,25 @@ client.query_CMP_unsuccesful_requests(start = start, end = end, country_code = c
     uioli_available_lt : "Available through UIOLI long-term",
     uioli_available_st : "Available through UIOLI short-term"}
 
-client.query_operational_data(start = start, end = end, country_code = country_code, indicator = ['renomination', 'physical_flow'])
+client.query_operational_data(start = start, end = end, country_code = country_code, indicators = ['renomination', 'physical_flow'])
 
-client.query_operational_data_all(start = start, end = end, indicator = ['renomination', 'physical_flow'])
+client.query_operational_data_all(start = start, end = end, indicators = ['renomination', 'physical_flow'])
+
+
+# Example for if you would like to see Gazprom points. TODO:
+
+points = client.query_operator_point_directions()
+mask = points['connected_operators'].str.contains('Gazprom')
+masked_points = points[mask]
+print(masked_points)
+
+keys = []
+for idx, item in masked_points.iterrows():
+    keys.append(f"{item['operator_key']}{item['point_key']}{item['direction_key']}")
+
+data = client.query_operational_point_data(start = start, end = end, indicators = ['physical_flow'], point_directions = keys, verbose = False)
+
+print(data.head())
+
 
 ```

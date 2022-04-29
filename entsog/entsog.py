@@ -14,7 +14,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.1.0"
+__version__ = "0.7.0"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -1247,7 +1247,9 @@ class EntsogRawClient:
                                end: pd.Timestamp,
                                operator: Optional[str] = None,
                                period_type: str = 'day',
-                               indicators: Union[List[Indicator], List[str]] = None) -> str:
+                               indicators: Union[List[Indicator], List[str]] = None,
+                               point_directions : Optional[List[str]] = None,
+                               ) -> str:
 
         """
         
@@ -1325,8 +1327,13 @@ class EntsogRawClient:
 
             params['indicator'] = ','.join(decoded_indicators)
 
-        response = self._base_request(endpoint='/operationaldatas', params=params)
+        if point_directions is not None:
+            params['pointDirection'] = ','.join(point_directions)
 
+        response = self._base_request(endpoint='/operationaldatas', params=params)
+        print(response.url)
+        print(response.text)
+        
         return response.text, response.url
 
 
@@ -1846,6 +1853,28 @@ class EntsogPandasClient(EntsogRawClient):
 
         return result
 
+    @week_limited
+    def query_operational_point_data(
+        self,
+        start: pd.Timestamp,
+        end: pd.Timestamp,
+        point_directions : List[str],
+        period_type: str = 'day',
+        indicators: Union[List[Indicator], List[str]] = None,
+        verbose: bool = False) -> pd.DataFrame:        
+
+        json_data, url = super(EntsogPandasClient, self).query_operational_data(
+            start=start,
+            end=end,
+            point_directions= point_directions,
+            period_type=period_type,
+            indicators=indicators
+        )
+
+        data = parse_operational_data(json_data, verbose)
+        data['url'] = url
+        return data
+        
     @week_limited
     def _query_operational_data(self,
                                 start: pd.Timestamp,

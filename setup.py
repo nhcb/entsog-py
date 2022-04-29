@@ -16,7 +16,7 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'readme.md'), encoding='utf-8') as f:
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 # Get the version from the source code
@@ -71,6 +71,6 @@ setup(
     # Note: for creating the source distribution, they had to be included in the
     # MANIFEST.in as well.
     package_data={
-        'entsog-py': ['LICENSE.md', 'readme.md'],
+        'entsog-py': ['LICENSE.md', 'README.md'],
     },
 )
