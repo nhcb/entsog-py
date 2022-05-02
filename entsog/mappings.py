@@ -156,7 +156,7 @@ class Country(enum.Enum):
 
     @property
     def label(self):
-        return (self._operator_labels)
+        return (self._label)
 
     AL = "AL", "Albania"
     CH = "CH", "Switzerland"
@@ -199,6 +199,7 @@ class Country(enum.Enum):
     SK = "SK", "Slovakia"
     TN = "TN", "Tunisia"
     TR = "TR", "Turkey"
+    SM = 'SM', 'San Marino'
     UA = "UA", "Ukraine"
 
 
@@ -349,6 +350,7 @@ DATASET_MAPPINGS = {
 # TODO: All countries must be represented in operational_aggregates, or this does NOT work
 REGIONS = {
     "AL": "Northern Africa",
+    'SM': "Southern Europe",
     "CH": "Western Europe",
     "AT": "Western Europe",
     "AZ": "Western Asia",

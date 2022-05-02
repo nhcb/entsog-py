@@ -255,6 +255,17 @@ def parse_interconnections(json_text):
     return df
 
 
+def parse_operator_points_directions(json_text):
+    df = _extract_data(json_text)
+    df.columns = [to_snake_case(col) for col in df.columns]
+
+    # Get the regions in Europe
+    df['region'] = df['t_so_country'].map(REGIONS)
+    df['adjacent_region'] = df['adjacent_country'].map(REGIONS)
+
+    return df
+
+
 def parse_aggregate_data(
         json_text,
         verbose: bool

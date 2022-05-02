@@ -49,8 +49,6 @@ keys = []
 for idx, item in masked_points.iterrows():
     keys.append(f"{item['operator_key']}{item['point_key']}{item['direction_key']}")
 
-print(masked_points['id'].tolist())
-
 data = client.query_operational_point_data(start = start, end = end, indicators = ['physical_flow'], point_directions = keys, verbose = False)
 
 print(data.head())

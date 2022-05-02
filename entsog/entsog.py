@@ -1331,8 +1331,6 @@ class EntsogRawClient:
             params['pointDirection'] = ','.join(point_directions)
 
         response = self._base_request(endpoint='/operationaldatas', params=params)
-        print(response.url)
-        print(response.text)
 
         return response.text, response.url
 
@@ -1440,7 +1438,7 @@ class EntsogPandasClient(EntsogRawClient):
         json, url = super(EntsogPandasClient, self).query_operator_point_directions(
             country_code=country_code, has_data=has_data
         )
-        data = parse_general(json)
+        data = parse_operator_points_directions(json)
         data['url'] = url
 
         return data
@@ -1853,7 +1851,7 @@ class EntsogPandasClient(EntsogRawClient):
 
         return result
 
-    @week_limited
+    @year_limited
     def query_operational_point_data(
         self,
         start: pd.Timestamp,
@@ -1874,6 +1872,7 @@ class EntsogPandasClient(EntsogRawClient):
         data = parse_operational_data(json_data, verbose)
         data['url'] = url
         return data
+    
         
     @week_limited
     def _query_operational_data(self,
