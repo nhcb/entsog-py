@@ -136,4 +136,5 @@ def to_snake_case(string: str) -> str:
     string = re.sub('([a-z0-9])([A-Z])', r'\1_\2', string)
     string = re.sub('_+', '_', string.replace(' ', '_'))
     string = string.lower().replace('m_wh', 'mwh').lstrip('_').rstrip('_')
+    string = string.lower().replace('k_wh', 'kwh').lstrip('_').rstrip('_')
     return string

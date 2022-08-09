@@ -14,7 +14,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.8.1"
+__version__ = "0.9.0"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -177,12 +177,12 @@ class EntsogRawClient:
         -----------------
         """
 
-        response = self._base_request(endpoint='/connectionpoints')
+        response = self._base_request(endpoint='/connectionpoints', params = {})
 
         return response.text, response.url
 
     def query_operators(self,
-                        country_code: Union[Country, str],
+                        country_code: Union[Country, str] = None,
                         has_data: int = 1) -> str:
 
         """
@@ -946,8 +946,8 @@ class EntsogRawClient:
         response = self._base_request(endpoint='/aggregatedData', params=params)
 
         return response.text, response.url
-
-    def query_interruptions(self) -> str:
+    
+    def query_interruptions(self, start : pd.Timestamp, end : pd.Timestamp) -> str:
 
         """
         
@@ -1009,13 +1009,15 @@ class EntsogRawClient:
         "isArchived"
         -----------------
         """
-
-        response_text, response_url = self._base_offset_request(endpoint='/interruptions')
+        params = {
+            'from': self._datetime_to_str(start),
+            'to': self._datetime_to_str(end),
+        }
+        response_text, response_url = self._base_request(endpoint='/interruptions', params = params)
 
         return response_text, response_url
 
     def query_CMP_auction_premiums(self, start: pd.Timestamp, end: pd.Timestamp,
-                                   # country_code: Union[Country, str],
                                    period_type: str = 'day') -> str:
 
         """
@@ -1368,7 +1370,7 @@ class EntsogPandasClient(EntsogRawClient):
         return data
 
     def query_operators(self,
-                        country_code: Union[Country, str],
+                        country_code: Union[Country, str] = None,
                         has_data: int = 1) -> pd.DataFrame:
 
         """
@@ -1384,7 +1386,8 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         str
         """
-        country_code = lookup_country(country_code)
+        if country_code:
+            country_code = lookup_country(country_code)
         json, url = super(EntsogPandasClient, self).query_operators(
             country_code=country_code, has_data=has_data
         )
@@ -1648,8 +1651,9 @@ class EntsogPandasClient(EntsogRawClient):
         data['url'] = url
 
         return data
-
-    def query_interruptions(self, verbose: bool = True) -> pd.DataFrame:
+    
+    @day_limited
+    def query_interruptions(self, start : pd.Timestamp, end : pd.Timestamp, verbose : bool = False) -> pd.DataFrame:
 
         """
         Interruptions
@@ -1666,20 +1670,13 @@ class EntsogPandasClient(EntsogRawClient):
         pd.DataFrame
         """
 
-        json_list, url_list = super(EntsogPandasClient, self).query_interruptions()
-        frames = []
+        json, url = super(EntsogPandasClient, self).query_interruptions(start = start, end = end)
+        data = parse_interruptions(json, verbose)
+        data['url'] = url
 
-        for n_offset in range(1, len(json_list)):
-            json = json_list[n_offset]
-            url = url_list[n_offset]
-            frame = parse_interruptions(json, verbose)
-            frame['url'] = url
-            frames.append(frame)
-
-        return pd.DataFrame(frames)
+        return data
 
     def query_CMP_auction_premiums(self, start: pd.Timestamp, end: pd.Timestamp,
-                                   country_code: Union[Country, str],
                                    verbose: bool = True) -> pd.DataFrame:
 
         """
@@ -1696,9 +1693,8 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         pd.DataFrame
         """
-        area = lookup_country(country_code)
         json, url = super(EntsogPandasClient, self).query_CMP_auction_premiums(
-            start=start, end=end, country_code=area
+            start=start, end=end
         )
         data = parse_CMP_auction_premiums(json, verbose)
         data['url'] = url
@@ -1706,7 +1702,6 @@ class EntsogPandasClient(EntsogRawClient):
         return data
 
     def query_CMP_unavailable_firm_capacity(self, start: pd.Timestamp, end: pd.Timestamp,
-                                            country_code: Union[Country, str],
                                             verbose: bool = True) -> pd.DataFrame:
 
         """
@@ -1723,9 +1718,8 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         pd.DataFrame
         """
-        area = lookup_country(country_code)
         json, url = super(EntsogPandasClient, self).query_CMP_unavailable_firm_capacity(
-            start=start, end=end, country_code=area
+            start=start, end=end
         )
         data = parse_CMP_unavailable_firm_capacity(json, verbose)
         data['url'] = url
@@ -1734,7 +1728,6 @@ class EntsogPandasClient(EntsogRawClient):
 
     @week_limited
     def query_CMP_unsuccesful_requests(self, start: pd.Timestamp, end: pd.Timestamp,
-                                       country_code: Union[Country, str],
                                        verbose: bool = True) -> pd.DataFrame:
 
         """
@@ -1751,9 +1744,8 @@ class EntsogPandasClient(EntsogRawClient):
         -------
         pd.DataFrame
         """
-        area = lookup_country(country_code)
         json, url = super(EntsogPandasClient, self).query_CMP_unsuccesful_requests(
-            start=start, end=end, country_code=area
+            start=start, end=end
         )
         data = parse_CMP_unsuccesful_requests(json, verbose)
         data['url'] = url

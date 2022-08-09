@@ -133,16 +133,15 @@ def parse_tariffs(json_text: str, verbose: bool, melt: bool):
     # https://transparency.entsog.eu/api/v1/tariffsfulls
 
     data = parse_general(json_text)
-
     renamed_columns = {
-        'applicable_tariff_per_local_currency_k_wh_d_value': 'applicable_tariff_per_local_currency_kwh_d_value',
-        'applicable_tariff_per_local_currency_k_wh_d_unit': 'applicable_tariff_per_local_currency_kwh_d_unit',
-        'applicable_tariff_per_local_currency_k_wh_h_value': 'applicable_tariff_per_local_currency_kwh_h_value',
-        'applicable_tariff_per_local_currency_k_wh_h_unit': 'applicable_tariff_per_local_currency_kwh_h_unit',
-        'applicable_tariff_per_eurk_wh_d_unit': 'applicable_tariff_per_eur_kwh_d_unit',
-        'applicable_tariff_per_eurk_wh_d_value': 'applicable_tariff_per_eur_kwh_d_value',
-        'applicable_tariff_per_eurk_wh_h_unit': 'applicable_tariff_per_eur_kwh_h_unit',
-        'applicable_tariff_per_eurk_wh_h_value': 'applicable_tariff_per_eur_kwh_h_value',
+        'applicable_tariff_per_local_currency_kwh_d_value': 'applicable_tariff_per_local_currency_kwh_d_value',
+        'applicable_tariff_per_local_currency_kwh_d_unit': 'applicable_tariff_per_local_currency_kwh_d_unit',
+        'applicable_tariff_per_local_currency_kwh_h_value': 'applicable_tariff_per_local_currency_kwh_h_value',
+        'applicable_tariff_per_local_currency_kwh_h_unit': 'applicable_tariff_per_local_currency_kwh_h_unit',
+        'applicable_tariff_per_eurkwh_d_unit': 'applicable_tariff_per_eur_kwh_d_unit',
+        'applicable_tariff_per_eurkwh_d_value': 'applicable_tariff_per_eur_kwh_d_value',
+        'applicable_tariff_per_eurkwh_h_unit': 'applicable_tariff_per_eur_kwh_h_unit',
+        'applicable_tariff_per_eurkwh_h_value': 'applicable_tariff_per_eur_kwh_h_value',
         'applicable_commodity_tariff_local_currency': 'applicable_commodity_tariff_local_currency'
     }
 
@@ -183,10 +182,9 @@ def parse_tariffs(json_text: str, verbose: bool, melt: bool):
         'item_remarks',
         'general_remarks']
 
-    if verbose:
-        columns = data.columns  # Pick all
-        data = data[columns]
-    else:
+    if verbose and not melt:
+        return data
+    elif not verbose or melt:
         data = data[columns]
 
     if melt:
@@ -206,7 +204,7 @@ def parse_tariffs(json_text: str, verbose: bool, melt: bool):
             "applicable_tariff_in_common_unit_unit",
         ]
 
-        id_columns = list(set(columns) - set(melt_columns_unit) - set(melt_columns_value))
+        id_columns = list(set(columns) - set(melt_columns_unit + melt_columns_value))
 
         data_value = pd.melt(
             data,
@@ -215,8 +213,9 @@ def parse_tariffs(json_text: str, verbose: bool, melt: bool):
             var_name='variable',
             value_name='value'
         )
-
+        
         data_value['variable'] = data_value["variable"].str.replace("_value$", "")
+        
         data_unit = pd.melt(
             data,
             id_vars=id_columns,
@@ -226,10 +225,11 @@ def parse_tariffs(json_text: str, verbose: bool, melt: bool):
         )
         data_unit['variable'] = data_unit["variable"].str.replace("_unit$", "")
 
-        merge_columns = id_columns.append('variable')
+        # Append with variable
+        id_columns.append('variable')
 
-        data_pivot = data_value.merge(data_unit, on=merge_columns)
-
+        data_pivot = pd.merge(data_value, data_unit, on=id_columns)
+        
         data_pivot['variable'] = data_pivot['variable'].str.extract(r'(local_currency|eur|common_unit)')
         data_pivot['currency'] = data_pivot['code'].str.extract(r'^(.*?)\/')  # ^(.*?)\/ LINE START
         data_pivot['unit'] = data_pivot['code'].str.extract(
