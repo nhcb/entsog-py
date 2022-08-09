@@ -60,9 +60,9 @@ def plot_area(
     aggregation : Optional[str]  = '1D'
     ):
     
-    assert facet_row in ['country','operator_label','balancing_zone', 'region', 'point_type']
+    assert facet_row in ['country','operator_label','balancing_zone', 'region', 'point_type', 'point_label']
 
-    assert facet_col in ['adjacent_country','connected_operators','adjacent_zone', 'adjacent_region', 'point_type']
+    assert facet_col in ['adjacent_country','connected_operators','adjacent_zone', 'adjacent_region', 'point_type', 'point_label','indicator']
     
     flow_data = flow_data.replace({'': None})
 
