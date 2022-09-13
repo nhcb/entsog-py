@@ -8,18 +8,18 @@ import pytz
 import requests
 
 from .decorators import *
-from .exceptions import UnauthorizedError
+from .exceptions import UnauthorizedError, BadGatewayError
 from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, \
     BalancingZone
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.9.0"
+__version__ = "0.9.1"
 __author__ = "nhcb"
 __license__ = "MIT"
 
 URL = 'https://transparency.entsog.eu/api/v1'
-
+OFFSET = 1000
 
 class EntsogRawClient:
     """
@@ -33,7 +33,7 @@ class EntsogRawClient:
 
     def __init__(
             self, session: Optional[requests.Session] = None,
-            retry_count: int = 1, retry_delay: int = 0,
+            retry_count: int = 3, retry_delay: int = 1.5,
             proxies: Optional[Dict] = None, timeout: Optional[int] = None):
         """
         Parameters
@@ -76,12 +76,11 @@ class EntsogRawClient:
             'limit': -1,
             'timeZone': 'UCT'
         }
-        params.update(base_params)
+        base_params.update(params)
 
         logging.debug(f'Performing request to {url} with params {params}')
 
         params = urllib.parse.urlencode(params, safe=',')  # ENTSOG uses comma-seperated values
-
         response = self.session.get(url=url, params=params,
                                     proxies=self.proxies, timeout=self.timeout)  # ,verify=False)
 
@@ -96,6 +95,8 @@ class EntsogRawClient:
                 elif response.status_code == 500:
                     # Gets a 500 error when the API is not available or no data is available
                     raise NoMatchingDataError
+                elif response.status_code == 502:
+                    raise BadGatewayError
 
             return response
 
@@ -1247,10 +1248,10 @@ class EntsogRawClient:
     def query_operational_data(self,
                                start: pd.Timestamp,
                                end: pd.Timestamp,
-                               operator: Optional[str] = None,
                                period_type: str = 'day',
                                indicators: Union[List[Indicator], List[str]] = None,
                                point_directions : Optional[List[str]] = None,
+                               offset : int = None,
                                ) -> str:
 
         """
@@ -1318,10 +1319,11 @@ class EntsogRawClient:
             'to': self._datetime_to_str(end),
             'periodType': period_type
         }
-
-        if operator is not None:
-            params['operatorKey'] = operator
-
+    
+        if offset is not None:
+            params['offset'] = offset
+            params['limit'] = OFFSET
+            
         if indicators is not None:
             decoded_indicators = []
             for indicator in indicators:
@@ -1753,12 +1755,15 @@ class EntsogPandasClient(EntsogRawClient):
         return data
 
     @day_limited
+    @paginated
+    @documents_limited(OFFSET)
     def query_operational_data_all(self,
                                    start: pd.Timestamp,
                                    end: pd.Timestamp,
                                    period_type: str = 'day',
                                    indicators: Union[List[Indicator], List[str]] = ['physical_flow'],
-                                   verbose: bool = True) -> pd.DataFrame:
+                                   verbose: bool = True,
+                                   offset: int = 0) -> pd.DataFrame:
 
         """
         Operational data for all countries
@@ -1777,71 +1782,17 @@ class EntsogPandasClient(EntsogRawClient):
 
         """
 
-        if len(indicators) > 2:
-            raise NotImplementedError("Specify less than two indicators")
-        # Dangerous yet faster function, I noticed it can at least get two indicators based on both daily and hourly period type...
-        # For daily, it will take about 1.5m to obtain a month of data.
-
         json, url = super(EntsogPandasClient, self).query_operational_data(
             start=start,
             end=end,
             period_type=period_type,
-            indicators=indicators
+            indicators=indicators, 
+            offset = offset
         )
-
         data = parse_operational_data(json, verbose)
-
         data['url'] = url
 
         return data
-
-    def query_operational_data(self,
-                               start: pd.Timestamp,
-                               end: pd.Timestamp,
-                               country_code: Union[Area, str],
-                               period_type: str = 'day',
-                               indicators: Union[List[Indicator], List[str]] = ['physical_flow'],
-                               verbose: bool = True) -> pd.DataFrame:
-
-        """
-        
-        Nomination, Renominations, Allocations, Physical Flows, GCV,
-        Wobbe Index, Capacities, Interruptions, and CMP CMA
-
-        Parameters
-        ----------
-        start: pd.Timestamp
-        end: pd.Timestamp
-        country_code: Union[Area, str]
-        period_type: str
-        indicators: Union[List[Indicator],List[str]]
-        verbose: bool
-
-        Returns
-        -------
-        pd.DataFrame
-        """
-
-        area = lookup_area(country_code)
-        operators = list(area.value)
-
-        frames = []
-        for operator in operators:
-            try:
-                frame = self._query_operational_data(
-                    start=start,
-                    end=end,
-                    operator=operator,
-                    period_type=period_type,
-                    indicators=indicators,
-                    verbose=verbose)
-                frames.append(frame)
-            except Exception as e:
-                 print(f"Failure on operator {operator}: {e}")
-
-        result = pd.concat(frames)
-
-        return result
 
     @year_limited
     def query_operational_point_data(
@@ -1860,7 +1811,7 @@ class EntsogPandasClient(EntsogRawClient):
             period_type=period_type,
             indicators=indicators
         )
-
+        
         data = parse_operational_data(json_data, verbose)
         data['url'] = url
         return data
@@ -1887,111 +1838,3 @@ class EntsogPandasClient(EntsogRawClient):
         data = parse_operational_data(json_data, verbose)
         data['url'] = url
         return data
-
-        # except Exception as e:
-        #     print(
-        #         f"Wrong or no data available for OPERATOR: {operator} and INDICATORS:{indicators}. " +
-        #         f"Due to the poor structure and documentation of the data, this occurs frequently: {e}")
-        #     return None
-
-    def get_operational_aggregates(
-            self,
-            start: pd.Timestamp,
-            end: pd.Timestamp,
-            country_code: Union[Area, str],
-            period_type: str = 'day',
-            indicators: Union[List[Indicator], List[str]] = None) -> pd.DataFrame:
-
-        raise NotImplementedError("Function not implemented anymore")
-
-        if self._operator_point_directions is None:
-            self._operator_point_directions = self.query_operator_point_directions()
-
-        # Get the data
-        data = self.query_operational_data(
-            start=start,
-            end=end,
-            country_code=country_code,
-            period_type=period_type,
-            indicators=indicators
-        )
-        # Merge the data
-        merged = pd.merge(
-            data,
-            self._operator_point_directions,
-            left_on=['operator_key', 'point_key'],
-            right_on=['operator_key', 'point_key'],
-            suffixes=['', '_static'],
-            how='left'
-        )
-
-        columns = [
-            "indicator",
-            "period_type",
-            "period_from",
-            "period_to",
-            "operator_key",
-            "tso_eic_code",
-            "operator_label",
-            "point_key",
-            "point_label",
-            "tso_item_identifier",
-            "last_update_date_time",
-            "direction_key",
-            "value",
-            "flow_status",
-            "is_cmp_relevant",
-            "booking_platform_key",
-            "point_type",
-            "is_pipe_in_pipe",
-            "tp_tso_item_label",
-            "last_update_date_time_static",
-            "virtual_reverse_flow",
-            "tso_country",
-            "tso_balancing_zone",
-            "cross_border_point_type",
-            "eu_relationship",
-            "connected_operators",
-            "adjacent_operator_key",
-            "adjacent_country",
-            "adjacent_zones"  # e.g. Switzerland
-        ]
-
-        subset = merged[columns]
-
-        return subset
-
-    def get_grouped_operational_aggregates(
-            self,
-            start: pd.Timestamp,
-            end: pd.Timestamp,
-            country_code: Union[Area, str],
-            period_type: str = 'day',
-            indicators: Union[List[Indicator], List[str]] = None,
-            groups: List[str] = ['point', 'operator', 'country', 'balancing_zone', 'region'],
-            entry_exit: bool = False) -> dict:
-
-        raise NotImplementedError("Function not implemented anymore")
-
-        if list(set(groups).difference(['point', 'operator', 'country', 'balancing_zone', 'region'])):
-            raise ValueError(f'{groups} contain not a valid group type, please specify any of the following: {groups}.')
-
-        data = self.get_operational_aggregates(
-            start=start,
-            end=end,
-            country_code=country_code,
-            period_type=period_type,
-            indicators=indicators
-        )
-        data.to_csv(f"data/get_operational_aggregates_{country_code}.csv", sep=';')
-
-        result = {}
-        for group in groups:
-            small = parse_grouped_operational_aggregates(
-                data=data,
-                group_type=group,
-                entry_exit=entry_exit
-            )
-            result[group] = small
-
-        return result

@@ -21,7 +21,7 @@ client.query_tariffs_sim(start = start, end = end, country_code = country_code, 
 
 client.query_aggregated_data(start = start, end = end, country_code = country_code)
 # TODO: Add interruptions...
-# client.query_interruptions(start = start, end = end)
+#client.query_interruptions(start = start, end = end)
 client.query_CMP_auction_premiums(start = start, end = end)
 client.query_CMP_unavailable_firm_capacity(start = start, end = end)
 
@@ -53,19 +53,21 @@ operational_options = {
     'uioli_available_st' : "Available through UIOLI short-term"
 }
 
-client.query_operational_data(start = start, end = end, country_code = country_code, indicators = ['renomination', 'physical_flow'])
+#client.query_operational_data(start = start, end = end, country_code = country_code, indicators = ['renomination', 'physical_flow'])
 # You should use this when you want to query operational data for the entirety of continental europe.
-client.query_operational_data_all(start = start, end = end, indicators = ['renomination', 'physical_flow'])
-# Example for if you would like to see Gazprom points.
+data = client.query_operational_data_all(start = start, end = end,period_type = 'hour', indicators = ['renomination', 'physical_flow'])
+print(data)
+print(data['url'])
+# Example for if you would like to see Fluxys points.
 points = client.query_operator_point_directions()
-mask = points['connected_operators'].str.contains('Gazprom')
+mask = points['connected_operators'].str.contains('Fluxys')
 masked_points = points[mask]
 print(masked_points)
 
 keys = []
 for idx, item in masked_points.iterrows():
     keys.append(f"{item['operator_key']}{item['point_key']}{item['direction_key']}")
-
+print(keys)
 data = client.query_operational_point_data(start = start, end = end, indicators = ['physical_flow'], point_directions = keys, verbose = False)
 
 print(data.head())

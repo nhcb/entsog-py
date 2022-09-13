@@ -3,7 +3,7 @@ from socket import gaierror
 from time import sleep
 import requests
 from functools import wraps
-from .exceptions import NoMatchingDataError
+from .exceptions import NoMatchingDataError, PaginationError, BadGatewayError
 import pandas as pd
 import logging
 
@@ -20,7 +20,7 @@ def retry(func):
         for _ in range(self.retry_count):
             try:
                 result = func(*args, **kwargs)
-            except (requests.ConnectionError, gaierror) as e:
+            except (requests.ConnectionError, gaierror, BadGatewayError) as e:
                 error = e
                 print("Connection Error, retrying in {} seconds".format(
                     self.retry_delay), file=sys.stderr)
@@ -32,6 +32,48 @@ def retry(func):
             raise error
 
     return retry_wrapper
+
+def paginated(func):
+    """Catches a PaginationError, splits the requested period in two and tries
+    again. Finally it concatenates the results"""
+
+    @wraps(func)
+    def pagination_wrapper(*args, start, end, **kwargs):
+        try:
+            df = func(*args, start=start, end=end, **kwargs)
+        except PaginationError:
+            pivot = start + (end - start) / 2
+            df1 = pagination_wrapper(*args, start=start, end=pivot, **kwargs)
+            df2 = pagination_wrapper(*args, start=pivot, end=end, **kwargs)
+            df = pd.concat([df1, df2])
+        return df
+
+    return pagination_wrapper
+
+def documents_limited(n):
+    def decorator(func):
+        """Deals with calls where you cannot query more than n documents at a time, by offsetting per n documents"""
+
+        @wraps(func)
+        def documents_wrapper(*args, **kwargs):
+            frames = []
+            for offset in range(0, 4800 + n, n):
+                try:
+                    frame = func(*args, offset=offset, **kwargs)
+                    frames.append(frame)
+                except NoMatchingDataError:
+                    logging.debug(f"NoMatchingDataError: for offset {offset}")
+                    break
+
+            if len(frames) == 0:
+                # All the data returned are void
+                raise NoMatchingDataError
+
+            df = pd.concat(frames, sort=True)
+            df = df.loc[~df.index.duplicated(keep='first')]
+            return df
+        return documents_wrapper
+    return decorator
 
 
 def year_limited(func):

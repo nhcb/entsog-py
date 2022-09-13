@@ -1,6 +1,8 @@
 import bs4
 import pandas as pd
 import json
+
+from entsog.exceptions import NoMatchingDataError
 from .mappings import REGIONS
 from .misc import to_snake_case
 
@@ -30,10 +32,14 @@ def parse_operational_data(json_text: str, verbose: bool):
                'capacity_type',
                'last_update_date_time',
                'item_remarks', 'general_remarks']
-    if verbose:
-        return data
+    
+    if not data.empty:
+        if verbose:
+            return data
+        else:
+            return data[columns]
     else:
-        return data[columns]
+        raise NoMatchingDataError('No matching data found')
 
 
 def parse_CMP_unsuccesful_requests(json_text: str, verbose: bool):
@@ -46,10 +52,13 @@ def parse_CMP_unsuccesful_requests(json_text: str, verbose: bool):
                'occurence_count',
                'item_remarks', 'general_remarks']
 
-    if verbose:
-        return data
+    if not data.empty:
+        if verbose:
+            return data
+        else:
+            return data[columns]
     else:
-        return data[columns]
+        raise NoMatchingDataError('No matching data found')
 
 
 def parse_CMP_unavailable_firm_capacity(json_text: str, verbose: bool):
@@ -61,10 +70,13 @@ def parse_CMP_unavailable_firm_capacity(json_text: str, verbose: bool):
                'last_update_date_time',
                'item_remarks', 'general_remarks']
 
-    if verbose:
-        return data
+    if not data.empty:
+        if verbose:
+            return data
+        else:
+            return data[columns]
     else:
-        return data[columns]
+        raise NoMatchingDataError('No matching data found')
 
 
 def parse_CMP_auction_premiums(json_text: str, verbose: bool):
@@ -77,10 +89,13 @@ def parse_CMP_auction_premiums(json_text: str, verbose: bool):
                'last_update_date_time',
                'item_remarks', 'general_remarks']
 
-    if verbose:
-        return data
+    if not data.empty:
+        if verbose:
+            return data
+        else:
+            return data[columns]
     else:
-        return data[columns]
+        raise NoMatchingDataError('No matching data found')
 
 
 def parse_interruptions(json_text: str, verbose: bool):
@@ -92,10 +107,13 @@ def parse_interruptions(json_text: str, verbose: bool):
                'last_update_date_time',
                'item_remarks', 'general_remarks']
 
-    if verbose:
-        return data
+    if not data.empty:
+        if verbose:
+            return data
+        else:
+            return data[columns]
     else:
-        return data[columns]
+        raise NoMatchingDataError('No matching data found')
 
 
 # TODO: implement melt...
@@ -123,10 +141,13 @@ def parse_tariffs_sim(json_text: str, verbose: bool, melt: bool):
                'item_remarks',
                'general_remarks']
 
-    if verbose:
-        return data
+    if not data.empty:
+        if verbose:
+            return data
+        else:
+            return data[columns]
     else:
-        return data[columns]
+        raise NoMatchingDataError('No matching data found')
 
 
 def parse_tariffs(json_text: str, verbose: bool, melt: bool):
@@ -282,10 +303,13 @@ def parse_aggregate_data(
         'period_from', 'period_to', 'period_type', 'direction_key', 'indicator',
         'unit', 'value']
 
-    if verbose:
-        return data
+    if not data.empty:
+        if verbose:
+            return data
+        else:
+            return data[columns]
     else:
-        return data[columns]
+        raise NoMatchingDataError('No matching data found')
 
 
 # Legacy stuff
@@ -568,20 +592,3 @@ def parse_grouped_operational_aggregates(
         )
 
     return df.reset_index()
-
-
-def _extract_timeseries(xml_text):
-    """
-    Parameters
-    ----------
-    xml_text : str
-
-    Yields
-    -------
-    bs4.element.tag
-    """
-    if not xml_text:
-        return
-    soup = bs4.BeautifulSoup(xml_text, 'html.parser')
-    for timeseries in soup.find_all('timeseries'):
-        yield timeseries
