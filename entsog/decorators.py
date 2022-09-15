@@ -60,6 +60,7 @@ def documents_limited(n):
             for offset in range(0, 4800 + n, n):
                 try:
                     frame = func(*args, offset=offset, **kwargs)
+                    sleep(0.25)
                     frames.append(frame)
                 except NoMatchingDataError:
                     logging.debug(f"NoMatchingDataError: for offset {offset}")

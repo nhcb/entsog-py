@@ -7,25 +7,25 @@ start = pd.Timestamp('20171228', tz='Europe/Brussels')
 end = pd.Timestamp('20180101', tz='Europe/Brussels')
 country_code = 'NL'  # Netherlands
 
-client.query_connection_points()
-client.query_operators(country_code)
-client.query_balancing_zones()
-client.query_operator_point_directions()
-client.query_interconnections()
-client.query_aggregate_interconnections()
-client.query_urgent_market_messages()
+#client.query_connection_points()
+#client.query_operators(country_code)
+#client.query_balancing_zones()
+#client.query_operator_point_directions()
+#client.query_interconnections()
+#client.query_aggregate_interconnections()
+#client.query_urgent_market_messages()
 
 # 
-client.query_tariffs(start = start, end = end, country_code = country_code, melt = True, verbose = True)
-client.query_tariffs_sim(start = start, end = end, country_code = country_code, verbose = True)
+#client.query_tariffs(start = start, end = end, country_code = country_code, melt = True, verbose = True)
+#client.query_tariffs_sim(start = start, end = end, country_code = country_code, verbose = True)
 
-client.query_aggregated_data(start = start, end = end, country_code = country_code)
+#client.query_aggregated_data(start = start, end = end, country_code = country_code)
 # TODO: Add interruptions...
 #client.query_interruptions(start = start, end = end)
-client.query_CMP_auction_premiums(start = start, end = end)
-client.query_CMP_unavailable_firm_capacity(start = start, end = end)
+#client.query_CMP_auction_premiums(start = start, end = end)
+#client.query_CMP_unavailable_firm_capacity(start = start, end = end)
 
-client.query_CMP_unsuccesful_requests(start = start, end = end)
+#client.query_CMP_unsuccesful_requests(start = start, end = end)
 
 operational_options = {   
     'interruption_capacity' : "Actual interruption of interruptible capacity",

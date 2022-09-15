@@ -14,7 +14,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.9.2"
+__version__ = "0.9.3"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -83,7 +83,6 @@ class EntsogRawClient:
         params = urllib.parse.urlencode(params, safe=',')  # ENTSOG uses comma-seperated values
         response = self.session.get(url=url, params=params,
                                     proxies=self.proxies, timeout=self.timeout)  # ,verify=False)
-
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
