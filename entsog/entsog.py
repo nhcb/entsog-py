@@ -14,7 +14,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.9.1"
+__version__ = "0.9.2"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -87,7 +87,15 @@ class EntsogRawClient:
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
-            raise e
+            if response.status_code == 401:
+                raise UnauthorizedError
+            elif response.status_code == 500:
+                # Gets a 500 error when the API is not available or no data is available
+                raise NoMatchingDataError
+            elif response.status_code == 502:
+                raise BadGatewayError    
+            else:        
+                raise e
         else:
             if response.headers.get('content-type', '') == 'application/xml':
                 if response.status_code == 401:
