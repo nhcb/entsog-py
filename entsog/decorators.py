@@ -17,14 +17,14 @@ def retry(func):
     def retry_wrapper(*args, **kwargs):
         self = args[0]
         error = None
-        for _ in range(self.retry_count):
+        for r in range(self.retry_count):
             try:
                 result = func(*args, **kwargs)
             except (requests.ConnectionError, gaierror, BadGatewayError) as e:
                 error = e
-                print("Connection Error, retrying in {} seconds".format(
-                    self.retry_delay), file=sys.stderr)
-                sleep(self.retry_delay)
+                retry_delay = self.retry_delay * (r + 1) # Exponential backoff
+                print(f"Connection error, retrying in {retry_delay} seconds", file=sys.stderr)
+                sleep(retry_delay)
                 continue
             else:
                 return result

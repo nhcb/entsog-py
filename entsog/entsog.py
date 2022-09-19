@@ -14,7 +14,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.9.3"
+__version__ = "0.9.4"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -33,7 +33,7 @@ class EntsogRawClient:
 
     def __init__(
             self, session: Optional[requests.Session] = None,
-            retry_count: int = 3, retry_delay: int = 1.5,
+            retry_count: int = 5, retry_delay: int = 3,
             proxies: Optional[Dict] = None, timeout: Optional[int] = None):
         """
         Parameters
