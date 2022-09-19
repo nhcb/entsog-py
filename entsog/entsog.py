@@ -13,7 +13,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.9.6"
+__version__ = "0.9.7"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -75,7 +75,8 @@ class EntsogRawClient:
             'limit': -1,
             'timeZone': 'UCT'
         }
-        base_params.update(params)
+        # Update the default parameters and add the new ones.
+        params = {**base_params, **params}
 
         logging.debug(f'Performing request to {url} with params {params}')
 

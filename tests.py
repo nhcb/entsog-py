@@ -10,7 +10,7 @@ country_code = 'NL'  # Netherlands
 #client.query_connection_points()
 #client.query_operators(country_code)
 #client.query_balancing_zones()
-#client.query_operator_point_directions()
+print(client.query_operator_point_directions())
 #client.query_interconnections()
 #client.query_aggregate_interconnections()
 #client.query_urgent_market_messages()
