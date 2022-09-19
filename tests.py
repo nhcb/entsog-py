@@ -3,8 +3,8 @@ import pandas as pd
 
 client = EntsogPandasClient()
 
-start = pd.Timestamp('20171228', tz='Europe/Brussels')
-end = pd.Timestamp('20180101', tz='Europe/Brussels')
+start = pd.Timestamp('20220912', tz='Europe/Brussels')
+end = pd.Timestamp('20220920', tz='Europe/Brussels')
 country_code = 'NL'  # Netherlands
 
 #client.query_connection_points()
@@ -55,7 +55,7 @@ operational_options = {
 
 #client.query_operational_data(start = start, end = end, country_code = country_code, indicators = ['renomination', 'physical_flow'])
 # You should use this when you want to query operational data for the entirety of continental europe.
-data = client.query_operational_data_all(start = start, end = end,period_type = 'hour', indicators = ['renomination', 'physical_flow'])
+data = client.query_operational_data_all(start = start, end = end,period_type = 'day', indicators = ['renomination', 'physical_flow'])
 print(data)
 print(data['url'])
 # Example for if you would like to see Fluxys points.
