@@ -10,3 +10,5 @@ class PaginationError(Exception):
 class BadGatewayError(Exception):
     pass
 
+class TooManyRequestsError(Exception):
+    pass

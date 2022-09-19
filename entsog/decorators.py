@@ -3,7 +3,7 @@ from socket import gaierror
 from time import sleep
 import requests
 from functools import wraps
-from .exceptions import NoMatchingDataError, PaginationError, BadGatewayError
+from .exceptions import NoMatchingDataError, PaginationError, BadGatewayError, TooManyRequestsError
 import pandas as pd
 import logging
 
@@ -20,7 +20,7 @@ def retry(func):
         for r in range(self.retry_count):
             try:
                 result = func(*args, **kwargs)
-            except (requests.ConnectionError, gaierror, BadGatewayError) as e:
+            except (requests.ConnectionError, gaierror, BadGatewayError, TooManyRequestsError) as e:
                 error = e
                 retry_delay = self.retry_delay * (r + 1) # Exponential backoff
                 print(f"Connection error, retrying in {retry_delay} seconds", file=sys.stderr)

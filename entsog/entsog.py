@@ -8,13 +8,12 @@ import pytz
 import requests
 
 from .decorators import *
-from .exceptions import UnauthorizedError, BadGatewayError
-from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, \
-    BalancingZone
+from .exceptions import UnauthorizedError, BadGatewayError, TooManyRequestsError
+from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.9.4"
+__version__ = "0.9.5"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -92,7 +91,9 @@ class EntsogRawClient:
                 # Gets a 500 error when the API is not available or no data is available
                 raise NoMatchingDataError
             elif response.status_code == 502:
-                raise BadGatewayError    
+                raise BadGatewayError
+            elif response.status_code == 429:
+                raise TooManyRequestsError
             else:        
                 raise e
         else:
@@ -104,6 +105,8 @@ class EntsogRawClient:
                     raise NoMatchingDataError
                 elif response.status_code == 502:
                     raise BadGatewayError
+                elif response.status_code == 429:
+                    raise TooManyRequestsError
 
             return response
 
