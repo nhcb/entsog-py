@@ -325,7 +325,7 @@ class Indicator(enum.Enum):
     interruptible_interruption_actual = "Interruptible Interruption Actual – Interrupted",
     interruptible_interruption_planned = "Interruptible Interruption Planned - Interrupted",
     interruptible_total = "Interruptible Total",
-    nominations = "Nominations",
+    nomination = "Nomination",
     physical_flow = "Physical Flow",
     firm_interruption_capacity_planned = "Planned interruption of firm capacity",
     renomination = "Renomination",

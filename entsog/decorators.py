@@ -57,7 +57,7 @@ def documents_limited(n):
         @wraps(func)
         def documents_wrapper(*args, **kwargs):
             frames = []
-            for offset in range(0, 5000 + n, n):
+            for offset in range(0, 250_000 + n, n):
                 try:
                     frame = func(*args, offset=offset, **kwargs)
                     sleep(0.25)

@@ -13,7 +13,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "0.9.7"
+__version__ = "1.0.0"
 __author__ = "nhcb"
 __license__ = "MIT"
 

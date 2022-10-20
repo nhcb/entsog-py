@@ -3,7 +3,7 @@ import pandas as pd
 
 client = EntsogPandasClient()
 
-start = pd.Timestamp('20220912', tz='Europe/Brussels')
+start = pd.Timestamp('20220918', tz='Europe/Brussels')
 end = pd.Timestamp('20220920', tz='Europe/Brussels')
 country_code = 'NL'  # Netherlands
 
@@ -41,7 +41,7 @@ operational_options = {
     'interruptible_interruption_actual' : "Interruptible Interruption Actual – Interrupted",
     'interruptible_interruption_planned' : "Interruptible Interruption Planned - Interrupted",
     'interruptible_total' : "Interruptible Total",
-    'nominations' : "Nominations",
+    'nomination' : "Nomination",
     'physical_flow' : "Physical Flow",
     'firm_interruption_capacity_planned' : "Planned interruption of firm capacity",
     'renomination' : "Renomination",
@@ -55,19 +55,22 @@ operational_options = {
 
 #client.query_operational_data(start = start, end = end, country_code = country_code, indicators = ['renomination', 'physical_flow'])
 # You should use this when you want to query operational data for the entirety of continental europe.
-data = client.query_operational_data_all(start = start, end = end,period_type = 'day', indicators = ['renomination', 'physical_flow'])
+data = client.query_operational_data_all(start = start, end = end,period_type = 'hour', indicators = ['renomination', 'physical_flow', 'nomination'])
 print(data)
 print(data['url'])
-# Example for if you would like to see Fluxys points.
-points = client.query_operator_point_directions()
-mask = points['connected_operators'].str.contains('Fluxys')
-masked_points = points[mask]
-print(masked_points)
 
-keys = []
-for idx, item in masked_points.iterrows():
-    keys.append(f"{item['operator_key']}{item['point_key']}{item['direction_key']}")
-print(keys)
-data = client.query_operational_point_data(start = start, end = end, indicators = ['physical_flow'], point_directions = keys, verbose = False)
+data.to_csv("test.csv")
 
-print(data.head())
+# # Example for if you would like to see Fluxys points.
+# points = client.query_operator_point_directions()
+# mask = points['connected_operators'].str.contains('Fluxys')
+# masked_points = points[mask]
+# print(masked_points)
+
+# keys = []
+# for idx, item in masked_points.iterrows():
+#     keys.append(f"{item['operator_key']}{item['point_key']}{item['direction_key']}")
+# print(keys)
+# data = client.query_operational_point_data(start = start, end = end, indicators = ['physical_flow'], point_directions = keys, verbose = False)
+
+# print(data.head())
