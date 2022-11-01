@@ -8,17 +8,17 @@ import pytz
 import requests
 
 from .decorators import *
-from .exceptions import UnauthorizedError, BadGatewayError, TooManyRequestsError
+from .exceptions import GatewayTimeOut, UnauthorizedError, BadGatewayError, TooManyRequestsError
 from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "nhcb"
 __license__ = "MIT"
 
 URL = 'https://transparency.entsog.eu/api/v1'
-OFFSET = 1000
+OFFSET = 10000
 
 class EntsogRawClient:
     """
@@ -93,6 +93,8 @@ class EntsogRawClient:
                 raise NoMatchingDataError
             elif response.status_code == 502:
                 raise BadGatewayError
+            elif response.status_code == 504:
+                raise GatewayTimeOut
             elif response.status_code == 429:
                 raise TooManyRequestsError
             else:        

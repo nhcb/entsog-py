@@ -12,3 +12,6 @@ class BadGatewayError(Exception):
 
 class TooManyRequestsError(Exception):
     pass
+
+class GatewayTimeOut(Exception):
+    pass
