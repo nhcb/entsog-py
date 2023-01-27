@@ -77,12 +77,11 @@ class EntsogRawClient:
         }
         # Update the default parameters and add the new ones.
         params = {**base_params, **params}
-
         logging.debug(f'Performing request to {url} with params {params}')
 
         params = urllib.parse.urlencode(params, safe=',')  # ENTSOG uses comma-seperated values
-        response = self.session.get(url=url, params=params,
-                                    proxies=self.proxies, timeout=self.timeout)  # ,verify=False)
+        # UPDATE: ENTSOG now cannot handle verifications of SSL certificates. This is a temporary fix, will contact ENTSOG to fix this.
+        response = self.session.get(url=url, params=params, proxies=self.proxies, timeout=self.timeout,verify=False)
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
