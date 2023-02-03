@@ -13,7 +13,7 @@ from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, looku
 from .parsers import *
 
 __title__ = "entsog-py"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __author__ = "nhcb"
 __license__ = "MIT"
 
@@ -81,7 +81,7 @@ class EntsogRawClient:
 
         params = urllib.parse.urlencode(params, safe=',')  # ENTSOG uses comma-seperated values
         # UPDATE: ENTSOG now cannot handle verifications of SSL certificates. This is a temporary fix, will contact ENTSOG to fix this.
-        response = self.session.get(url=url, params=params, proxies=self.proxies, timeout=self.timeout,verify=False)
+        response = self.session.get(url=url, params=params, proxies=self.proxies, timeout=self.timeout)
         try:
             response.raise_for_status()
         except requests.HTTPError as e:

@@ -9,11 +9,13 @@ from .misc import to_snake_case
 
 def _extract_data(json_text):
     json_data = json.loads(json_text)
-
     keys = list(json_data.keys())
-    df = pd.json_normalize(json_data[keys[1]])
-
-    return df
+    # Returns nothing
+    if len(keys) == 1 or keys[0] == 'message':
+        return pd.DataFrame()
+    else:
+        df = pd.json_normalize(json_data[keys[1]])
+        return df
 
 
 def parse_general(json_text):
