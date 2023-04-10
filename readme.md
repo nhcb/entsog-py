@@ -68,12 +68,6 @@ client.query_tariffs_sim(start = start, end = end, country_code = country_code)
     uioli_available_lt : "Available through UIOLI long-term",
     uioli_available_st : "Available through UIOLI short-term"}
 
-client.query_operational_data(start = start, end = end, country_code = country_code, indicator = ['renomination', 'physical_flow'])
-
-
-
-
-
 ```
 
 ### <a name="EntsogPandasClient"></a>EntsogPandasClient
