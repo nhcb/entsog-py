@@ -8,7 +8,7 @@ import pytz
 import requests
 
 from .decorators import *
-from .exceptions import GatewayTimeOut, UnauthorizedError, BadGatewayError, TooManyRequestsError
+from .exceptions import GatewayTimeOut, UnauthorizedError, BadGatewayError, TooManyRequestsError, NotFoundError
 from .mappings import Area, lookup_area, Indicator, lookup_balancing_zone, lookup_country, lookup_indicator, Country, BalancingZone
 from .parsers import *
 
@@ -96,6 +96,8 @@ class EntsogRawClient:
                 raise GatewayTimeOut
             elif response.status_code == 429:
                 raise TooManyRequestsError
+            elif response.status_code == 404:
+                raise NotFoundError
             else:        
                 raise e
         else:
@@ -109,6 +111,8 @@ class EntsogRawClient:
                     raise BadGatewayError
                 elif response.status_code == 429:
                     raise TooManyRequestsError
+                elif response.status_code == 404:
+                    raise NotFoundError
 
             return response
 
