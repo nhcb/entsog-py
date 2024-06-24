@@ -406,8 +406,7 @@ class EntsogRawClient:
         return response.text, response.url
 
     def query_operator_point_directions(self,
-                                        country_code: Union[Country, str] = None,
-                                        has_data: int = 1) -> str:
+                                        country_code: Union[Country, str] = None) -> str:
 
         """
         
@@ -417,7 +416,6 @@ class EntsogRawClient:
         Parameters
         ----------
         country_code : Union[Country, str]
-        has_data : int
 
         Returns
         -------
@@ -504,9 +502,7 @@ class EntsogRawClient:
         "dataSet"
         -----------------
         """
-        params = {
-            'hasData': has_data
-        }
+        params = {}
         if country_code is not None:
             params['tSOCountry'] = lookup_country(country_code).code
 
@@ -1437,8 +1433,7 @@ class EntsogPandasClient(EntsogRawClient):
         return data
 
     def query_operator_point_directions(self,
-                                        country_code: Optional[Union[Country, str]] = None,
-                                        has_data: int = 1) -> pd.DataFrame:
+                                        country_code: Optional[Union[Country, str]] = None) -> pd.DataFrame:
 
         """
         
@@ -1448,7 +1443,6 @@ class EntsogPandasClient(EntsogRawClient):
         Parameters
         ----------
         country Union[Area, str]
-        has_data int
 
         Returns
         -------
@@ -1457,7 +1451,7 @@ class EntsogPandasClient(EntsogRawClient):
         if country_code is not None:
             country_code = lookup_country(country_code)
         json, url = super(EntsogPandasClient, self).query_operator_point_directions(
-            country_code=country_code, has_data=has_data
+            country_code=country_code
         )
         data = parse_operator_points_directions(json)
         data['url'] = url
