@@ -3,7 +3,7 @@ from socket import gaierror
 from time import sleep
 import requests
 from functools import wraps
-from .exceptions import NoMatchingDataError, PaginationError, BadGatewayError, TooManyRequestsError
+from .exceptions import NoMatchingDataError, PaginationError, BadGatewayError, TooManyRequestsError, NotFoundError
 import pandas as pd
 import logging
 
@@ -64,6 +64,9 @@ def documents_limited(n):
                     frames.append(frame)
                 except NoMatchingDataError:
                     logging.debug(f"NoMatchingDataError: for offset {offset}")
+                    break
+                except NotFoundError:
+                    logging.debug(f"NotFoundError: for offset {offset}")
                     break
 
             if len(frames) == 0:

@@ -15,3 +15,6 @@ class TooManyRequestsError(Exception):
 
 class GatewayTimeOut(Exception):
     pass
+
+class NotFoundError(Exception):
+    pass
